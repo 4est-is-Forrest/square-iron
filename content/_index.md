@@ -28,6 +28,26 @@ sections:
     beneficial to the team and organization.
   image: ''
   actions: []
+- template: featuresblock
+  component: features_block.html
+  type: featuresblock
+  featureslist:
+  - title: Role Experience
+    content: |-
+      * Network Design and Troubleshooting
+      * Windows & Linux Environments (Servers & Clients)
+      * Systems Administration
+      * Automation Design & Implementation
+      * Tier 1 & 2 IT Support
+      * Cyber, System & Information Security
+      * Web Application Development
+      * Data Collection, Storage, Analysis & Reporting
+      * Database Administration
+    actions: []
+  title: Skills and Experience
+  section_id: skills_and_experience
+  subtitle: Brief Overview on Roles and Technologies I've interacted with in academic
+    and professional capacities.
 - template: contentblock
   component: content_block.html
   type: contentblock
@@ -72,26 +92,6 @@ sections:
     * Google's GCloud Console Tool Set
   image: ''
   actions: []
-- template: featuresblock
-  component: features_block.html
-  type: featuresblock
-  featureslist:
-  - title: Role Experience
-    content: |-
-      * Network Design and Troubleshooting
-      * Windows & Linux Environments (Servers & Clients)
-      * Systems Administration
-      * Automation Design & Implementation
-      * Tier 1 & 2 IT Support
-      * Cyber, System & Information Security
-      * Web Application Development
-      * Data Collection, Storage, Analysis & Reporting
-      * Database Administration
-    actions: []
-  title: Skills and Experience
-  section_id: skills_and_experience
-  subtitle: Brief Overview on Roles and Technologies I've interacted with in academic
-    and professional capacities.
 layout: home
 menu:
   main:
