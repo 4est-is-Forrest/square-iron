@@ -32,7 +32,7 @@ sections:
   component: content_block.html
   type: contentblock
   title: Skills and Experience
-  section_id: skills_and_technologies
+  section_id: skills_and_experience
   content: |-
     ### Role Experience
 
@@ -44,12 +44,32 @@ sections:
     * Cyber, System & Information Security
     * Web Application Development
     * Data Collection, Storage, Analysis & Reporting
+    * Database Administration
 
     ### Technologies Experience
 
-    * Web Services & RESTful APIs
+    * Web Services & RESTful APIs Interaction
     * Google Cloud Platform
-    * ServiceNow Platform
+    * ServiceNow (London)
+    * Virtual Machine Management Platforms
+    * IAM & LDAP Frameworks
+    * Microsoft Flow
+    * Cisco Networking Devices (Physical & Virtual)
+    * Natural Language Processing
+    * Flask & Jinja2
+    * Selenium (Python)
+    * Windows COM API (Python)
+
+    ### Languages & Consoles
+
+    * Python 3
+    * HTML, CSS & JS
+    * JQuery
+    * SQL, NoSQL, MySQL, SQLite
+    * Powershell Scripting
+    * Bash Scripting
+    * Ruby
+    * Google's GCloud Console Tool Set
   image: ''
   actions: []
 layout: home
