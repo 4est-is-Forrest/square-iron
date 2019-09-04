@@ -32,6 +32,20 @@ sections:
   component: features_block.html
   type: featuresblock
   featureslist:
+  - title: Technologies Experience
+    content: |-
+      * Web Services & RESTful APIs Interaction
+      * Google Cloud Platform
+      * ServiceNow (London)
+      * Virtual Machine Management Platforms
+      * IAM & LDAP Frameworks
+      * Microsoft Flow
+      * Cisco Networking Devices (Physical & Virtual)
+      * Natural Language Processing
+      * Flask & Jinja2
+      * Selenium (Python)
+      * Windows COM API (Python)
+    actions: []
   - title: Role Experience
     content: |-
       * Network Design and Troubleshooting
