@@ -32,6 +32,18 @@ sections:
   component: features_block.html
   type: featuresblock
   featureslist:
+  - title: Role Experience
+    content: |-
+      * Network Design and Troubleshooting
+      * Windows & Linux Environments (Servers & Clients)
+      * Systems Administration
+      * Automation Design & Implementation
+      * Tier 1 & 2 IT Support
+      * Cyber, System & Information Security
+      * Web Application Development
+      * Data Collection, Storage, Analysis & Reporting
+      * Database Administration
+    actions: []
   - title: Technologies Experience
     content: |-
       * Web Services & RESTful APIs Interaction
@@ -46,17 +58,16 @@ sections:
       * Selenium (Python)
       * Windows COM API (Python)
     actions: []
-  - title: Role Experience
+  - title: Languages & Consoles
     content: |-
-      * Network Design and Troubleshooting
-      * Windows & Linux Environments (Servers & Clients)
-      * Systems Administration
-      * Automation Design & Implementation
-      * Tier 1 & 2 IT Support
-      * Cyber, System & Information Security
-      * Web Application Development
-      * Data Collection, Storage, Analysis & Reporting
-      * Database Administration
+      * Python 3
+      * HTML, CSS & JS
+      * JQuery
+      * SQL, NoSQL, MySQL, SQLite
+      * Powershell Scripting
+      * Bash Scripting
+      * Ruby
+      * Google’s GCloud Console Tool Set
     actions: []
   title: Skills and Experience
   section_id: skills_and_experience
