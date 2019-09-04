@@ -88,9 +88,10 @@ sections:
       * Data Collection, Storage, Analysis & Reporting
       * Database Administration
     actions: []
-  title: ''
-  section_id: ''
-  subtitle: ''
+  title: Skills and Experience
+  section_id: skills_and_experience
+  subtitle: Brief Overview on Roles and Technologies I've interacted with in academic
+    and professional capacities.
 layout: home
 menu:
   main:
