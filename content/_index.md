@@ -15,9 +15,15 @@ sections:
 - template: featuresblock
   component: features_block.html
   type: featuresblock
-  title: About Me
+  title: Resume Brief
   section_id: ''
   featureslist:
+  - title: Work and Education
+    content: |-
+      ##### BS Information Technology (Cyber Security Track)
+
+      ###### December 2019 (Northern Kentucky University)
+    actions: []
   - title: About Me
     content: Graduating December 2019 from Northern Kentucky University with a Bachelor
       of Science in Computer Information Technology with a concentration in Cyber
