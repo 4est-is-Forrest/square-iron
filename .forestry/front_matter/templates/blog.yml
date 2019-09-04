@@ -23,5 +23,3 @@ fields:
   default: blog
   config:
     required: true
-pages:
-- content/blog/_index.md
