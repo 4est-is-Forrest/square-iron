@@ -12,72 +12,19 @@ sections:
   actions:
   - label: Code Samples
     url: docs/index.html
-- type: featuresblock
-  template: featuresblock
-  section_id: features
-  component: features_block.html
-  featureslist:
-  - title: Documentation
-    content: Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-      a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at, tincidunt
-      ut tellus. Vivamus rhoncus mattis varius.
-    actions:
-    - label: Get Started
-      url: docs/index.html
-  - title: Blog
-    content: Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis nunc
-      non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
-    actions:
-    - label: View Posts
-      url: blog/index.html
-  - title: Style Guides
-    content: Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-      a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at, tincidunt
-      ut tellus. Vivamus rhoncus mattis varius.
-    actions:
-    - label: Learn More
-      url: "/style-guide.html"
-  title: ''
-  subtitle: ''
-- type: featuresblock
-  template: featuresblock
-  title: Sample Layouts
-  section_id: features-two-col
-  component: features_block.html
-  subtitle: An optional subtitle of the section
-  featureslist:
-  - title: Overview
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl ligula,
-      cursus id molestie vel, maximus aliquet risus. Vivamus in nibh fringilla, fringilla
-      tortor at, pulvinar orci.
-    actions:
-    - label: Learn More
-      url: "/overview.html"
-  - title: Showcase
-    content: Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-      a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at, tincidunt
-      ut tellus. Vivamus rhoncus mattis varius.
-    actions:
-    - label: Learn More
-      url: "/showcase.html"
-- type: contentblock
-  template: contentblock
-  title: A Section Without Image
-  section_id: text-no-img
-  component: content_block.html
-  content: Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
-    cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum consectetur
-    lobortis.
-  actions:
-  - label: Get Started
-    url: "/docs/getting-started/installation.html"
-  image: ''
 - template: contentblock
   component: content_block.html
   type: contentblock
-  title: Skills
-  section_id: ''
-  content: ''
+  title: About Me
+  section_id: about_me
+  content: Graduating December 2019 from Northern Kentucky University with a Bachelor
+    of Science in Computer Information Technology with a concentration in Cyber security.
+    Possessing more than three years of professional experience in IT while interacting
+    with a broad range of technologies. Additionally, more than two years of consistent
+    and diverse utilization of the Python language. Efficiency-driven, detail-oriented,
+    and demonstrated tenacity in learning and solving difficult problems. Seeking
+    interesting and challenging technical prospects where comprehensive IT knowledge
+    compounded with coding abilities would be greatly beneficial to the team and organization.
   image: ''
   actions: []
 layout: home
