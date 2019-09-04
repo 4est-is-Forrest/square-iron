@@ -51,8 +51,6 @@ sections:
       * ServiceNow (London)
       * Virtual Machine Management Platforms
       * IAM & LDAP Frameworks
-      * Microsoft Flow
-      * Cisco Networking Devices (Physical & Virtual)
       * Natural Language Processing
       * Flask & Jinja2
       * Selenium (Python)
