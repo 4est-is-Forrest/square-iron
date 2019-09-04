@@ -72,6 +72,25 @@ sections:
     * Google's GCloud Console Tool Set
   image: ''
   actions: []
+- template: featuresblock
+  component: features_block.html
+  type: featuresblock
+  featureslist:
+  - title: Role Experience
+    content: |-
+      * Network Design and Troubleshooting
+      * Windows & Linux Environments (Servers & Clients)
+      * Systems Administration
+      * Automation Design & Implementation
+      * Tier 1 & 2 IT Support
+      * Cyber, System & Information Security
+      * Web Application Development
+      * Data Collection, Storage, Analysis & Reporting
+      * Database Administration
+    actions: []
+  title: ''
+  section_id: ''
+  subtitle: ''
 layout: home
 menu:
   main:
