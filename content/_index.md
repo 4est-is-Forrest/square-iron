@@ -72,6 +72,14 @@ sections:
   - label: Get Started
     url: "/docs/getting-started/installation.html"
   image: ''
+- template: contentblock
+  component: content_block.html
+  type: contentblock
+  title: Skills
+  section_id: ''
+  content: ''
+  image: ''
+  actions: []
 layout: home
 menu:
   main:
