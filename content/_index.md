@@ -39,20 +39,6 @@ sections:
       url: "/style-guide.html"
   title: ''
   subtitle: ''
-- type: contentblock
-  template: contentblock
-  title: A Section With An Image
-  section_id: text-img
-  component: content_block.html
-  content: Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
-    cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum consectetur
-    lobortis.
-  image: images/10.jpg
-  actions:
-  - label: View Demo
-    url: "/docs/getting-started/index.html"
-  - label: Get Started
-    url: "/docs/getting-started/index.html"
 - type: featuresblock
   template: featuresblock
   title: Sample Layouts
@@ -74,15 +60,6 @@ sections:
     actions:
     - label: Learn More
       url: "/showcase.html"
-- type: ctablock
-  template: ctablock
-  title: The Title of The Call to Action Block
-  section_id: cta
-  component: cta_block.html
-  subtitle: This is an optional description for the call to action block.
-  actions:
-  - label: Get Started
-    url: "/docs/getting-started/installation.html"
 - type: contentblock
   template: contentblock
   title: A Section Without Image
