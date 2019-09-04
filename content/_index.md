@@ -31,21 +31,13 @@ sections:
     actions: []
   - title: IT Work and Education
     content: |-
-      #### Academic
-
       ##### _Bachelor's of Science in Information Technology_
 
-      Northern Kentucky University
-
-      December 2019
-
-      #### Professional
+      Northern Kentucky University - December 2019
 
       ##### _Information Technology Automation Developer_
 
-      Atos IT Solutions
-
-      April, 2016 - Present
+      Atos IT Solutions - April, 2016 - Present
     actions: []
   subtitle: ''
 - template: featuresblock
