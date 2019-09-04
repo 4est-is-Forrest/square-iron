@@ -30,7 +30,8 @@ sections:
       with coding abilities would be greatly beneficial to the team and organization.
     actions: []
   - title: IT Work and Education
-    content: |-
+    content: |2-
+
       ##### _Bachelor's of Science in Information Technology_
 
       Northern Kentucky University - December 2019
