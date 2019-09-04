@@ -34,7 +34,7 @@ sections:
   title: Skills and Experience
   section_id: skills_and_experience
   content: |-
-    ### Role Experience
+    #### Role Experience
 
     * Network Design and Troubleshooting
     * Windows & Linux Environments (Servers & Clients)
@@ -46,7 +46,7 @@ sections:
     * Data Collection, Storage, Analysis & Reporting
     * Database Administration
 
-    ### Technologies Experience
+    #### Technologies Experience
 
     * Web Services & RESTful APIs Interaction
     * Google Cloud Platform
@@ -60,7 +60,7 @@ sections:
     * Selenium (Python)
     * Windows COM API (Python)
 
-    ### Languages & Consoles
+    #### Languages & Consoles
 
     * Python 3
     * HTML, CSS & JS
