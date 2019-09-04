@@ -7,7 +7,7 @@ sections:
   section_id: Web_Title
   component: hero_block.html
   content: Hello and welcome to my CV site. Here you can learn more about my professional
-    experience and view some of my Python projects accompanied with details.
+    experience as well as view some code samples.
   image: images/5.jpg
   actions:
   - label: Get Started
