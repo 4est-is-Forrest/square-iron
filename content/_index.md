@@ -10,7 +10,7 @@ sections:
     experience as well as view some code samples.
   image: "/images/3.jpg"
   actions:
-  - label: Get Started
+  - label: Code Samples
     url: docs/index.html
 - type: featuresblock
   template: featuresblock
