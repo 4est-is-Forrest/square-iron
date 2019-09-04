@@ -18,11 +18,23 @@ sections:
   title: Resume Brief
   section_id: ''
   featureslist:
-  - title: Work and Education
+  - title: IT Work and Education
     content: |-
-      ##### BS Information Technology (Cyber Security Track)
+      #### Academic
 
-      ###### December 2019 (Northern Kentucky University)
+      ##### _Bachelor's of Science in Information Technology_
+
+      Northern Kentucky University
+
+      December 2019
+
+      #### Professional
+
+      ##### _Information Technology Automation Developer_
+
+      Atos IT Solutions
+
+      April, 2016 - Present
     actions: []
   - title: About Me
     content: Graduating December 2019 from Northern Kentucky University with a Bachelor
