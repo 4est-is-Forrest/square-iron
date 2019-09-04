@@ -20,11 +20,12 @@ sections:
   content: Graduating December 2019 from Northern Kentucky University with a Bachelor
     of Science in Computer Information Technology with a concentration in Cyber security.
     Possessing more than three years of professional experience in IT while interacting
-    with a broad range of technologies. Additionally, more than two years of consistent
-    and diverse utilization of the Python language. Efficiency-driven, detail-oriented,
-    and demonstrated tenacity in learning and solving difficult problems. Seeking
-    interesting and challenging technical prospects where comprehensive IT knowledge
-    compounded with coding abilities would be greatly beneficial to the team and organization.
+    with a broad range of technologies. Additionally, more than three years of consistent
+    and diverse utilization of the Python language in professional environment. Efficiency-driven,
+    detail-oriented, and demonstrated tenacity in learning and solving difficult problems.
+    Seeking interesting and challenging technical prospects where comprehensive IT
+    knowledge compounded with coding abilities would be greatly beneficial to the
+    team and organization.
   image: ''
   actions: []
 layout: home
