@@ -28,6 +28,30 @@ sections:
     beneficial to the team and organization.
   image: ''
   actions: []
+- template: contentblock
+  component: content_block.html
+  type: contentblock
+  title: Skills and Experience
+  section_id: skills_and_technologies
+  content: |-
+    ### Role Experience
+
+    * Network Design and Troubleshooting
+    * Windows & Linux Environments (Servers & Clients)
+    * Systems Administration
+    * Automation Design & Implementation
+    * Tier 1 & 2 IT Support
+    * Cyber, System & Information Security
+    * Web Application Development
+    * Data Collection, Storage, Analysis & Reporting
+
+    ### Technologies Experience
+
+    * Web Services & RESTful APIs
+    * Google Cloud Platform
+    * ServiceNow Platform
+  image: ''
+  actions: []
 layout: home
 menu:
   main:
