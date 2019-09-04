@@ -8,7 +8,7 @@ sections:
   component: hero_block.html
   content: Hello and welcome to my CV site. Here you can learn more about my professional
     experience as well as view some code samples.
-  image: images/5.jpg
+  image: "/images/3.jpg"
   actions:
   - label: Get Started
     url: docs/index.html
