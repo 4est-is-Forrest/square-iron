@@ -43,7 +43,7 @@ sections:
 
       Atos IT Solutions - April, 2016 - Present
 
-      #### **Military**
+      #### Military
 
       ##### _Indirect-Fire Infantryman (11C)_
 
