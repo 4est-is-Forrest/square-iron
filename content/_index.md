@@ -29,16 +29,25 @@ sections:
       challenging technical prospects where comprehensive IT knowledge compounded
       with coding abilities would be greatly beneficial to the team and organization.
     actions: []
-  - title: IT Work and Education
-    content: |2-
+  - title: ''
+    content: |-
+      ### Academic
 
       ##### _Bachelor's of Science in Information Technology_
 
       Northern Kentucky University - December 2019
 
+      ### Professional
+
       ##### _Information Technology Automation Developer_
 
       Atos IT Solutions - April, 2016 - Present
+
+      ### Military
+
+      ##### _Indirect-Fire Infantryman (11C)_
+
+      Army National Guard - 2012 - 2015
     actions: []
   subtitle: ''
 - template: featuresblock
