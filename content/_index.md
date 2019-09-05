@@ -29,7 +29,7 @@ sections:
       challenging technical prospects where comprehensive IT knowledge compounded
       with coding abilities would be greatly beneficial to the team and organization.
     actions: []
-  - title: ''
+  - title: Overview
     content: |-
       ### Academic
 
