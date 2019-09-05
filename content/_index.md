@@ -25,7 +25,10 @@ sections:
       experience in IT while interacting with a broad range of technologies. Additionally,
       more than three years of consistent and diverse utilization of the Python language
       in a professional environment. \n\n##### Efficiency-driven, detail-oriented,
-      and demonstrated tenacity in learning and solving difficult problems. "
+      and demonstrated tenacity in learning and solving difficult problems. \n\n#####
+      Seeking interesting and challenging technical prospects where comprehensive
+      IT knowledge compounded with coding abilities would be greatly beneficial to
+      the team and organization."
     actions: []
   - title: Overview
     content: |-
