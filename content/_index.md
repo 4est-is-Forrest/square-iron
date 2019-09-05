@@ -31,19 +31,19 @@ sections:
     actions: []
   - title: Overview
     content: |-
-      ### Academic
+      #### **Academic**
 
       ##### _Bachelor's of Science in Information Technology_
 
       Northern Kentucky University - December 2019
 
-      ### Professional
+      #### **Professional**
 
       ##### _Information Technology Automation Developer_
 
       Atos IT Solutions - April, 2016 - Present
 
-      ### Military
+      #### **Military**
 
       ##### _Indirect-Fire Infantryman (11C)_
 
