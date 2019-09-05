@@ -19,7 +19,7 @@ sections:
   section_id: ''
   featureslist:
   - title: About Me
-    content: "#### Graduating December 2019 from Northern Kentucky University with
+    content: "##### Graduating December 2019 from Northern Kentucky University with
       a Bachelor of Science in Computer Information Technology with a concentration
       in Cyber security. Possessing more than three years of professional experience
       in IT while interacting with a broad range of technologies. Additionally, more
