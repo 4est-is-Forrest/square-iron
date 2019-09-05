@@ -31,23 +31,23 @@ sections:
     actions: []
   - title: Overview
     content: |-
-      #### **Academic**
+      ### **Academic**
 
-      ##### _Bachelor's of Science in Information Technology_
+      * **_Bachelor's of Science in Information Technology_**
+      * Northern Kentucky University
+      * December 2019
 
-      Northern Kentucky University - December 2019
+      ### **Professional**
 
-      #### **Professional**
+      * **_Information Technology Automation Developer_**
+      * Atos IT Solutions
+      * April 2016 - Present
 
-      ##### _Information Technology Automation Developer_
+      ### **Military**
 
-      Atos IT Solutions - April, 2016 - Present
-
-      #### **Military**
-
-      ##### _Indirect-Fire Infantryman (11C)_
-
-      Army National Guard - 2012 - 2015
+      * **_Indirect-Fire Infantryman (11C)_**
+      * Army National Guard
+      * 2012 - 2015
     actions: []
   subtitle: ''
 - template: featuresblock
