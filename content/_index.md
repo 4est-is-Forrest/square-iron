@@ -19,7 +19,7 @@ sections:
   section_id: ''
   featureslist:
   - title: About Me
-    content: "### IT Professional and Python Enthusiast\n\n##### Graduating December
+    content: "#### _IT Professional and Python Enthusiast_\n\n##### Graduating December
       2019 from Northern Kentucky University with a Bachelor of Science in Computer
       Information Technology with a concentration in Cyber Security. \n\n##### Possessing
       more than three years of professional experience in IT while interacting with
