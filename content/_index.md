@@ -19,16 +19,16 @@ sections:
   section_id: ''
   featureslist:
   - title: About Me
-    content: "#### _IT Professional and Python Developer_\n\n##### Graduating December
+    content: "###### _IT Professional and Python Developer_\n\n###### Graduating December
       2019 from Northern Kentucky University with a Bachelor of Science in Computer
-      Information Technology with a concentration in Cyber Security. \n\n##### Possessing
+      Information Technology with a concentration in Cyber Security. \n\n###### Possessing
       more than three years of professional experience in IT while interacting with
       a broad range of technologies. Additionally, more than three years of consistent
       and diverse utilization of the Python language in a professional environment.
-      \n\n##### Efficiency-driven, detail-oriented, and demonstrated tenacity in learning
-      and solving difficult problems. \n\n##### Seeking interesting and challenging
-      technical prospects where comprehensive IT knowledge compounded with coding
-      abilities would be greatly beneficial to the team and organization."
+      \n\n###### Efficiency-driven, detail-oriented, and demonstrated tenacity in
+      learning and solving difficult problems. \n\n###### Seeking interesting and
+      challenging technical prospects where comprehensive IT knowledge compounded
+      with coding abilities would be greatly beneficial to the team and organization."
     actions: []
   - title: Overview
     content: |-
