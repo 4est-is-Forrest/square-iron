@@ -5,7 +5,7 @@ layout: docs
 excerpt: ''
 
 ---
-### Atos IT Solutions
+## Atos IT Solutions
 
 **_Information Technology Automation Developer_**
 
