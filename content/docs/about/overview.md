@@ -9,7 +9,7 @@ excerpt: ''
 
 **_Information Technology Automation Developer_**
 
-**April 2016 - Present**<hr>
+<hr>
 
 There are two types of callouts availabale in this theme, **note** and **important**. To add a callout to your documentation simply add the following `html` code with class `important` or `note`. Like in the example bellow.
 
