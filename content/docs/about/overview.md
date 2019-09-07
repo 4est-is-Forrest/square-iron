@@ -11,127 +11,18 @@ excerpt: ''
 
 <hr>
 
-There are two types of callouts availabale in this theme, **note** and **important**. To add a callout to your documentation simply add the following `html` code with class `important` or `note`. Like in the example bellow.
+2016 - Present
 
-### HTML example
+• Level II troubleshooting/resolving uncommon issues with Citrix Receiver, Cisco VPN/AnyConnect Client, LAN connectivity, O365 document file recovery, remote activation of corporate Microsoft products
 
-Copy the code and modify these blocks according to your needs.
+• Responsible for automating help desk processes and KPI reports using Python 3 and several modules and tool sets.
 
-```html
-<div class="important">
-  <strong>Important:</strong> 
-  This is an "Important" callout block of text.
-  This block indicates a warning or caution. 
-  Use it for an important message. 
-</div>
-```
+•	Develop, implement and support a tool set used to create ServiceNow tickets from Outlook emails using a combination of Python’s Requests, Selenium, WIN32 API and ServiceNow’s JSON web service and ServiceNow’s JavaScript.
 
-```html
-<div class="note">
-  <strong>Note:</strong> 
-  This is a "Note" callout block of text. 
-  This block signifies a general note.
-</div>
-```
+• Design and support service-like tools that facilitate real-time ticket queue monitoring and automatic, dynamic and instant redirection of tickets matching criteria utilizing Python’s Requests and ServiceNow’s JSON web service and ServiceNow’s JavaScript.
 
-### Live example
+• Utilizing Python’s Pandas to provide collective KPI reports sourced from several different data sources such as multiple ServiceNow tables and scheduled SAP BI reports. 
 
-<div class="important">
-<strong>Important:</strong>
-This is an "Important" callout block of text.
-This block indicates a warning or caution.
-Use it for an important message.
-</div>
+• Adjust and distribute these tool sets remotely as well as provide remote training and support for teams as far as the Philippines. 
 
-<div class="note">
-<strong>Note:</strong>
-This is an "Note" callout block of text.
-This block signifies a general note.
-</div>
-
-## Code blocks
-
-<hr>
-
-<div class="note">
-<strong>Note:</strong>
-Code blocks have copy functionality. To copy the code press the grey button located in the right side top corner.
-</div>
-
-You can create simple code blocks by placing triple backticks <code>\`\`\`</code> before and after the code block. To render a code block more readable, we recommend placing a blank line before and after code blocks.
-
-<pre>\`\`\`
-if (condition) {
-code to run if condition is true
-} else {
-run some other code instead
-}
-
-    </pre>
-    
-
-if (condition) {
-code to run if condition is true
-} else {
-run some other code instead
-}
-
-    
-    ### Syntax highlighting
-    
-    You can add a language identifier to enable syntax highlighting in your code block. For example, to syntax highlight **JavaScript** code, specify `javascript` next to the tick marks before the fenced code block:
-    
-    <pre>
-    ```javascript
-    if (condition) {
-      code to run if condition is true
-    } else {
-      run some other code instead
-    }
-
-</pre>
-
-The rendered output looks like this:
-
-```javascript
-if (condition) {
-  code to run if condition is true
-} else {
-  run some other code instead
-}
-```
-
-## Tables
-
-<hr>
-
-You can build tables with markdown to help you organize information. To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column like in the example below.
-
-<pre>
-
-| Title | Title |
-| --- | --- |
-| Text | Text |
-| Text | Text |
-
-</pre>
-
-| Title | Title |
-| --- | --- |
-| Text | Text |
-| Text | Text |
-
-<div class="note">
-<strong>Note:</strong>
-Creating tables with hyphens and pipes can be time-consuming. To speed up the process, try using the <a href="http://www.tablesgenerator.com/markdown_tables" >Markdown Tables Generator</a>.
-</div>
-
-## Start using Libris theme
-
-<hr>
-
-We’ve packed this theme with powerful features to help you have awesome documentation for your current or next project.
-
-**Why not start using this theme today?**
-
-<a href="https://www.stackbit.com/" class="button">Join Stackbit</a>
+• Rapidly produces specialized Python scripts to complete sudden and high-volume tasks such as creating over 1200 ServiceNow tickets in a few hours or automatically emailing end users out of compliance with McAfee’s Endpoint Protection.
