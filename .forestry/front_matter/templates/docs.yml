@@ -27,13 +27,13 @@ fields:
   config:
     required: true
 pages:
+- content/docs/_index.md
 - content/docs/ui-components/typography.md
 - content/docs/ui-components/_index.md
 - content/docs/tools/starter-theme.md
 - content/docs/tools/plug-ins.md
 - content/docs/tools/_index.md
 - content/docs/manage-content/_index.md
-- content/docs/_index.md
 - content/docs/getting-started/quick-start.md
 - content/docs/getting-started/installation.md
 - content/docs/getting-started/_index.md
