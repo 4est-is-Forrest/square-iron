@@ -11,7 +11,7 @@ excerpt: ''
 
 <hr>
 
-**Responsibilities**
+**Summary**
 
 • Level II troubleshooting/resolving uncommon issues with Citrix Receiver, Cisco VPN/AnyConnect Client, LAN connectivity, O365 document file recovery, remote activation of corporate Microsoft products
 
