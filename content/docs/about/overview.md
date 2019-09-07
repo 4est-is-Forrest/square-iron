@@ -5,13 +5,13 @@ layout: docs
 excerpt: ''
 
 ---
-## Atos IT Solutions
+## **Atos IT Solutions**
 
 **_Information Technology Automation Developer_**
 
 <hr>
 
-#### Job Responsibilities
+### Responsibilities Summary
 
 • Tier I-II troubleshooting/resolving uncommon issues with Citrix Receiver, Cisco VPN/AnyConnect Client, LAN connectivity, O365 document file recovery, remote activation of corporate Microsoft products
 
@@ -27,9 +27,9 @@ excerpt: ''
 
 • Rapidly produces specialized Python scripts to complete sudden and high-volume tasks such as creating over 1200 ServiceNow tickets in a few hours or automatically emailing end users out of compliance with McAfee’s Endpoint Protection.
 
-#### Details
+### Details
 
-###### IT Support (I-II) Role
+###### **IT Support (I-II) Role**
 
 **_Overview_** - Much of my first year with Atos was spent as a Tier I agent that sometimes came across Tier II issues with our corporate and enterprise clients. Our communication mediums with users at the time were either phone or email. Two key factors helped me rapidly grow into and eventually out of this role. Firstly, I had started working on my IT focused degree at NKU during this time and secondly, I had (and still have) a tenacious troubleshooting nature.
 
