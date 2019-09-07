@@ -31,4 +31,6 @@ excerpt: ''
 
 ###### IT Support (I-II)
 
-Much of my first year with Atos was spent as a Tier I agent that occasionally came across Tier II issues. Two key factors helped me rapidly grow in and eventually out of this role very ; I was attending IT focused classes at NKU and I found I had both an strong interest and tenacious desire in finding answers. 
+Much of my first year with Atos was spent as a Tier I agent that sometimes came across Tier II issues with our corporate and enterprise clients. Our communication mediums with users at the time were either phone or email. Two key factors helped me rapidly grow into and eventually out of this role. Firstly, I had started working on my IT focused degree at NKU during this time and secondly, I had (and still have) a tenacious troubleshooting nature.
+
+In retrospect, I think having the ability to take what I was learning in class and immediately apply it in my full-time IT work environment was immensely educational in understanding technologies I was using on both fronts in both an academic and practical capacity. 
