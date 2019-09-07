@@ -11,9 +11,9 @@ excerpt: ''
 
 <hr>
 
-**Summary**
+##### Job Responsibilities
 
-• Level II troubleshooting/resolving uncommon issues with Citrix Receiver, Cisco VPN/AnyConnect Client, LAN connectivity, O365 document file recovery, remote activation of corporate Microsoft products
+• Tier I-II troubleshooting/resolving uncommon issues with Citrix Receiver, Cisco VPN/AnyConnect Client, LAN connectivity, O365 document file recovery, remote activation of corporate Microsoft products
 
 • Responsible for automating help desk processes and KPI reports using Python 3 and several modules and tool sets.
 
