@@ -7,7 +7,7 @@ excerpt: ''
 ---
 ### Atos IT Solutions
 
-##### **_Information Technology Automation Developer_**
+**_Information Technology Automation Developer_**
 
 **April 2016 - Present**
 
