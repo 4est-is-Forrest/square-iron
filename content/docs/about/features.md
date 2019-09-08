@@ -12,6 +12,8 @@ excerpt: ''
 * **Cyber Security Specialty**
 * **Information Security Minor**
 
+<hr>
+
 ##### Summary
 
 My degree program is characterized as 'Computer Information Technology' and with that, I choose to pursue the Cyber Security specialty track. I also elected to pursue a minor in Information Security.
