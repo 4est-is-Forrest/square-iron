@@ -30,6 +30,8 @@ Computer and IT specific courses
 * Elementary Programming
 * Technical Writing
 * Windows Administration
+* IT Project Management
+* Unix Systems
 * Scripting I & II
 * Web Server Administration
 * Network Design & Troubleshooting
@@ -41,3 +43,29 @@ Computer and IT specific courses
 * Network Security
 * Advanced Cyber Security
 * Principles of Information Security
+
+##### Course Details
+
+**_Web Development & Elementary Programming_**
+
+**Web Development** started on fundamental HTML/CSS elements and ended on an introduction into to JavaScript functions and application with web pages.
+
+**Elementary Programming** was exclusively taught using the Java implementation of Python: Jython. Basic concepts that are common to a wide range of languages were explored and practiced such as variables, functions, lists, dictionaries and loops.
+
+I attribute these classes as laying the groundwork toward my strong interest to learn and practice Python.
+
+**_Windows Administration & Unix Systems_**
+
+**Windows Administration** focused on Windows 10 and Windows Server 2015, delving into common system settings, administrative tools and a thorough introduction into PowerShell.
+
+**Unix Systems** was a prerequisite given much of the curriculum ahead was almost entirely taught on Linux distributions. The course set out to familiarize students with utilizing the bash console to accomplish any administrative objective or task. Bash scripting was also introduced. 
+
+By this point, I had already been working in IT for nearly two years and beginning to rapidly gain confidence with Python. I was already experienced with many of the Windows topics but I still learned a great deal. The Unix class provided the tools and knowledge to confidently navigate and find answers within a console, and allowed me to tackle my following classes and personal projects with confidence.
+
+**_Technical Writing & IT Project Management_**
+
+**Technical Writing** revolved around creating manuals and other documents meant to explain a process. 
+
+**IT Project Management** introduced the elements that go into creating, implementing, maintaining and finishing IT projects. Outside of textbook work, we worked in groups on our own IT projects for fictional clients, iterrating through each phase (Initiation, Planning, Execution, Performance, Close).
+
+While I did have some experience attaching documentation with my work projects for others, I learned a great deal about best practices when it comes to technical writing. IT Project Management provided hands on experience with the Waterfall model, but also provided insight into comparing the Waterfall model with Agile.
