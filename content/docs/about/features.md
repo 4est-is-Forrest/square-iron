@@ -5,7 +5,7 @@ layout: docs
 excerpt: ''
 
 ---
-#### **Bachelor of Science: Computer Information Technology**
+### **Bachelor of Science: Computer Information Technology**
 
 * **Northern Kentucky University**
 * **December 2019**
