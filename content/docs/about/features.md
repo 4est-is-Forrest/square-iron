@@ -74,4 +74,4 @@ By this point, I had already been working in IT for nearly two years and beginni
 
 **IT Project Management** introduced the elements that go into creating, implementing, maintaining and finishing IT projects. Outside of textbook work, we worked in groups on our own IT projects for fictional clients, iterrating through each phase (Initiation, Planning, Execution, Performance, Close).
 
-While I did have some experience attaching documentation with my work projects for others, I learned a great deal about best practices when it comes to technical writing. IT Project Management provided hands on experience with the Waterfall model, but also provided insight into comparing the Waterfall model with Agile.
+While I did have some experience attaching documentation to my work projects, I learned a great deal about best practices when it comes to technical writing. IT Project Management provided hands on experience with the Waterfall model, but also provided insight into comparing the Waterfall model with Agile.
