@@ -22,6 +22,8 @@ The overwhelming majority of NKU's computer related courses were and are taught 
 
 The NKU's network specific courses were equally divided between physical and virtual (GNS3) lab environments. All equipment and platforms were entirely Cisco and usually these classes used Cisco Cert books as the required textbook.
 
+<hr>
+
 ##### Course Overview
 
 Computer and IT specific courses
@@ -44,9 +46,9 @@ Computer and IT specific courses
 * Advanced Cyber Security
 * Principles of Information Security
 
-##### Course Details
-
 <hr>
+
+##### Course Details
 
 **Web Development & Elementary Programming**
 
