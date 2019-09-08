@@ -7,10 +7,10 @@ excerpt: ''
 ---
 #### **Bachelor of Science: Computer Information Technology**
 
-* **_Northern Kentucky University_**
-* **_December 2019_**
-* **_Cyber Security Specialty_**
-* **_Information Security Minor_**
+* **Northern Kentucky University**
+* **December 2019**
+* **Cyber Security Specialty**
+* **Information Security Minor**
 
 ##### Summary
 
