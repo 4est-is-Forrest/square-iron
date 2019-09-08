@@ -13,7 +13,7 @@ excerpt: ''
 
 ### Technologies & Responsibilities by Role
 
-##### **_IT Support (\~1 year)_**
+#### **_IT Support (\~1 year)_**
 
 * **Password Resets**: Active Directory, SSO Portals,TN3270, as400, SAP
 * **Browsers**: Compatibility, Proxy, Local Storage (Chrome, IE/Edge, Firefox, Opera)
@@ -29,7 +29,7 @@ excerpt: ''
 
 Generally, Tier I and Tier II Support for my first year with Atos. During my time in automation, I often volunteered time to diagnose and troubleshoot interesting issues not solved by others. These issues typically fell in a Tier II category and were valuable opportunities to learn and build skills in a variety of aspects.
 
-##### **_IT Automation (\~3 years)_**
+#### **_IT Automation (\~3 years)_**
 
 * **Python 3:** Primary Language; utilized in a Windows environment
 * **Python Modules**: Selenium, OpenPyxl, Requests, Pandas, PyWin32, PySimpleGUI, XlsxWriter, Jinja2, Flair (NLP), Beautiful Soup
