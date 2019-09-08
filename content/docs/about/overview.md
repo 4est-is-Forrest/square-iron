@@ -37,11 +37,11 @@ Generally, Tier I and Tier II Support for my first year with Atos. During my tim
 * **Web APIs**: ServiceNow's JSON Web Service API & Encoded Query URLs
 * **Outlook Shared Mailbox Automation**: Rapidly process user emails containing certain arguments into ServiceNow tickets
 * **Data Analysis & Reporting Automation**: Query ServiceNow tables, perform data analytics and/or return a report formatted to user specification
-* **Compliance Notification Automation**: Iterate a report to either notify an end user they're out of compliance or route a ticket to local support; both cases require their own unique ticket 
+* **Compliance Notification Automation**: Iterate a report to either notify an end user they're out of compliance or route a ticket to local support; both cases require their own unique ticket
 * **Natural Language Processing**: Build models to provide guess and confidence on the nature of any given email
 * **Queue Monitoring & Notification Automation**: Watch a ServiceNow queue and either notify the team or route ticket elsewhere
 * **Bridge Ticket Creation & Continuity Automation**: Create any new bridge tickets, locate existing active bridge tickets and ensure field equivalents are synchronized between separate ServiceNow instances
 
-Typically, I am approached with an idea or I search for areas to implement automation. Both have resulted in thorough experience with using Python to interact with a wide range of applications and technologies. The same is true with developing a large variety of general and custom solutions.
+I am often approached with ideas but I also actively search for areas to implement automation. Both cases have resulted in thorough experience using Python to interact with a wide range of applications and technologies. The same is true with developing a large variety of general and custom solutions.
 
 ### 
