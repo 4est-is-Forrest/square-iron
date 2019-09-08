@@ -42,6 +42,6 @@ Generally, Tier I and Tier II Support for my first year with Atos. During my tim
 * **Queue Monitoring & Notification Automation**: Watch a ServiceNow queue and either notify the team or route ticket elsewhere
 * **Bridge Ticket Creation & Continuity Automation**: Create any new bridge tickets, locate existing active bridge tickets and ensure field equivalents are synchronized between separate ServiceNow instances
 
-Typically, I am approached with an idea or I search for areas to implement automation. Both have resulted in thorough experience with using Python to interact with a wide range of applications and technologies. The same is true with developing a large variety of general and custom solutions at a rapid rate.
+Typically, I am approached with an idea or I search for areas to implement automation. Both have resulted in thorough experience with using Python to interact with a wide range of applications and technologies. The same is true with developing a large variety of general and custom solutions.
 
 ### 
