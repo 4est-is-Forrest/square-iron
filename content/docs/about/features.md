@@ -48,7 +48,7 @@ Computer and IT specific courses
 
 **_Web Development & Elementary Programming_**
 
-**Web Development** started on fundamental HTML/CSS elements and ended on an introduction into to JavaScript functions and application with web pages.
+**Web Development** began on fundamental HTML/CSS elements and ended on an introduction into JavaScript functions and application with web pages.
 
 **Elementary Programming** was exclusively taught using the Java implementation of Python: Jython. Basic concepts that are common to a wide range of languages were explored and practiced such as variables, functions, lists, dictionaries and loops.
 
