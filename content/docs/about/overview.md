@@ -31,7 +31,7 @@ excerpt: ''
 
 **_IT Support_**
 
-* Password Resets: Active Directory, SSO Portals,TN3270, as400, etc.
+* Password Resets: Active Directory, SSO Portals,TN3270, as400, SAP
 * Browsers: Compatibility, Proxy, Local Storage (Chrome, IE/Edge, Firefox, Opera)
 * VM Application: Troubleshooting and Utilization (VMware Horizon Client, Citrix (Receiver), RDP)
 * ServiceNow: Ticket Creation, Routing, Follow Up, Resolving and Closing
@@ -41,7 +41,7 @@ excerpt: ''
 * Network Configuration & Troubleshooting: Proxy Settings, Adapter Settings & Drivers, Network Folders
 * VPN: Setup, Access Requests, Troubleshooting (Windows, Cisco VPN Client, Cisco Anyconnect)
 * Multi-Factor Authentication: Setup, Access, Troubleshooting (Symantec, RSA, MobilePass)
-* 
+* Remote Connection Support Tools: Skype, TeamViewer, LogMeIn Rescue
 
 ### Thoughts
 
