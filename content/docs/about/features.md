@@ -46,19 +46,21 @@ Computer and IT specific courses
 
 ##### Course Details
 
-**_Web Development & Elementary Programming_**
+<hr>
 
-**Web Development** began on fundamental HTML/CSS elements and ended on an introduction into JavaScript functions and application with web pages.
+**Web Development & Elementary Programming**
 
-**Elementary Programming** was exclusively taught using the Java implementation of Python: Jython. Basic concepts that are common to a wide range of languages were explored and practiced such as variables, functions, lists, dictionaries and loops.
+_Web Development_ began on fundamental HTML/CSS elements and ended on an introduction into JavaScript functions and application with web pages.
 
-I attribute these classes as laying the groundwork toward my strong interest to learn and practice Python.
+_Elementary Programming _was exclusively taught using the Java implementation of Python: Jython. Basic concepts that are common to a wide range of languages were explored and practiced such as variables, functions, lists, dictionaries and loops.
 
-**_Windows Administration & Unix Systems_**
+I attribute these classes as laying the groundwork toward my strong interest in learning and practicing Python.
 
-**Windows Administration** focused on Windows 10 and Windows Server 2015, delving into common system settings, administrative tools and a thorough introduction into PowerShell.
+**Windows Administration & Unix Systems**
 
-**Unix Systems** was a prerequisite given much of the curriculum ahead was almost entirely taught on Linux distributions. The course set out to familiarize students with utilizing the bash console to accomplish any administrative objective or task. Bash scripting was also introduced. 
+**_Windows Administration _**focused on Windows 10 and Windows Server 2015, delving into common system settings, administrative tools and a thorough introduction into PowerShell.
+
+**_Unix Systems_** was a prerequisite given much of the curriculum ahead was almost entirely taught on Linux distributions. The course set out to familiarize students with utilizing the bash console to accomplish any administrative objective or task. Bash scripting was also introduced. 
 
 By this point, I had already been working in IT for nearly two years and beginning to rapidly gain confidence with Python. I was already experienced with many of the Windows topics but I still learned a great deal. The Unix class provided the tools and knowledge to confidently navigate and find answers within a console, and allowed me to tackle my following classes and personal projects with confidence.
 
