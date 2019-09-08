@@ -5,7 +5,7 @@ layout: docs
 excerpt: ''
 
 ---
-### **Bachelor of Science: Computer Information Technology**
+## **Bachelor of Science: Computer Information Technology**
 
 * **Northern Kentucky University**
 * **December 2019**
@@ -14,11 +14,11 @@ excerpt: ''
 
 <hr>
 
-#### **Summary**
+### **Summary**
 
 My degree program is characterized as 'Computer Information Technology' and with that, I choose to pursue the Cyber Security specialty track. I also elected to pursue a minor in Information Security.
 
-#### **Environment Context**
+### **Environment Context**
 
 The overwhelming majority of NKU's computer related courses were and are taught exclusively on Linux distributions such as CentOS, Kali Linux, and Ubuntu. Both servers and clients were largely virtual, but sometimes physical.
 
@@ -26,7 +26,7 @@ The NKU's network specific courses were equally divided between physical and vir
 
 <hr>
 
-#### **Course Overview**
+### **Course Overview**
 
 _Computer and IT specific courses_
 
@@ -50,9 +50,9 @@ _Computer and IT specific courses_
 
 <hr>
 
-#### **Course Details**
+### **Course Details**
 
-##### Web Development & Elementary Programming
+#### _Web Development & Elementary Programming_
 
 **Web Development** began on fundamental HTML/CSS elements and ended on an introduction into JavaScript functions and application with web pages.
 
@@ -60,7 +60,7 @@ _Computer and IT specific courses_
 
 I attribute these classes as laying the groundwork toward my strong interest in learning and practicing Python.
 
-##### _Windows Administration & Unix Systems_
+#### _Windows Administration & Unix Systems_
 
 **Windows Administration** focused on Windows 10 and Windows Server 2015, delving into common system settings, administrative tools and a thorough introduction into PowerShell.
 
@@ -68,7 +68,7 @@ I attribute these classes as laying the groundwork toward my strong interest in 
 
 By this point, I had already been working in IT for nearly two years and beginning to rapidly gain confidence with Python. I was already experienced with many of the Windows topics but I still learned a great deal. The Unix class provided the tools and knowledge to confidently navigate and find answers within a console, and allowed me to tackle my following classes and personal projects with confidence.
 
-##### _Technical Writing & IT Project Management_
+#### _Technical Writing & IT Project Management_
 
 **Technical Writing** revolved around creating manuals and other documents meant to explain a process. 
 
