@@ -23,13 +23,13 @@ excerpt: ''
 * **Windows 7 & 10**: Troubleshooting Drivers, Application Settings, Installations, Recovery & Repair
 * **Printer/Scanner Setup & Troubleshooting**: Network, USB, Bluetooth, Driver Installations, Network Source & Destination File Locations
 * **Network Configuration & Troubleshooting**: Proxy Settings, Adapter Settings & Drivers, Network Folders
-* **VPN**: Setup, Access Requests, Troubleshooting (Windows, Cisco VPN Client, Cisco Anyconnect)
+* **VPN**: Setup, Access Requests, Troubleshooting (Windows, Cisco VPN Client, Cisco AnyConnect)
 * **Multi-Factor Authentication**: Setup, Access, Troubleshooting (Symantec, RSA, MobilePass)
 * **Remote Connection Support Tools**: Skype, TeamViewer, LogMeIn Rescue
 
 ##### **_IT Automation (\~3 years)_**
 
-* **Python 3** (Primary Language)
+* **Python 3:** Primary Language; utilized in a Windows Environment
 * **Python Modules**: Selenium, OpenPyxl, Requests, Pandas, PyWin32, PySimpleGUI, XlsxWriter, Jinja2, Flair (NLP), Beautiful Soup
 * **Other Languages**: Regex, HTML, JavaScript, PowerShell
 * **ServiceNow**: JSON Web Service API & Encoded Query URLs
