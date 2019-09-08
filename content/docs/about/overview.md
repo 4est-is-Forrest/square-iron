@@ -13,7 +13,7 @@ excerpt: ''
 
 ### Technologies & Responsibilities by Role
 
-**_IT Support (\~1 year)_**
+##### **_IT Support (\~1 year)_**
 
 * **Password Resets**: Active Directory, SSO Portals,TN3270, as400, SAP
 * **Browsers**: Compatibility, Proxy, Local Storage (Chrome, IE/Edge, Firefox, Opera)
@@ -27,7 +27,7 @@ excerpt: ''
 * **Multi-Factor Authentication**: Setup, Access, Troubleshooting (Symantec, RSA, MobilePass)
 * **Remote Connection Support Tools**: Skype, TeamViewer, LogMeIn Rescue
 
-**_IT Automation (\~3 years)_**
+##### **_IT Automation (\~3 years)_**
 
 * **Python 3** (Primary Language)
 * **Python Modules**: Selenium, OpenPyxl, Requests, Pandas, PyWin32, PySimpleGUI, XlsxWriter, Jinja2, Flair (NLP), Beautiful Soup
