@@ -27,7 +27,18 @@ excerpt: ''
 
 • Rapidly produces specialized Python scripts to complete sudden and high-volume tasks such as creating over 1200 ServiceNow tickets in a few hours or automatically emailing end users out of compliance with McAfee’s Endpoint Protection.
 
-### Details by Role
+### Technology Details by Role
+
+**_IT Support_**
+
+* Password Resets: Active Directory, SSO Portals,TN3270, as400, etc.
+* Browsers: Compatibility, Proxy, Local Storage, etc. (Chrome, IE, Firefox, Opera)
+* VM Application: Troubleshooting and Utilization (VMware Horizon Client, Citrix (Receiver), RDP)
+* ServiceNow: Ticket Creation, Routing, Follow Up, Resolving and Closing
+* Office 2003-O365 Suite: Compatibility, Activation, File Recovery, etc
+* Windows 7 & 10: Troubleshooting Drivers, Network Configuration, Application Settings, Installations, Recovery & Repair, etc
+* Printer/Scanner Setup & Troubleshooting: Network, USB, Bluetooth, Driver Installations, Network Source & Destination File Locations
+* 
 
 ### Thoughts
 
