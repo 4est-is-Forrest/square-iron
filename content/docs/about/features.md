@@ -5,17 +5,24 @@ layout: docs
 excerpt: ''
 
 ---
-### Summary
+#### **Bachelor of Science: Computer Information Technology**
+
+* **_Northern Kentucky University_**
+* **_December 2019_**
+* **_Cyber Security Specialty_**
+* **_Information Security Minor_**
+
+##### Summary
 
 My degree program is characterized as 'Computer Information Technology' and with that, I choose to pursue the Cyber Security specialty track. I also elected to pursue a minor in Information Security.
 
-### Environment Context
+##### Environment Context
 
 The overwhelming majority of NKU's computer related courses were and are taught exclusively on Linux distributions such as CentOS, Kali Linux, and Ubuntu. Both servers and clients were largely virtual, but sometimes physical.
 
 The NKU's network specific courses were equally divided between physical and virtual (GNS3) lab environments. All equipment and platforms were entirely Cisco and usually these classes used Cisco Cert books as the required textbook.
 
-### Course Overview
+##### Course Overview
 
 Computer and IT specific courses
 
