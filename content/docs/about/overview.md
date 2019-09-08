@@ -27,9 +27,11 @@ excerpt: ''
 * **Multi-Factor Authentication**: Setup, Access, Troubleshooting (Symantec, RSA, MobilePass)
 * **Remote Connection Support Tools**: Skype, TeamViewer, LogMeIn Rescue
 
+Generally, Tier I and Tier II Support for my first year with Atos.
+
 ##### **_IT Automation (\~3 years)_**
 
-* **Python 3:** Primary Language; utilized in a Windows Environment
+* **Python 3:** Primary Language; utilized in a Windows environment
 * **Python Modules**: Selenium, OpenPyxl, Requests, Pandas, PyWin32, PySimpleGUI, XlsxWriter, Jinja2, Flair (NLP), Beautiful Soup
 * **Other Languages**: Regex, HTML, JavaScript, PowerShell
 * **ServiceNow**: JSON Web Service API & Encoded Query URLs
@@ -39,5 +41,7 @@ excerpt: ''
 * **Natural Language Processing**: Build models to provide guess and confidence on the nature of any given email
 * **Queue Monitoring & Notification Automation**: Watch a queue and decide whether to notify or route ticket elsewhere
 * **Bridge Ticket Creation & Continuity Automation**: Create any new bridge tickets, locate existing active bridge tickets and ensure field equivalents are identical between separate ServiceNow instances
+
+Either I am approached with an idea or I search for areas to implement automation. Both have resulted in thorough experience with using Python to interact with a wide range of applications and technologies. The same is true with accomplishing a large variety of objectives and solutions.
 
 ### 
