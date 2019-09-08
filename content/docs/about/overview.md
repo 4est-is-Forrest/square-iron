@@ -30,8 +30,8 @@ excerpt: ''
 **_IT Automation (\~3 years)_**
 
 * Python 3: Primary Language
-* Python Modules: Selenium, Openpyxl, Requests, Pandas, Pywin32, PysimpleGUI, Xlsxwriter, Jinja2, 
-* Other Languages: HTML, JavaScript, PowerShell, Regex
+* Python Modules: Selenium, OpenPyxl, Requests, Pandas, PyWin32, PySimpleGUI, XlsxWriter, Jinja2, Flair (NLP), Beautiful Soup
+* Other Languages: Regex, HTML, JavaScript, PowerShell
 * 
 
 ### Thoughts
