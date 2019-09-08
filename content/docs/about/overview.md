@@ -38,8 +38,7 @@ excerpt: ''
 * Compliance Notification Automation - Iterate a report to either notify an end user they're out of compliance or route ticket to local support, both cases require a ticket
 * Natural Language Processing: Build models to provide guess and confidence on the nature of any given email
 * Queue Monitoring & Notification Automation: Watch a queue and decide whether to notify or route ticket elsewhere
-* Ticket Bridging & Bridge Ticket Continuity: Create any new bridge tickets, locate existing active bridge tickets and ensure field equivalents are identical between the two separate ServiceNow instances
-* 
+* Bridge Ticket Creation & Continuity: Create any new bridge tickets, locate existing active bridge tickets and ensure field equivalents are identical between separate ServiceNow instances
 
 ### Thoughts
 
