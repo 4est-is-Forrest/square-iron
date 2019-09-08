@@ -27,21 +27,22 @@ excerpt: ''
 * **Multi-Factor Authentication**: Setup, Access, Troubleshooting (Symantec, RSA, MobilePass)
 * **Remote Connection Support Tools**: Skype, TeamViewer, LogMeIn Rescue
 
-Generally, Tier I and Tier II Support for my first year with Atos.
+Generally, Tier I and Tier II Support for my first year with Atos. During my time in automation, I often volunteered time to diagnose and troubleshoot interesting issues not solved by others. These issues typically fell in a Tier II category and were valuable opportunities to learn and build skills in a variety of aspects.
 
 ##### **_IT Automation (\~3 years)_**
 
 * **Python 3:** Primary Language; utilized in a Windows environment
 * **Python Modules**: Selenium, OpenPyxl, Requests, Pandas, PyWin32, PySimpleGUI, XlsxWriter, Jinja2, Flair (NLP), Beautiful Soup
 * **Other Languages**: Regex, HTML, JavaScript, PowerShell
-* **ServiceNow**: JSON Web Service API & Encoded Query URLs
+* **Web APIs**: ServiceNow's JSON Web Service API & Encoded Query URLs
 * **Outlook Shared Mailbox Automation**: Rapidly process user emails containing certain arguments into ServiceNow tickets
-* **Data Analysis & Reporting Automation**: Query ServiceNow tables, perform data analytics and/or produce a report formatted to user specification
-* **Compliance Notification Automation**: Iterate a report to either notify an end user they're out of compliance or route ticket to local support, both cases require a ticket
-* **Natural Language Processing**: Build models to provide guess and confidence on the nature of any given email
-* **Queue Monitoring & Notification Automation**: Watch a queue and decide whether to notify or route ticket elsewhere
-* **Bridge Ticket Creation & Continuity Automation**: Create any new bridge tickets, locate existing active bridge tickets and ensure field equivalents are identical between separate ServiceNow instances
+* **Data Analysis & Reporting Automation**: Query ServiceNow tables, perform data analytics and/or return a report formatted to user specification
+* **Compliance Notification Automation**: Iterate a report to either notify an end user they're out of compliance or route a ticket to local support; both cases require their own unique ticket 
 
-Either I am approached with an idea or I search for areas to implement automation. Both have resulted in thorough experience with using Python to interact with a wide range of applications and technologies. The same is true with accomplishing a large variety of objectives and solutions.
+  **Natural Language Processing**: Build models to provide guess and confidence on the nature of any given email
+* **Queue Monitoring & Notification Automation**: Watch a ServiceNow queue and either notify the team or route ticket elsewhere
+* **Bridge Ticket Creation & Continuity Automation**: Create any new bridge tickets, locate existing active bridge tickets and ensure field equivalents are synchronized between separate ServiceNow instances
+
+Typically, I am approached with an idea or I search for areas to implement automation. Both have resulted in thorough experience with using Python to interact with a wide range of applications and technologies. The same is true with developing a large variety of general and custom solutions at a rapid rate.
 
 ### 
