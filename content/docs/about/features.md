@@ -14,11 +14,11 @@ excerpt: ''
 
 <hr>
 
-##### Summary
+#### **Summary**
 
 My degree program is characterized as 'Computer Information Technology' and with that, I choose to pursue the Cyber Security specialty track. I also elected to pursue a minor in Information Security.
 
-##### Environment Context
+#### **Environment Context**
 
 The overwhelming majority of NKU's computer related courses were and are taught exclusively on Linux distributions such as CentOS, Kali Linux, and Ubuntu. Both servers and clients were largely virtual, but sometimes physical.
 
@@ -26,9 +26,9 @@ The NKU's network specific courses were equally divided between physical and vir
 
 <hr>
 
-##### Course Overview
+#### **Course Overview**
 
-Computer and IT specific courses
+_Computer and IT specific courses_
 
 * Web Development
 * Elementary Programming
@@ -50,17 +50,17 @@ Computer and IT specific courses
 
 <hr>
 
-##### Course Details
+#### **Course Details**
 
-**Web Development & Elementary Programming**
+##### Web Development & Elementary Programming
 
-_Web Development_ began on fundamental HTML/CSS elements and ended on an introduction into JavaScript functions and application with web pages.
+**_Web Development_** began on fundamental HTML/CSS elements and ended on an introduction into JavaScript functions and application with web pages.
 
-_Elementary Programming _was exclusively taught using the Java implementation of Python: Jython. Basic concepts that are common to a wide range of languages were explored and practiced such as variables, functions, lists, dictionaries and loops.
+**_Elementary Programming _**was exclusively taught using the Java implementation of Python: Jython. Basic concepts that are common to a wide range of languages were explored and practiced such as variables, functions, lists, dictionaries and loops.
 
 I attribute these classes as laying the groundwork toward my strong interest in learning and practicing Python.
 
-**Windows Administration & Unix Systems**
+##### Windows Administration & Unix Systems
 
 **_Windows Administration _**focused on Windows 10 and Windows Server 2015, delving into common system settings, administrative tools and a thorough introduction into PowerShell.
 
