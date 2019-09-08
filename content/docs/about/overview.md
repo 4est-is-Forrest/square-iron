@@ -32,6 +32,13 @@ excerpt: ''
 * Python 3: Primary Language
 * Python Modules: Selenium, OpenPyxl, Requests, Pandas, PyWin32, PySimpleGUI, XlsxWriter, Jinja2, Flair (NLP), Beautiful Soup
 * Other Languages: Regex, HTML, JavaScript, PowerShell
+* ServiceNow JSON Web Service
+* Outlook Shared Mailbox Automation: Rapidly process user emails containing certain arguments into ServiceNow tickets
+* Data Analysis & Reporting Automation: Query ServiceNow tables, perform data analytics and/or produce a report formatted to user specification
+* Compliance Notification Automation - Iterate a report to either notify an end user they're out of compliance or route ticket to local support, both cases require a ticket
+* Natural Language Processing: Build models to provide guess and confidence on the nature of any given email
+* Queue Monitoring & Notification Automation: Watch a queue and decide whether to notify or route ticket elsewhere
+* Ticket Bridging & Bridge Ticket Continuity: Create any new bridge tickets, locate existing active bridge tickets and ensure field equivalents are identical between the two separate ServiceNow instances
 * 
 
 ### Thoughts
