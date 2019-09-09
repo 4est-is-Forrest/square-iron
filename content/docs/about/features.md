@@ -41,11 +41,9 @@ _Computer and IT specific courses_
 * Network Design & Troubleshooting
 * Computer Forensics
 * Advanced Network & System Administration
-* Intro to Databases
 * Database Administration
 * Network Security
 * Advanced Cyber Security
-* Principles of Information Security
 
 <hr>
 
@@ -103,4 +101,8 @@ Familiar with Python in a Windows, learning to accomplish goals in Linux adminis
 
 **Advanced Cyber Security** introduced threat and malware definitions, compromised network detection, report composition, web application security and Cyber Security laws and compliance.
 
-**Network Security** consisted of topics such as AAA, Securing Layer 2, Firewall fundamentals, ACLs, ASAs & DMZ Configuration and IPS/IDS implementation. Every week, we performed a lab that was either implementing that week's topic or we performed attacks (CAM Table Overflow, SYN Flood) and practiced strategies to mitigate those attacks.
+**Network Security** consisted of topics such as AAA, Securing Layer 2, Firewall fundamentals, ACLs, ASAs & DMZ Configuration and IPS/IDS implementation. Every week, we performed a lab that was either implementing that week's topic or we performed attacks (CAM Table Overflow, SYN Flood Attack) and practiced strategies to mitigate those attacks.
+
+#### **_Database Administration_**
+
+The curriculum explored topics such as design, optimization, diagramming and SQL syntax. For the practical portion, Oracle was the platform we used to apply the concepts we were covering.
