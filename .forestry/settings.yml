@@ -77,10 +77,10 @@ file_template: ":filename:"
 build:
   preview_env:
   - HUGO_ENV=staging
-  - HUGO_VERSION=0.58.1
+  - HUGO_VERSION=0.47
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
-  instant_preview_command: hugo server -D -E -F --port 5060 --bind 0.0.0.0 --renderToDisk
-    -d public
+  instant_preview_command: hugo server -D -E -F --port 8080 -b https://69rgoqhzsjge7a.instant.forestry.io
+    --renderToDisk -d public
 version: '0.47'
