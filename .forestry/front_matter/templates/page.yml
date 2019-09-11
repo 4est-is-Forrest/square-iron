@@ -24,4 +24,5 @@ fields:
   config:
     required: true
 pages:
+- content/docs/about/skills-and-experience.md
 - content/style-guide.md
