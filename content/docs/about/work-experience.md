@@ -5,8 +5,6 @@ title = "Role Experience"
 weight = 3
 
 +++
-## Role Experience
-
 ### Overview
 
 * Network Design and Troubleshooting
