@@ -1,7 +1,7 @@
 +++
 excerpt = "Details on technologies and skills I've encountered and practiced."
 layout = "docs"
-title = "Technologies & Languages Experience"
+title = "Technology & Language Experience"
 weight = 3
 
 +++
