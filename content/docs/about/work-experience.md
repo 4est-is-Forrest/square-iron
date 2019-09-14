@@ -5,7 +5,7 @@ title = "Role Experience"
 weight = 3
 
 +++
-### Role Overview
+## Role Overview
 
 * Network Design and Troubleshooting
 * Windows & Linux Environments (Servers & Clients)
@@ -19,7 +19,7 @@ weight = 3
 
 <hr>
 
-### Role Details
+## Role Details
 
 #### _Network Design and Troubleshooting_
 
