@@ -1,7 +1,7 @@
 +++
 excerpt = "Details on technologies and skills I've encountered and practiced."
 layout = "docs"
-title = "Skills and Experience"
+title = "Role Experience"
 weight = 3
 
 +++
@@ -63,4 +63,4 @@ If code samples related to this are not posted, they will be coming soon.
 
 #### _Database Administration_
 
-Primarily in an academic capacity as far as Oracle. I am very familiar with SQL as a language and have experience managing my own MySQL and NoSQL-type databases. 
+Primarily in an academic capacity as far as Oracle. I am, however, familiar with SQL as a language and have experience managing my own MySQL and NoSQL-type databases. 
