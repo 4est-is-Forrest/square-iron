@@ -1,8 +1,7 @@
 +++
-draft = true
 excerpt = "Details on technologies and skills I've encountered and practiced."
 layout = "docs"
-title = "Role Experience"
+title = "Technologies & Languages Experience"
 weight = 3
 
 +++
