@@ -27,6 +27,7 @@ fields:
   config:
     required: true
 pages:
+- content/docs/about/role-experience.md
 - content/docs/about/work-experience.md
 - content/docs/about/_index.md
 - content/docs/about/features.md
