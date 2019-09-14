@@ -7,15 +7,28 @@ weight = 3
 +++
 ## Overview
 
-* Network Design and Troubleshooting
-* Windows & Linux Environments (Servers & Clients)
-* Systems Administration
-* Automation Design & Implementation
-* Tier 1 & 2 IT Support
-* Cyber, System & Information Security
-* Web Application Development
-* Data Collection, Storage, Analysis & Reporting
-* Database Administration
+#### Technologies
+
+* Web Services & RESTful APIs Interaction
+* Google Cloud Platform
+* ServiceNow (London)
+* Virtual Machine Management Platforms
+* IAM & LDAP Frameworks
+* Natural Language Processing
+* Flask & Jinja2
+* Selenium (Python)
+* Windows COM API (Python)
+
+#### Languages
+
+* Python 3
+* HTML, CSS & JS
+* JQuery
+* SQL, NoSQL, MySQL, SQLite
+* Powershell Scripting
+* Bash Scripting
+* Ruby
+* Google’s GCloud Console Tool Set
 
 <hr>
 
@@ -39,7 +52,7 @@ NKU requires a Unix class be completed before moving onto 300 and 400 level. The
 
 #### _Systems Administration_
 
-One of the most immersive role-based classes was the course "Advanced Systems and Network Administration." The class provided our previously designated teams with four CentOS clients and one CentOS server. 
+One of the most immersive role-based classes was the course "Advanced Systems and Network Administration." The class provided our previously designated teams with four CentOS clients and one CentOS server.
 
 The class revolved around aspects of IT from an administrative view, which encompassed topics such as different support layers (help desk, etc.), LDAP, monitoring tools and backup methods. Our projects involved initially settings up the VM's automatically with a mix of Kickstart and our choice of scripting language. Another project was to automate the configuration of LDAP and network folders. Our last projects required a comprehensive Monit system be implemented on all of our VM's.
 
@@ -47,7 +60,7 @@ The class revolved around aspects of IT from an administrative view, which encom
 
 Comprising the vast majority of my time with Atos, I wrote tools and scripts that completed many processes of varying complexity and specification. Anywhere from general tools designed to eliminate 90% of the necessary labor associated with converting large amounts of emails into ServiceNow tickets to iterating an Excel sheet and making specific decisions based off that data.
 
-Much of my experience and knowledge with automation can be better illustrated in my 'Code Samples' Section. 
+Much of my experience and knowledge with automation can be better illustrated in my 'Code Samples' Section.
 
 #### _Tier 1 & 2 IT Support_
 
@@ -61,7 +74,7 @@ My academic experience with security in technology caused me early on to write m
 
 #### _Web Application Development_
 
-The course in 'Web Development,' and some of the content from 'Web Server Administration' contributed to my interest in learning Flask. My curiosity stemmed mostly from my interest in familiarizing myself with parts of the Google Cloud platform and specifically Google's App Engine. 
+The course in 'Web Development,' and some of the content from 'Web Server Administration' contributed to my interest in learning Flask. My curiosity stemmed mostly from my interest in familiarizing myself with parts of the Google Cloud platform and specifically Google's App Engine.
 
 Learning and utilizing Flask took some effort but I was able to construct a basic web application in about four days on my first attempt. Over the course of this personal project, I learned a great deal about front-end and back-end development, Jinja2's templating engine, web security and NoSQL like databases (Google Cloud Datastore).
 
@@ -69,7 +82,7 @@ One of my early projects in college was to build a simple ticketing website buil
 
 #### _Data Collection, Storage, Analysis & Reporting_
 
-The collection and storage aspect stems from my usage of Python to query ServiceNow tables in order to create compartmentalized and readily accessible data objects for use by my tools and scripts across the team. 
+The collection and storage aspect stems from my usage of Python to query ServiceNow tables in order to create compartmentalized and readily accessible data objects for use by my tools and scripts across the team.
 
 Analysis and reporting derive from my constant utilization of the Pandas Python library to analyze automatically collected data and usually produce a formatted report for the leadership (mostly with the Openpyxl module).
 
@@ -77,4 +90,4 @@ If code samples related to this are not posted, they will be coming soon.
 
 #### _Database Administration_
 
-Primarily in an academic capacity as far as Oracle. I am, however, familiar with SQL as a language and have experience managing my own MySQL and NoSQL-type databases. 
+Primarily in an academic capacity as far as Oracle. I am, however, familiar with SQL as a language and have experience managing my own MySQL and NoSQL-type databases.
