@@ -49,12 +49,18 @@ My academic experience with security in technology caused me early on to write m
 
 The course in 'Web Development,' and some of the content from 'Web Server Administration' contributed to my interest in learning Flask. My curiosity stemmed mostly from my interest in familiarizing myself with parts of the Google Cloud platform and specifically Google's App Engine. 
 
-Learning and utilizing Flask took some effort but I was able to construct a basic web application in about four days on my first attempt. Over the course of this personal project, I learned a great deal about front-end and back-end development, Jinja2's templating engine, web security and NoSQL like databases (Google's Datastore).
+Learning and utilizing Flask took some effort but I was able to construct a basic web application in about four days on my first attempt. Over the course of this personal project, I learned a great deal about front-end and back-end development, Jinja2's templating engine, web security and NoSQL like databases (Google Cloud Datastore).
 
 One of my early projects in college was to build a simple ticketing website built on a LAMP server platform (Linux, Apache, MySQL, and Python in my case). Naturally, this provided practice and understanding of a variety of technologies, among them being Web Application Development.
 
 #### _Data Collection, Storage, Analysis & Reporting_
 
-The collection and storage aspect stems from my usage of Python to query ServiceNow tables in order to create compartmentalized and readily accessible data objects 
+The collection and storage aspect stems from my usage of Python to query ServiceNow tables in order to create compartmentalized and readily accessible data objects for use by my tools and scripts across the team. 
 
-* Database Administration
+Analysis and reporting derive from my constant utilization of the Pandas Python library to analyze automatically collected data and usually produce a formatted report for the leadership (mostly with the Openpyxl module).
+
+If code samples related to this are not posted, they will be coming soon.
+
+#### _Database Administration_
+
+Primarily in an academic capacity as far as Oracle. I am very familiar with SQL as a language and have experience managing my own MySQL and NoSQL-type databases. 
