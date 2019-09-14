@@ -7,6 +7,22 @@ weight = 3
 +++
 ## Role Experience
 
+### Overview
+
+* Network Design and Troubleshooting
+* Windows & Linux Environments (Servers & Clients)
+* Systems Administration
+* Automation Design & Implementation
+* Tier 1 & 2 IT Support
+* Cyber, System & Information Security
+* Web Application Development
+* Data Collection, Storage, Analysis & Reporting
+* Database Administration
+
+<hr>
+
+### Role Details
+
 #### _Network Design and Troubleshooting_
 
 As noted in the 'Academic Experience' section, a single course I completed had this very title. It provided a lot of valuable Cisco console experience, troubleshooting and debugging strategies as well as practice with setting up and fixing routing protocols. The lab setting largely existed within GNS3 but a sizable amount of lab work was also done in a physical network lab.
