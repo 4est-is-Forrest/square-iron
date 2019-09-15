@@ -20,9 +20,5 @@ items:
   preview_img: images/9.jpg
   url: https://themes.stackbit.com/demos/ampersand/
 layout: showcase
-menu:
-  main:
-    weight: 3
-    parent: layouts
 
 ---

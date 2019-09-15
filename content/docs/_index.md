@@ -6,7 +6,7 @@ excerpt: ''
 menu:
   main:
     name: Docs
-    weight: 4
+    weight: 2
 
 ---
 ***
