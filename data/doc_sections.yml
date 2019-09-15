@@ -2,7 +2,7 @@
 root_folder: "/docs/"
 sections:
 - Introduction
-- Resume
+- Docs
 - ui-components
 - manage-content
 - tools
