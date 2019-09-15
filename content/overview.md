@@ -15,7 +15,6 @@ sections:
 layout: overview
 menu:
   main:
-    name: Introduction
     weight: 2
     parent: layouts
 
