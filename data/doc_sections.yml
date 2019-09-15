@@ -1,8 +1,8 @@
 ---
 root_folder: "/docs/"
 sections:
-- Home
-- Docs
+- Resume
+# - Docs
 # - ui-components
 # - manage-content
 # - tools
