@@ -17,6 +17,7 @@ weight = 4
 * Flask & Jinja2
 * Selenium (Python)
 * Windows COM API (Python)
+* Pandas (Python)
 
 #### Languages
 
@@ -80,6 +81,14 @@ I have since converted to using JSON as much as I can and rewritten many of the 
 This is my go to Python library to interact with Outlook. With this, I can access an existing instance of Outlook and fully utilize it's elements. A viable and functional work around an API key when it comes to Office 365 and ensures anything I write can be run independently on various user systems.
 
 I go into more detail in my code samples as I use it very often. There you can see specifics about how useful the library has ultimately proven to be with Python.
+
+#### _Pandas_
+
+Perhaps one of my favorite and most used libraries due to it's great number of capabilities, convenience when working with data and, in my case, it's versatility in completing a wide range of varying objectives in my code. 
+
+Pandas was instrumental in my data analysis efforts and was also key in creating corpuses to be fed into Flair's tools. I also rely on it to help maintain data continuity (with the help of Xlsxwriter) should an exception be raised during execution of my code. The convenience of being able to read and write CSV's quickly as well as the ability to create data frames directly from a request reply's JSON. 
+
+Some, if not, many of my code samples will demonstrate how I have utilized this library. 
 
 ## Language Details
 
