@@ -94,29 +94,31 @@ Some, if not, many of my code samples will provide some context on how I've used
 
 #### _Python 3_
 
-Python is the primary language I utilize by far. I've been immersed in it consistently for more than three years at the time of this writing. I've used it to interact with other languages, applications, databases, operating systems and web services. In depth Python coding examples can be found can be found in the 'Coding' section of this site.
+Python is the primary language I utilize by far. I've been immersed in it consistently for more than three years at the time of this writing. I've used it to interact with other languages, applications, databases, operating systems and web services. In depth Python coding examples can be found in the 'Coding' section of my site.
 
-I do have a lot of experience with Python 2 due to NKU's favoritism of Linux distributions, but that may not be all that relevant nowadays.
+I do have a lot of experience with Python 2 due to NKU's favoritism of Linux distributions, but I'm not sure if that counts for much given it's date of deprecation. 
 
 #### _HTML, CSS, JS & JQuery_
 
-The foundations of these markup and scripting languages for me was the course in 'Web Development' I completed. However, given the nature of my automation, I constantly use browser developer tools in all manner of ways from element targeting to activating page JavaScript functions. Additionally, I received a great amount of practical experience with these languages when developing my Google App Engine web application. During that project, I also learned the fundamentals of JQuery and how it was able to make my application significantly more dynamic.
+The foundations of these markup and scripting languages for me was the course in 'Web Development' I completed. However, given the nature of my automation, I constantly use browser developer tools in all manner of ways from element targeting to activating page JavaScript functions. Additionally, I received a great amount of practical experience with these languages when developing my Google App Engine web application. During that project, I also learned the fundamentals of JQuery and used it to make the application one dynamic page from the user's perspective.
 
 #### _SQL, NoSQL, MySQL, SQLite_
 
-My experience with SQL and MySQL is from college courses 'Database Administration' and 'Web Server Administration' respectively. With regards to MySQL, my simple LAMP web server project contained a majority and large amount of experience with MySQL and interacting with it directly and with Python.
+My experience with SQL and MySQL is from college courses 'Database Administration' and 'Web Server Administration' respectively. With regards to MySQL, my simple LAMP web server project produced the majority of my experience with MySQL and Python's capability to interact with it.
 
-NoSQL experience stems from my experience with Google Datastore for my web application which is built on NoSQL principles.
+My NoSQL experience stems from my experience with Google Datastore for my web application which, as I understand, is built on NoSQL methods and principles.
 
-SQLite, aside from occasionally using it in the work environment, was my go to tool to practice with SQL syntax and familiarize myself with the language naturally.
+SQLite, aside from occasionally using it in the work environment, was my tool of choice to practice with SQL syntax and familiarize myself with the language.
 
 #### _PowerShell Scripting_
 
-I received most of my hands on practice in the 'Windows Administration' course I completed as well as through my own academic curiosity. While I've been exposed to it quite a bit, I often use Python instead to accomplish any scripting task needed.
+I received most of my PowerShell experience in the 'Windows Administration' course I completed as well as through my own curiosity. While I've been exposed to it quite a bit, I often use Python instead to accomplish any scripting task needed on my local machine or I'll create executable for other machines that don't have Python installed. 
+
+I use it and Windows Command Prompt interchangeably for console navigation and some other basic objectives.
 
 #### _Bash Scripting_
 
-Another product of NKU's overwhelmingly Linux-based learning environment. The 'Unix' course touched on this topic a bit but much of the practical aspect happened with regard to the five CentOS VM's within my 'Systems Administration' course. We were often granted our choice of scripting language to complete the elements of each project and was my team's preference.
+Another product of NKU's overwhelmingly Linux-based learning environment. The 'Unix' course touched on this topic a bit but much of the practical aspect happened with regard to the five CentOS VM's within my 'Systems Administration' course. We were often granted our choice of scripting language to complete the elements of each project and Bash scripting was my team's preference.
 
 #### _Ruby_
 
