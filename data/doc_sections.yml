@@ -1,10 +1,10 @@
 ---
 root_folder: "/docs/"
 sections:
+- Introduction
 - Resume
 - getting-started
 - ui-components
 - manage-content
 - tools
 - faq
-- community
