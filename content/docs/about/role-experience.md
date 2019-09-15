@@ -48,9 +48,9 @@ Aside from the web application I made to familiarize myself with a variety of el
 
 #### _ServiceNow_
 
-While at Atos, I worked with a variety of ticketing systems but almost all of them were different instances of the ServiceNow platform. My experience includes GUI navigation, ServiceNow's Client JavaScript, encoded URL queries and ServiceNow's web services (JSON, CSV, Excel).
+In my role at Atos, I work with a variety of ticketing systems but almost all of them are various instances of the ServiceNow. My experience includes GUI navigation, ServiceNow's Client JavaScript, encoded URL queries and ServiceNow's web services (JSON, CSV, Excel).
 
-In my efforts to automate as well as work around road blocks, I understand a great deal about the inner workings of ServiceNow from an administrator's stand point including ACLs and server side JavaScript.
+In my efforts to automate as well as work around road blocks, I understand a great deal about the inner workings of ServiceNow from an administrator's stand point including ACLs and server-side scripting.
 
 #### _IAM & LDAP Frameworks_
 
@@ -84,11 +84,11 @@ I go into more detail in my code samples as I use it very often. There you can s
 
 #### _Pandas_
 
-Perhaps one of my favorite and most used libraries due to it's great number of capabilities, convenience when working with data and, in my case, it's versatility in completing a wide range of varying objectives in my code. 
+Perhaps one of my favorite and most used libraries due to it's great number of capabilities, convenience when working with data and, in my case, it's versatility in completing a wide range of varying objectives in my code.
 
-Pandas was instrumental in my data analysis efforts and was also key in creating corpuses to be fed into Flair's tools. I also rely on it to help maintain data continuity (with the help of Xlsxwriter) should an exception be raised during execution of my code. The convenience of being able to read and write CSV's quickly as well as the ability to create data frames directly from a request reply's JSON. 
+Pandas was instrumental in my data analysis efforts and was also key in creating corpuses to be fed into Flair's tools. I also rely on it to help maintain data continuity (with the help of Xlsxwriter) should an exception be raised during execution of my code. The convenience of being able to read and write CSV's quickly as well as the ability to create data frames directly from a request reply's JSON.
 
-Some, if not, many of my code samples will demonstrate how I have utilized this library. 
+Some, if not, many of my code samples will demonstrate how I have utilized this library.
 
 ## Language Details
 
