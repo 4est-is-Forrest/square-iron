@@ -57,11 +57,11 @@ The 'Systems Administration' course went in depth with LDAP and many of the help
 
 #### _Natural Language Processing_
 
-Early into 2019, I began experimenting with the new Python library, Flair. It provided a convenient set of tools build, train, test and improve NLP models.
+Early into 2019, I began experimenting with the new Python library, Flair. It provided a convenient set of tools to build, train, test and improve NLP models.
 
-Recently, I've started utilizing Flair with better practices in mind, particularly sanitizing data and using binary labels. My hope is to make a combination of reliable models and past data to filter designate various conclusions about any given email a help desk would receive.
+Recently, I've started utilizing Flair with better practices in mind than when I started, particularly sanitizing data and using binary labels. My hope is to create a combination of reliable models to coincide with a few compilations of past data statistics in order to make reliable and multiple conclusions about any given email a help desk would receive.
 
-While my current tools I've written handle 90% of the labor (email to ticket conversion) they still rely on humans to either check the argument predictions or fill in arguments themselves. My overall goal is reduce that 10% as much as I can while producing something that might be useful across the organization.
+While my current tools I've written handle 90% of the labor (email to ticket conversion process itself) they still rely on humans to either check the argument predictions or fill in the arguments themselves. My overall goal is reduce (perhaps eliminate) that remaining 10% as much as I can while creating an automatic process to build this custom system for any help desk across our organization.
 
 #### _Flask & Jinja2_
 
