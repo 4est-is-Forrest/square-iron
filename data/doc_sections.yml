@@ -1,9 +1,9 @@
 ---
 root_folder: "/docs/"
 sections:
-- Introduction
+- Home
 - Docs
-- ui-components
-- manage-content
-- tools
-- faq
+# - ui-components
+# - manage-content
+# - tools
+# - faq
