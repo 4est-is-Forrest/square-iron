@@ -5,6 +5,6 @@ layout: docs
 weight: 
 
 ---
-Additional details regarding my work and academic experience can be found in the following sections.
+Additional details regarding my work, academic and skill experience can be found in the following sections.
 
 ***
