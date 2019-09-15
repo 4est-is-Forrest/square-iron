@@ -66,15 +66,15 @@ While my current tools I've written handle 90% of the labor (email to ticket con
 
 #### _Flask & Jinja2_
 
-Naturally, experience with Jinja2 was necessary in order to utilize Flask. Building a web application on Google's App Engine forced me to learn a great deal about both. Learning Jinja2 was very beneficial as it revealed a new way to produce professional reports as PDF rather than Excel when PDF was preferred.
+Naturally, experience with Jinja2 was a product of my utilization of Flask. Building a web application on Google's App Engine forced me to learn a great deal about both. Learning Jinja2 was very beneficial as it revealed a new and convenient way to produce reports in various formats rather than solely Excel or CSV.
 
 #### _Selenium_
 
-I'm aware that Selenium is often utilized for QA Testing but I've drawn a great deal of use out of it with automation, personally. Many of the tools and scripts I write are able to accomplish most, if not, all of their objectives using SeviceNow's JSON web service. However, some elements are restricted from the elements so I use Selenium as viable work around.
+I understand that Selenium is often utilized for web QA Testing but I've drawn a great deal of use out of it with automation. Many of the tools and scripts I write are able to accomplish most, if not, all of their objectives using SeviceNow's JSON web service. However, some objectives are beyond my permissions so I use Selenium as viable work around.
 
-When I first started automating processes, I started with exclusively using this library to interact with ServiceNow, which of course was nothing short of crude, unstable and needlessly complex. But making them gave me a great deal of practice with Selenium and I was one of the first libraries I devoted myself to learn after acquiring fundamental knowledge of Python.
+When I first started automating processes, I started with exclusively using this library to interact with ServiceNow, which of course was nothing short of crude, unstable and needlessly complex given my inexperience at the time. But making them gave me a great deal of practice with both Selenium and was one of the first libraries I devoted my time to learning after acquiring fundamental knowledge of Python.
 
-I have since converted to using JSON as much as I can and rewritten many of the tools as such while keeping Selenium to a minimum. Still, when I do have to use it, I've learned it well enough to minimize its inefficient nature and use it as very viable work around.
+I have since converted my code to use primarily use JSON and Selenium as a work around when needed.
 
 #### _Windows COM API_
 
