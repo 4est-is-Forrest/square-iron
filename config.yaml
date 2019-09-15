@@ -20,15 +20,5 @@ params:
       sass:
         accent1: "#8e2de2"
         accent2: "#4a00e0"
-menu:
-  main:
-  - url: https://github.com/
-    name: GitHub
-    weight: 4
-    identifier: github
-  - url: "#"
-    name: Sample Layouts
-    weight: 3
-    identifier: layouts
 disableKinds:
 - RSS
