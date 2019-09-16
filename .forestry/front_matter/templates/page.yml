@@ -24,5 +24,4 @@ fields:
   config:
     required: true
 pages:
-- content/docs/Code Samples/coding-section.md
 - content/style-guide.md
