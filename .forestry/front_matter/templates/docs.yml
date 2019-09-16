@@ -28,11 +28,6 @@ fields:
     required: true
 pages:
 - content/docs/_index.md
-- content/docs/about/role-experience.md
-- content/docs/about/_index.md
-- content/docs/about/work-experience.md
-- content/docs/about/features.md
-- content/docs/about/overview.md
 - content/docs/ui-components/typography.md
 - content/docs/ui-components/_index.md
 - content/docs/tools/starter-theme.md
