@@ -23,4 +23,4 @@ The OS environment is Windows 7/10 which isn't much of a factor.
 
 The networking environment is typical for any large organization but I ran into fatal issues using Pip and Requests due to our traffic being required to pass through an NTLM proxy. 
 
-Thankfully, I found a permanent solution utilizing [Px-Proxy](https://github.com/genotrance/px "Px-Proxy") in executable form as a Windows Service (start up). Utilizing PX's white list configuration, I gained the capability to use Pip and Requests without constant maintenance of a different service (CNTLM).
+Thankfully, I found a permanent solution utilizing [Px-Proxy](https://github.com/genotrance/px "Px-Proxy") in executable form as a Windows Service (start up). Utilizing PX's white list configuration, I gained the capability to use Pip and Requests without constant maintenance of a different service (CNTLM) on individual machines.
