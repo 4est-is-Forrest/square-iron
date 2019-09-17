@@ -28,3 +28,7 @@ The networking environment is typical for any large organization but I ran into 
 Thankfully, I found a permanent solution utilizing [Px-Proxy](https://github.com/genotrance/px "Px-Proxy") in executable form as a Windows Service (start up). Utilizing PX's white list configuration, I gained the capability to use Pip and Requests without constant maintenance of a different service (CNTLM) on individual machines.
 
 #### _ServiceNow JSON Web Service_ 
+
+When I discovered the existence of this service, I was crestfallen to learn that I had no valid username or password to authenticate my requests. 
+
+In my testing of the service, I noticed I was able to view raw JSON in my browser as long as I had authenticated with the browser recently. I theorized this would translate to Request's Session class and I was right. By importing existing cookies from browsers, Python can utilize the service through requests alone. 
