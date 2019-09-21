@@ -5,21 +5,13 @@ subtitle = ""
 title = "Environment & Context"
 
 +++
-## Professional Environment
-
-From the beginning, when I first started pursuing Python as a skill, I worked as a Help Desk agent. The job always suited my school schedule very well so that I could do both full-time but it also left me substantial time to pursue my own academic interest quite frequently, hence my proficiency with Python and eventual conversion to IT process automation and other coding specialties.
-
-Ultimately, I'm relied upon to code for my organization but I do so in an unofficial capacity, thus lacking API accesses and license privileges that would otherwise make my life easier. So keep in mind, that much of my code is working around this (I will be mindful to point it out).
-
-I'm largely left to my own devices in finding areas to automate and/or improve, therefore nearly all of my code's were my own ideas and projects. Sometimes, colleagues approach me with a problem or an idea in which I work closely with them to build what they are looking for.
-
 ## Technical Environment
 
-Most of these tools are meant to be independent with the capacity to be run across the team as seamlessly as possible without much user interaction aside from simple binary questions.
+Most of these tools and scripts are meant to be run by several individuals. Most have the capacity to be used across a team regardless of environment.with the capacity to be run across the team as seamlessly as possible without much user interaction aside from simple binary questions.
 
 The OS environment is Windows 7/10 which isn't much of a factor.
 
-## Work Arounds
+## Necessary Workarounds
 
 #### _Proxy Issues_
 
@@ -27,8 +19,8 @@ The networking environment is typical for any large organization but I ran into 
 
 Thankfully, I found a permanent solution utilizing [Px-Proxy](https://github.com/genotrance/px "Px-Proxy") in executable form as a Windows Service (start up). Utilizing PX's white list configuration, I gained the capability to use Pip and Requests without constant maintenance of a different service (CNTLM) on individual machines.
 
-#### _ServiceNow JSON Web Service_ 
+#### _ServiceNow JSON Web Service_
 
-When I discovered the existence of this service, I was crestfallen to learn that I had no valid username or password to authenticate my requests. 
+When I discovered the existence of this service, I was crestfallen to learn that I had no valid username or password to authenticate my requests.
 
-In my testing of the service, I noticed I was able to view raw JSON in my browser as long as I had authenticated with the browser recently. I theorized this would translate to Request's Session class and I was right. By importing existing cookies from browsers, Python can utilize the service through requests alone. 
+In my testing of the service, I noticed I was able to view raw JSON in my browser as long as I had authenticated with the browser recently. I theorized this would translate to Request's Session class and I was right. By importing existing cookies from browsers, Python can utilize the service through requests alone.
