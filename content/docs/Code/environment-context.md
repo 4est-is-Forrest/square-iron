@@ -1,10 +1,8 @@
-+++
-img_path = ""
-layout = "page"
-subtitle = ""
-title = "Environment & Context"
-
-+++
+---
+title: Context & Reference
+weight: 5
+template: docs
+---
 
 ## Technical Environment
 

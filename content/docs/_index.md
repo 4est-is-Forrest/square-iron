@@ -1,15 +1,15 @@
 ---
 title: Introduction
 layout: docs
-weight: 
-excerpt: ''
+weight:
+excerpt: ""
 menu:
   main:
     name: Docs
-    weight: 2
+    weight: 1
+---
 
 ---
-***
 
 Thank you for taking the time to visit my website, briefly or otherwise.
 
