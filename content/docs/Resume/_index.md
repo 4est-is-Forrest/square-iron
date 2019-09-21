@@ -1,10 +1,10 @@
 ---
 title: Resume
-excerpt: ''
+excerpt: ""
 layout: docs
-weight: 
-
+weight:
 ---
+
 Additional details regarding my work, academic and skill experience can be found in the following sections.
 
-***
+---

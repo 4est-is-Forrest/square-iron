@@ -5,6 +5,7 @@ subtitle = ""
 title = "Environment & Context"
 
 +++
+
 ## Technical Environment
 
 Most of these tools and scripts are meant to be run by several individuals. Most have the capacity to be used across a team regardless of environment.with the capacity to be run across the team as seamlessly as possible without much user interaction aside from simple binary questions.

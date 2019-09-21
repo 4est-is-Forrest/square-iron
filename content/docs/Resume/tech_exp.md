@@ -5,30 +5,31 @@ title = "Technology & Language Experience"
 weight = 4
 
 +++
+
 ## Overview
 
 #### Technologies
 
-* Web Services & RESTful APIs Interaction
-* Google Cloud Platform
-* ServiceNow
-* IAM & LDAP Frameworks
-* Natural Language Processing
-* Flask & Jinja2
-* Selenium (Python)
-* Windows COM API (Python)
-* Pandas (Python)
+- Web Services & RESTful APIs Interaction
+- Google Cloud Platform
+- ServiceNow
+- IAM & LDAP Frameworks
+- Natural Language Processing
+- Flask & Jinja2
+- Selenium (Python)
+- Windows COM API (Python)
+- Pandas (Python)
 
 #### Languages
 
-* Python 3
-* HTML, CSS & JS
-* JQuery
-* SQL, NoSQL, MySQL, SQLite
-* Powershell Scripting
-* Bash Scripting
-* Ruby
-* Google’s GCloud Console Tool Set
+- Python 3
+- HTML, CSS & JS
+- JQuery
+- SQL, NoSQL, MySQL, SQLite
+- Powershell Scripting
+- Bash Scripting
+- Ruby
+- Google’s GCloud Console Tool Set
 
 <hr>
 
@@ -86,7 +87,7 @@ I go into more detail in my code samples as I use it very often. There you can s
 
 Perhaps one of my favorite and most used libraries due to its great number of capabilities, convenience when working with data and, in my case, it's versatility in completing a wide range of varying objectives in my code.
 
-Pandas was instrumental in my data analysis efforts and was also key in creating corpuses to be fed into Flair. I also rely on it to help maintain data continuity (with the help of Xlsxwriter) should an exception be raised during execution of my code. The convenience of being able to read and write CSV's quickly  or the ability to create data frames directly from a request reply's JSON, are just a few reasons why I use it so often in my code.
+Pandas was instrumental in my data analysis efforts and was also key in creating corpuses to be fed into Flair. I also rely on it to help maintain data continuity (with the help of Xlsxwriter) should an exception be raised during execution of my code. The convenience of being able to read and write CSV's quickly or the ability to create data frames directly from a request reply's JSON, are just a few reasons why I use it so often in my code.
 
 Some, if not, many of my code samples will provide some context on how I've used it.
 
@@ -96,7 +97,7 @@ Some, if not, many of my code samples will provide some context on how I've used
 
 Python is the primary language I utilize by far. I've been immersed in it consistently for more than three years at the time of this writing. I've used it to interact with other languages, applications, databases, operating systems and web services. In depth Python coding examples can be found in the 'Coding' section of my site.
 
-I do have a lot of experience with Python 2 due to NKU's favoritism of Linux distributions, but I'm not sure if that counts for much given it's date of deprecation. 
+I do have a lot of experience with Python 2 due to NKU's favoritism of Linux distributions, but I'm not sure if that counts for much given it's date of deprecation.
 
 #### _HTML, CSS, JS & JQuery_
 
@@ -112,7 +113,7 @@ SQLite, aside from occasionally using it in the work environment, was my tool of
 
 #### _PowerShell Scripting_
 
-I received most of my PowerShell experience in the 'Windows Administration' course I completed as well as through my own curiosity. While I've been exposed to it quite a bit, I often use Python instead to accomplish any scripting task needed on my local machine or I'll create executable for other machines that don't have Python installed. 
+I received most of my PowerShell experience in the 'Windows Administration' course I completed as well as through my own curiosity. While I've been exposed to it quite a bit, I often use Python instead to accomplish any scripting task needed on my local machine or I'll create executable for other machines that don't have Python installed.
 
 I use it and Windows Command Prompt interchangeably for console navigation and some other basic objectives.
 
