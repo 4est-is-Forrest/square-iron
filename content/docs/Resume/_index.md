@@ -1,5 +1,5 @@
 ---
 title: Resume
+weight:
 template: docs
-weight: 2
 ---
