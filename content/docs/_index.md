@@ -11,6 +11,4 @@ menu:
 
 ---
 
-Thank you for taking the time to visit my website, briefly or otherwise.
-
-By exploring the following sections, you can find specific information about elements cited on my resume, contextual factors with my code and some detailed code samples.
+Thank you for stopping by. The following sections aim to provide code samples together with some clarity and context.
