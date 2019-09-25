@@ -10,7 +10,7 @@ template: docs
 * Most are tools capable of being run by all team members
 * Windows Environment
 * [Px-Proxy](https://github.com/genotrance/px "Px-Proxy") required for Pip and Requests to authenticate with organization NTLM Proxy
-* Requests must import cookies in order to use ServiceNow's JSON web service due to multi-factor authentication with most instances.
+* Requests must import cookies in order to use ServiceNow's JSON web service due to multi-factor authentication requirement with most instances.
 
 ## Technical Environment
 
