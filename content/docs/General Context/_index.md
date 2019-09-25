@@ -1,14 +1,18 @@
 ---
 title: General Context
-weight:
+weight: 
 template: docs
+
 ---
+## Summary
+
+* Tools and scripts to automate or aid in Help Desk processes
+* Most are tools capable of being run by all team members
+* Windows Environment
+* [Px-Proxy](https://github.com/genotrance/px "Px-Proxy") required for Pip and Requests to authenticate with organization NTLM Proxy
+* Requests must import cookies in order to use ServiceNow's JSON web service due to multi-factor authentication with most instances.
 
 ## Technical Environment
-
-Most of these tools and scripts are meant to be run by several individuals. Most have the capacity to be used across a team regardless of environment.with the capacity to be run across the team as seamlessly as possible without much user interaction aside from simple binary questions.
-
-The OS environment is Windows 7/10 which isn't much of a factor.
 
 ## Necessary Workarounds
 
