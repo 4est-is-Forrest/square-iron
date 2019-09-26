@@ -157,5 +157,11 @@ Only erasing the domain's cookies does the redirect cease. Since 'instance1' is 
             wait(10,0,'//*[@id="password"]').send_keys('instance3_pwd')
             wait(10,0,'//*[@id="password"]').send_keys(Keys.ENTER)
             wait(20,0,'//*[@id="filter"]')
+    	        driver_cookie_persist(inst)
+        if persist:
+            return driver,credentials
+        else:
+            driver.quit()
+            return credentials
 
-Each instance has unique login portals. Because 'instance1' requires PKI card login and its cookies last quite a while, it's simpler for the user to login. 
+Each instance has unique login portals. Because 'instance1' requires a PKI card login and its cookies last quite a while, it's simpler for the user to handle the login, hence the 120 second timeout to do so. 
