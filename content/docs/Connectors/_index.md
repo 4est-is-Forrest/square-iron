@@ -35,6 +35,22 @@ When only a Session is needed, cookies from the user's Chrome browser will also 
     import traceback
     from shutil import copy
 
-Standard imports one would expect, but the 'browser_cookie' library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously), but this gave me two important capabilities. It offered a way to assert that cookies have been saved locally (Chrome writes cookies in 30 second intervals) and also offered a way to import my actual browser's cookies, which is mostly just a convenience. 
+[browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/)
 
-Browser-Cookie
+Standard imports one would expect, but the 'browser_cookie3' library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously), but this gave me two important capabilities. It offered a way to assert that cookies have been saved locally (Chrome writes cookies in 30 second intervals) and also offered a way to import my actual browser's cookies, which is mostly just a convenience. 
+
+#### _Constants_
+
+    PROXY = '<My Local Machine>:<Px-Proxy Port>'
+    RESOURCES = os.environ['homepath'] + '/__resources__'
+    CHROME_DRIVER = RESOURCES + '/chromedriver.exe'
+    DRIVER_DATA = os.environ['homepath'] + '/Driver Data'
+    COOKIE_FILE = DRIVER_DATA + '/Default/Cookies'
+    CHROME_OPTIONS = webdriver.ChromeOptions()
+    CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
+
+The proxy is necessary for Sessions. See document 'General Context' for details on Px-Proxy.
+
+There is a separate script for new Python installations that ensures 'resources' exists in the script user's home path (among other things). Essentially a uniform location to house multiple assets for multiple tools/scripts.
+
+Chromedriver will create a profile directory in the home path if one does not already exist.
