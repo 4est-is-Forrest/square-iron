@@ -96,4 +96,4 @@ Instances requiring a username and password to login are defined in this loop's 
 
 Along with making sure credentials are available/collected, it does that before Chromedriver is opened which can easily cover the script's/tool's window. 
 
-While having the user login manually
+The reason behind collecting the credentials in the first place is to return them for scripts and tools meant to run for extended periods time.
