@@ -101,3 +101,22 @@ Instances requiring a username and password to login are defined in this loop's 
 Along with making sure credentials are available/collected, it does that before Chromedriver is opened which can easily cover the script's/tool's window. 
 
 The reason behind collecting the credentials in the first place is to return them for scripts and tools meant to run for extended periods time.
+
+**_Test Login State_**
+
+    if os.path.exists(COOKIE_FILE): # If the driver Cookie file exists (indicating a first run or not), import the cookies and perform a SNOW Get
+        s = requests.Session()
+        s.proxies['https'] = PROXY
+        logins = []
+        for inst in instances:
+            domain = '{}.service-now.com'.format(inst)
+            url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
+            cookies = browser_cookie3.chrome(COOKIE_FILE, domain)
+            for cookie in cookies:
+                s.cookies.set(cookie.name, cookie.value)
+            r = s.get(url)
+            if r.status_code != 200:
+                logins.append(inst)
+    else:
+        logins = instances
+    
