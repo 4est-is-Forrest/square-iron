@@ -120,3 +120,5 @@ The reason behind collecting the credentials in the first place is to return the
     else:
         logins = instances
     
+
+If the Driver's 'Cookies' file exists, use a Session to import them and perform a JSON query. Any return code other than 200 adds the instance to the 'logins' list. Otherwise if the the 'Cookies' file does not exist, all instances are added to 'logins.'
