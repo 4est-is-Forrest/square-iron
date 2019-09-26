@@ -20,7 +20,7 @@ Most of my code is to be used by other team members who are not coders. They can
 
 #### _OS_
 
-Primarily Windows 7 (3+ years) until Windows 10 became the new requirement in my professional environment. Academically, I've used Python on Linux distributions.
+Primarily Windows 7 (3+ years) until Windows 10 became the new requirement in my professional environment. Academically, I've regularly used Python within Linux distributions, preferably Python 3 in most scenarios.
 
 #### _Proxy Workaround_ 
 
