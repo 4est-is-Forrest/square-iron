@@ -14,6 +14,10 @@ template: docs
 
 ## Details
 
+#### _Tools utilized by any team member_
+
+Most of my code is to be used by other team members who are not coders. They can't be too complex to run or if they are, documentation and/or training must accompany them. 
+
 #### _Proxy Issues_
 
 On their own, Requests and Pip will fail against the required NTLM proxy in this particular environment. I used CNTLM for a while but I wanted something lower maintenance. 
@@ -22,4 +26,6 @@ On their own, Requests and Pip will fail against the required NTLM proxy in this
 
 #### _ServiceNow JSON Web Service_
 
-Most instances 
+Most instances used in this environment have multi-factored authentication methods and I would not be granted access to any kind of key or credentials to get around this.
+
+I discovered that ServiceNow's JSON Web Service was accessible from a browser so long as the user was logged in. This translated into the Requests library and it became possible for my tools and scripts to utilize the web service instead of a GUI.
