@@ -6,8 +6,8 @@ weight:
 ---
 ## Purpose
 
-* Functions to connect to various ServiceNow instances through a Selenium WebDriver object or a Requests Session. 
-* The Driver method minimizes login effort and after success, asserts cookies are saved locally. 
+* Functions to connect to various ServiceNow instances through a Selenium WebDriver object or a Requests Session.
+* The Driver method minimizes login effort and after success, asserts cookies are saved locally.
 * The Session method tries to import good cookies from various locations, optional login action
 
 ## Details
@@ -37,7 +37,7 @@ When only a Session is needed, cookies from the user's Chrome browser will also 
 
 [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/)
 
-Standard imports one would expect, but the 'browser_cookie3' library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously), but this gave me two important capabilities. It offered a way to assert that cookies have been saved locally (Chrome writes cookies in 30 second intervals) and also offered a way to import my actual browser's cookies, which is mostly just a convenience. 
+Standard imports one would expect, but the 'browser_cookie3' library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously), but this gave me two important capabilities. It offered a way to assert that cookies have been saved locally (Chrome writes cookies in 30 second intervals) and also offered a way to import my actual browser's cookies, which is mostly just a convenience.
 
 #### _Constants_
 
@@ -49,7 +49,7 @@ Standard imports one would expect, but the 'browser_cookie3' library is worth el
     CHROME_OPTIONS = webdriver.ChromeOptions()
     CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
 
-The proxy is necessary for Sessions. See document 'General Context' for details on Px-Proxy.
+Px-proxy is necessary for Sessions to play nice with an NTLM Proxy. See document 'General Context' for details on both.
 
 There is a separate script for new Python installations that ensures 'resources' exists in the script user's home path (among other things). Essentially a uniform location to house multiple assets for multiple tools/scripts.
 
