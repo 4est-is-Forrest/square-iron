@@ -8,7 +8,7 @@ template: docs
 
 * Tools and scripts to automate or aid in Help Desk processes
 * Most are tools capable of being run by all team members
-* Windows Environment
+* Professionally: Windows Environment; Academically: Linux
 * [Px-Proxy](https://github.com/genotrance/px "Px-Proxy") required for Pip and Requests to authenticate with organization NTLM Proxy
 * Requests must import cookies in order to use ServiceNow's JSON web service due to multi-factor authentication requirement with most instances.
 
@@ -17,6 +17,10 @@ template: docs
 #### _Tools utilized by any team member_
 
 Most of my code is to be used by other team members who are not coders. They can't be too complex to run or if they are, documentation and/or training must accompany them. 
+
+#### _Windows_
+
+Primarily Windows 7 until Windows 10 became the new requirement Academically, I've used Python on Linux distributions.
 
 #### _Proxy Issues_
 
