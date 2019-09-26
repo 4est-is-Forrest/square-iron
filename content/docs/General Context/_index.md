@@ -33,3 +33,5 @@ On their own, Requests and Pip will fail against the required NTLM proxy in this
 Most instances used in this environment have multi-factored authentication methods and I would not be granted access to any kind of key or credentials to get around this.
 
 I discovered that ServiceNow's JSON Web Service was accessible from a browser so long as the user was logged in. This translated into the Requests library and it became possible for my tools and scripts to utilize the web service instead of a GUI.
+
+Limitations of the web service include the inability to close records and attach files. The latter often being a requirement. For these tasks, Selenium is used.
