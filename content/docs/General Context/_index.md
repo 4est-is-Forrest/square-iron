@@ -18,9 +18,9 @@ template: docs
 
 Most of my code is to be used by other team members who are not coders. They can't be too complex to run or if they are, documentation and/or training must accompany them. 
 
-#### _Windows_
+#### _Utilized OS_
 
-Primarily Windows 7 until Windows 10 became the new requirement Academically, I've used Python on Linux distributions.
+Primarily Windows 7 (3+ years) until Windows 10 became the new requirement in my professional environment. Academically, I've used Python on Linux distributions.
 
 #### _Proxy Issues_
 
