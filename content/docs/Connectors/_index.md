@@ -53,4 +53,20 @@ Px-proxy is necessary for Sessions to play nice with an NTLM Proxy. See document
 
 There is a separate script for new Python installations that ensures 'resources' exists in the script user's home path (among other things). Essentially a uniform location to house multiple assets for multiple tools/scripts.
 
-Chromedriver will create a profile directory in the home path if one does not already exist.
+Chromedriver will create the profile directory if one does not already exist.
+
+#### _Function: Spawn Driver_
+
+**Arguments:**
+
+* Instances: list of one or more expected ServiceNow instances; Default: The most used instance
+* Credentials: (optional) dictionary of credentials for instances other than 'instance1.' Default is none. Dictionary key nomenclature is simply: instance_usr/pwd
+* Persist: Whether the Driver should be kept open after completed login/logins; Default is True
+
+The function is tailored for three specific instances with differentiating login methods and landing pages. 
+
+* Instance1: PKI card login with pin
+* Instance2: Username & Password
+* Instance3: Username & Password
+
+Other instances can be added to the function with relative ease, only needing to define the login process and whether the instance requires username and password credentials.
