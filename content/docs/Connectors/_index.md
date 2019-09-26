@@ -73,6 +73,8 @@ The function is tailored for three specific instances with differentiating login
 * Instance2: Username & Password
 * Instance3: Username & Password
 
+</hr>
+
 **Function Code:**
 
     def wait(x,y,z):
