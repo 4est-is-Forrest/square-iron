@@ -14,15 +14,15 @@ template: docs
 
 ## Details
 
-#### _Tools utilized by any team member_
+#### _The Users_
 
 Most of my code is to be used by other team members who are not coders. They can't be too complex to run or if they are, documentation and/or training must accompany them. 
 
-#### _Utilized OS_
+#### _OS_
 
 Primarily Windows 7 (3+ years) until Windows 10 became the new requirement in my professional environment. Academically, I've used Python on Linux distributions.
 
-#### _Proxy Issues_
+#### _Proxy Workaround_ 
 
 On their own, Requests and Pip will fail against the required NTLM proxy in this particular environment. I used CNTLM for a while but I wanted something lower maintenance. 
 
