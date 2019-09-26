@@ -72,3 +72,11 @@ The function is tailored for three specific instances with differentiating login
 * Instance1: PKI card login with pin (most used)
 * Instance2: Username & Password
 * Instance3: Username & Password
+
+**Code:**
+
+    def wait(x,y,z):
+        els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
+        return WebDriverWait(driver, x).until(EC.presence_of_element_located((els[y], z)))
+
+The function is just a short hand for the 'WebDriverWait' method, my preferred method in selecting HTML elements whenever I use Selenium. 
