@@ -75,13 +75,15 @@ The function is tailored for three specific instances with differentiating login
 
 </hr>
 
-**Function Code:**
+**_Local Functions_**
 
     def wait(x,y,z):
         els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
         return WebDriverWait(driver, x).until(EC.presence_of_element_located((els[y], z)))
 
 The function is just a short hand for the 'WebDriverWait' method, my preferred method in selecting HTML elements whenever I use Selenium. It looks neater and is convenient to use in the console. 
+
+**_Credential Handling_**
 
     for inst in instances:
         if inst in ['instance2','instance3']:
