@@ -119,10 +119,43 @@ The reason behind collecting the credentials in the first place is to return the
                 logins.append(inst)
     else:
         logins = instances
-    
 
 If the Driver's 'Cookies' file exists, use a Session to import them and perform a JSON query. Any return code other than 200 adds the instance to the 'logins' list. If the 'Cookies' file does not exist, naturally, all instances are added to 'logins' list.
 
 The Session offers a quick way to test whether cookies have expired and it will be used very often in this module. 
 
 Aside from saving time with logging in, knowing login states ahead of time simplifies what exactly the Driver should expect, thus handling potential redirects is no longer necessary. 
+
+**_Instance1's Annoying Redirect_**
+
+       if 'instance1' in logins:
+        try:
+            os.remove(COOKIE_FILE)
+        except:
+            pass
+
+The 'Cookies' file is erased if 'instance1' login is required. This is due to this particular instance's tendency to sometimes redirect those with expired cookies to a 'successful logged out page' regardless of URL being accessed (including the login URL). 
+
+Only erasing the domain's cookies does the redirect cease. Since 'instance1' is the most used and has cookies with the longest lifetime, it's safe to assume all other instance cookies have also expired.
+
+**_Perform Logins_**
+
+    driver = webdriver.Chrome(CHROME_DRIVER,options=CHROME_OPTIONS)
+    for inst in logins:
+        if inst == 'instance1':
+            driver.get('https://instance1.service-now.com/login_with_sso.do?glide_sso_id=<xxxxx>')
+            wait(120,0,'//*[@id="filter"]')
+        elif inst == 'instance2':
+            driver.get('https://instance2.service-now.com/itserviceportal/?id=<xxxxx>')
+            wait(10,0,'//*[@id="username"]').send_keys(credentials['instance2_usr'])
+            wait(10,0,'//*[@id="username"]').send_keys(Keys.ENTER)
+            wait(10,0,'//*[@id="User_ID"]').send_keys(credentials['instance2_usr'])
+            wait(10,0,'//*[@id="Password"]').send_keys(credentials['instance2_pwd'])
+            wait(10,0,'//*[@id="Password"]').send_keys(Keys.ENTER)
+            wait(20,0,'//*[@id="filter"]')
+        elif inst == 'instance3':
+            driver.get('https://instance3.service-now.com/')
+            wait(10,0,'//*[@id="username"]').send_keys('instance3_usr')
+            wait(10,0,'//*[@id="password"]').send_keys('instance3_pwd')
+            wait(10,0,'//*[@id="password"]').send_keys(Keys.ENTER)
+            wait(20,0,'//*[@id="filter"]')
