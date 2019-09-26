@@ -1,5 +1,5 @@
 ---
-title: Connectors (module)
+title: Connectors (Module)
 layout: docs
 weight: 
 
@@ -35,9 +35,7 @@ When only a Session is needed, cookies from the user's Chrome browser will also 
     import traceback
     from shutil import copy
 
-[browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/)
-
-Standard imports one would expect, but the 'browser_cookie3' library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously), but this gave me two important capabilities. It offered a way to assert that cookies have been saved locally (Chrome writes cookies in 30 second intervals) and also offered a way to import my actual browser's cookies, which is mostly just a convenience.
+The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously), but it specifically gave me two important capabilities. It offered a way to assert that cookies have been saved locally (Chrome writes cookies in 30 second intervals) and also offered a way to import my actual browser's cookies, which is mostly just a convenience.
 
 #### _Constants_
 
@@ -81,7 +79,7 @@ The function is tailored for three specific instances with differentiating login
         els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
         return WebDriverWait(driver, x).until(EC.presence_of_element_located((els[y], z)))
 
-The function is just a short hand for the 'WebDriverWait' method, my preferred method in selecting HTML elements whenever I use Selenium. It looks neater and is convenient to use in the console. 
+The function is just a short hand for the 'WebDriverWait' method, my preferred method in selecting HTML elements whenever I use Selenium. It looks neater and is convenient to use in the console.
 
 **_Credential Handling_**
 
@@ -96,9 +94,9 @@ The function is just a short hand for the 'WebDriverWait' method, my preferred m
                 pwd = getpass('Password ({}): '.format(inst))
                 credentials['{}_pwd'.format(inst)] = pwd
 
-Instances requiring a username and password to login are defined in this loop's list. Additional instances can simply be added to this list. This block determines whether credentials have been supplied and, if not, collects them appropriately. 
+Instances requiring a username and password to login are defined in this loop's list. Additional instances can simply be added to this list. This block determines whether credentials have been supplied and, if not, collects them appropriately.
 
-Along with making sure credentials are available/collected, it does that before Chromedriver is opened which can easily cover the script's/tool's window. 
+Along with making sure credentials are available/collected, it does that before Chromedriver is opened which can easily cover the script's/tool's window.
 
 The reason behind collecting the credentials in the first place is to return them for scripts and tools meant to run for extended periods time.
 
@@ -122,9 +120,9 @@ The reason behind collecting the credentials in the first place is to return the
 
 If the Driver's 'Cookies' file exists, use a Session to import them and perform a JSON query. Any return code other than 200 adds the instance to the 'logins' list. If the 'Cookies' file does not exist, naturally, all instances are added to 'logins' list.
 
-The Session offers a quick way to test whether cookies have expired and it will be used very often in this module. 
+The Session offers a quick way to test whether cookies have expired and it will be used very often in this module.
 
-Aside from saving time with logging in, knowing login states ahead of time simplifies what exactly the Driver should expect, thus handling potential redirects is no longer necessary. 
+Aside from saving time with logging in, knowing login states ahead of time simplifies what exactly the Driver should expect, thus handling potential redirects is no longer necessary.
 
 **_Instance1's Annoying Redirect_**
 
@@ -134,7 +132,7 @@ Aside from saving time with logging in, knowing login states ahead of time simpl
         except:
             pass
 
-The 'Cookies' file is erased if 'instance1' login is required. This is due to this particular instance's tendency to sometimes redirect those with expired cookies to a 'successful logged out page' regardless of URL being accessed (including the login URL). 
+The 'Cookies' file is erased if 'instance1' login is required. This is due to this particular instance's tendency to sometimes redirect those with expired cookies to a 'successful logged out page' regardless of URL being accessed (including the login URL).
 
 Only erasing the domain's cookies does the redirect cease. Since 'instance1' is the most used and has cookies with the longest lifetime, it's safe to assume all other instance cookies have also expired.
 
