@@ -157,3 +157,4 @@ Only erasing the domain's cookies does the redirect cease. Since 'instance1' is 
             wait(10,0,'//*[@id="password"]').send_keys('instance3_pwd')
             wait(10,0,'//*[@id="password"]').send_keys(Keys.ENTER)
             wait(20,0,'//*[@id="filter"]')
+            
