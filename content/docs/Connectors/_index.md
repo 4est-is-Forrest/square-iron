@@ -121,4 +121,8 @@ The reason behind collecting the credentials in the first place is to return the
         logins = instances
     
 
-If the Driver's 'Cookies' file exists, use a Session to import them and perform a JSON query. Any return code other than 200 adds the instance to the 'logins' list. Otherwise if the the 'Cookies' file does not exist, all instances are added to 'logins.'
+If the Driver's 'Cookies' file exists, use a Session to import them and perform a JSON query. Any return code other than 200 adds the instance to the 'logins' list. If the 'Cookies' file does not exist, naturally, all instances are added to 'logins' list.
+
+The Session offers a quick way to test whether cookies have expired and it will be used very often in this module. 
+
+Aside from saving time with logging in, knowing login states ahead of time simplifies what exactly the Driver should expect, thus handling potential redirects is no longer necessary. 
