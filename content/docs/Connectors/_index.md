@@ -1,9 +1,9 @@
 ---
-title: Connectors.py (module)
+title: Connectors.py (Module)
 layout: docs
-weight:
----
+weight: 
 
+---
 ## Purpose
 
 - Functions to connect to various ServiceNow instances through a Selenium WebDriver object or a Requests Session.
