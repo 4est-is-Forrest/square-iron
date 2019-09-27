@@ -136,7 +136,7 @@ The 'Cookies' file is erased if 'instance1' login is required. This is due to th
 
 Only erasing the domain's cookies does the redirect cease. Since 'instance1' is the most used and has cookies with the longest lifetime, it's safe to assume all other instance cookies have also expired.
 
-**_Perform Login/Logins_**
+**_Execute logins; return Driver and/or Credentials_**
 
     driver = webdriver.Chrome(CHROME_DRIVER,options=CHROME_OPTIONS)
     for inst in logins:
@@ -168,4 +168,4 @@ Each instance has unique login portals. Because 'instance1' requires a PKI card 
 
 Finally, by default the driver remains open but can be closed for when a Session simply needs good cookies.
 
-Returning credentials is useful for scripts and tools that need extended sustained login 
+Returning credentials is useful for when sustained login over long periods might be necessary but credentials are not defined ahead of time.
