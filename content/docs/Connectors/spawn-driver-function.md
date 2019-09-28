@@ -33,11 +33,11 @@ The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library i
 
 #### **_Px-Proxy_**
 
-[Px-proxy](https://github.com/genotrance/px) is necessary for Sessions to play nice with the environment's NTLM proxy. As the author, Genotrance, describes it, "An HTTP proxy server to automatically authenticate through an NTLM proxy." See the 'General Context' section for more information on this and why it is necessary.
+[Px-proxy](https://github.com/genotrance/px) is necessary for Sessions to play nice with the environment's NTLM proxy. As the author, Genotrance, describes it, "An HTTP proxy server to automatically authenticate through an NTLM proxy." See the 'General Context' document for more information on this.
 
 #### **_Chromedriver Executable Path_**
 
-There is a separate script all my users run to keep all assets, modules and scripts up to date and where I want them. In this context, the directory named 'RESOURCES' is in the user's home path and contains 'chromedriver.exe' because of this separate script.
+There is a separate script users run to keep all assets, modules and scripts up to date and in the correct locations. In this context, the directory named 'RESOURCES' is in the user's home path and contains 'chromedriver.exe' because of this separate script.
 
 #### **_Chromedriver Profile Directory_**
 
