@@ -21,7 +21,7 @@ Comprised of three functions:
 
 #### **_Environment_**
 
-This is a module specific to a help desk environment and most other scripts/tools for said environment depend on it. Chromedriver is my preferred Webdriver.
+This module is specific to a help desk environment and most other scripts/tools for said environment depend on it. Chromedriver is my preferred Webdriver.
 
 #### **_Why JSON?_**
 
@@ -39,10 +39,12 @@ The JSON web service has three important limitations:
 
 **Note:** I refer to a browser writing cookies locally as 'cookies persisting.'
 
-Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing to its 'Cookies' file. After a successful login, a Session queries the instance's JSON service repeatedly until a status code 200.
+The third function exists specifically to address this.
 
-When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time. I eventually noticed that the cookies were almost always bad if the Driver was immediately closed after login, implying some timing issue. Thankfully, a simple Google search revealed Chrome's 30-second interval and adjusted the module accordingly.
+Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing to its 'Cookies' file. After a login is successful, a Session queries the instance's JSON service repeatedly until a status code 200.
 
-##### **_Ultimately_**
+When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time. I eventually noticed that the local cookies were almost always bad if the Driver was immediately closed after login, implying some timing issue. Thankfully, a simple Google search revealed Chrome's 30-second interval and I adjusted the module accordingly. 
 
-A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this same environment, and this module makes creating and managing these connections much simpler and more readily available.
+**_Ultimately_**
+
+A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this same environment, and this module makes creating and managing these connections much simpler and readily available.
