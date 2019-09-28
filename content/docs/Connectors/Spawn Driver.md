@@ -49,7 +49,7 @@ The function is tailored for three specific instances with differentiating login
         els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
         return WebDriverWait(driver, x).until(EC.presence_of_element_located((els[y], z)))
 
-The function is just a short hand for the 'WebDriverWait' method, my preferred method in selecting HTML elements whenever I use Selenium. It looks neater and is convenient to use in the console.
+This function is just a short hand for the 'WebDriverWait' method, my preferred method in selecting HTML elements whenever Selenium is utilized. It looks neater and is convenient to use in the console.
 
 **_Credential Handling_**
 
@@ -64,11 +64,11 @@ The function is just a short hand for the 'WebDriverWait' method, my preferred m
                 pwd = getpass('Password ({}): '.format(inst))
                 credentials['{}_pwd'.format(inst)] = pwd
 
-Instances requiring a username and password to login are defined in this loop's list. Additional instances can simply be added to this list. This block determines whether credentials have been supplied and, if not, collects them appropriately.
+Instances requiring a username and password to login are defined in this loop's list. Additional instances can simply be added if desired. This block determines whether credentials have been supplied and, if not, collects them appropriately.
 
-Along with making sure credentials are available/collected, it does that before Chromedriver is opened which can easily cover the script's/tool's window.
+Along with making sure credentials are available/collected, it does that before Chromedriver is opened, ensuring the credential prompt is not covered by the Driver window.
 
-The reason behind collecting the credentials in the first place is to return them for scripts and tools meant to run for extended periods time.
+A big reason for collecting the credentials in the first place is to return them for scripts and tools meant to run for extended periods of time. This way, should the session expire without the user present, logging in again can be automatic.
 
 **_Test Login State_**
 
