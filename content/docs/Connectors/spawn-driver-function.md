@@ -31,8 +31,14 @@ The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library i
     CHROME_OPTIONS = webdriver.ChromeOptions()
     CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
 
+#### **_Px-Proxy_**
+
 [Px-proxy](https://github.com/genotrance/px) is necessary for Sessions to play nice with the environment's NTLM proxy. As the author, Genotrance, describes it, "An HTTP proxy server to automatically authenticate through an NTLM proxy." See the 'General Context' section for more information on this and why it is necessary.
 
+#### **_Chromedriver Executable Path_**
+
 There is a separate script all my users run to keep all assets, modules and scripts up to date and where I want them. In this context, the directory named 'RESOURCES' is in the user's home path and contains 'chromedriver.exe' because of this separate script.
+
+#### **_Chromedriver Profile Directory_**
 
 Chromedriver will create the profile directory if one does not already exist. The profile allows the Driver to behave like a regular browser in the sense that cookies, history, and other objects of that nature are retained. It is also independent of the user's default Chrome profile, primarily because regular Chrome and the Driver cannot access the same profile concurrently.
