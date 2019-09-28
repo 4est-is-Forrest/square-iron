@@ -2,7 +2,9 @@
 title: Spawn Driver (Function)
 layout: docs
 weight: 1
+
 ---
+A function used to authenticate with ServiceNow instances via Chromedriver and ensure respective instance cookies are saved locally.
 
 ## Walk Through
 
@@ -45,17 +47,17 @@ Chromedriver will create the profile directory if one does not already exist.
 
 **Arguments:**
 
-- Instances: list of one or more expected ServiceNow instances; Default: The most used instance
-- Credentials: (optional) dictionary of credentials for instances other than 'instance1.' Default is none. Dictionary key nomenclature is simply: instance_usr/pwd
-- Persist: Whether the Driver should be kept open after completed login/logins; Default is True
+* Instances: list of one or more expected ServiceNow instances; Default: The most used instance
+* Credentials: (optional) dictionary of credentials for instances other than 'instance1.' Default is none. Dictionary key nomenclature is simply: instance_usr/pwd
+* Persist: Whether the Driver should be kept open after completed login/logins; Default is True
 
 **Functionality:**
 
 The function is tailored for three specific instances with differentiating login methods and landing pages. Other instances can be added with relative ease, needing only to define the login process and whether the instance requires username and password credentials.
 
-- Instance1: PKI card login with pin (most used)
-- Instance2: Username & Password
-- Instance3: Username & Password
+* Instance1: PKI card login with pin (most used)
+* Instance2: Username & Password
+* Instance3: Username & Password
 
 </hr>
 
