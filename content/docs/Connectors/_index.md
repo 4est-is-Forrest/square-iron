@@ -9,7 +9,7 @@ An essential module I use to simplify authentication with different ServiceNow i
 
 ## Summary
 
-Two Functions:
+Comprised of two functions:
 
 * The Driver method minimizes login effort and, after success, asserts cookies are saved locally, usually in order for a Session to import them.
 * The Session method tries to import good cookies from the Driver, failing that, the user's Chrome browser. Optionally, a Driver launches temporarily to perform a login and closes once good cookies are available for the Session.
