@@ -45,7 +45,7 @@ _Not covered in Doc: General Context_
 
 **Note:** I refer to a browser writing cookies locally as 'cookies persisting.'
 
-The third function exists specifically to address this.
+The third function of this module specifically addresses this factor.
 
 Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing to its 'Cookies' file. After a login is successful, a Session queries the instance's JSON service repeatedly until a status code 200.
 
