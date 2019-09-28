@@ -26,6 +26,4 @@ With help of the author's '.bat' file held in Px-Proxy's repository, I created a
 
 #### _ServiceNow JSON Web Service_
 
-When I discovered the existence of this service, I was crestfallen to learn that I had no valid username or password to authenticate my requests.
-
-In my testing of the service, I noticed I was able to view raw JSON in my browser as long as I had authenticated with the browser recently. I theorized this would translate to Request's Session class and I was right. By importing existing cookies from browsers, Python can utilize the service through requests alone.
+For quite sometime, I believed ServiceNow's GUI was the only way to interact with its data. I came to this conclusion primarily because I tried and was unable to access the REST API  Because of this, arly forms of my automation tools solely 
