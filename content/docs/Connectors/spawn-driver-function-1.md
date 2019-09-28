@@ -49,33 +49,25 @@ Unlike the Spawn Driver function, credentials are not returned simply because if
     CHROME_OPTIONS = webdriver.ChromeOptions()
     CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
 
-#### **_Local Function: wait =_** WebDriverWait
+#### **_Local Constants_**
 
     s = requests.Session()
     s.proxies['https'] = PROXY
     domain = '{}.service-now.com'.format(inst)
     url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
 
-Here, local 
+The new Session's proxy settings are set to the Px-Proxy (See Doc: 'General Context'). Local constants are set appropriately. 
 
-#### **_Credential Handling_**
+#### **_Regular Chrome's Cookies_**
 
-    for inst in instances:
-        if inst in ['instance2','instance3']:
-            try:
-                usr = credentials['{}_usr'.format(inst)]
-                pwd = credentials['{}_pwd'.format(inst)]
-            except:
-                usr = input('Username ({}): '.format(inst))
-                credentials['{}_usr'.format(inst)] = usr
-                pwd = getpass('Password ({}): '.format(inst))
-                credentials['{}_pwd'.format(inst)] = pwd
+    cookies = browser_cookie3.chrome(domain_name=domain)
+    for cookie in cookies:
+        s.cookies.set(cookie.name, cookie.value)
+    r = s.get(url)
+    if r.status_code == 200:
+        return s
 
-Instances requiring a username and password to login are defined in this loop's list. Additional instances can simply be added if desired. This block determines whether credentials have been supplied and, if not, collects them appropriately.
-
-Along with making sure credentials are available/collected, it does that before Chromedriver is opened, ensuring the credential prompt is not covered by the Driver window.
-
-A big reason for collecting the credentials in the first place is to return them for scripts and tools meant to run for extended periods of time. This way, should the session expire, logging in again can be automated.
+Cookies are extracted using the 'browser-cookie' library (See Parent Doc: 
 
 #### **_Test Login State_**
 
