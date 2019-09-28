@@ -41,6 +41,6 @@ A Webdriver that runs concurrently with a Session is often necessary for many of
 
 Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing to its 'Cookies' file. After a successful login, a Session queries the instance's JSON service repeatedly until a status code 200. 
 
-When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time.
+When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time. I eventually noticed that the cookies were almost always bad if the Driver was immediately closed after login, implying a timing interval. Thankfully, a simple Google search gave me a definitive culprit.
 
 When only a Session is needed, cookies from the user's Chrome browser will also be considered a potential cookie source. The Session method has an optional login action, using a Driver for logging in and closing it only after the cookies have been saved locally.
