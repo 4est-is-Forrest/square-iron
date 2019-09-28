@@ -4,7 +4,7 @@ layout: docs
 weight: 1
 
 ---
-**spawn_driver(instances=\['instance1'\],credentials={},persist=True)**
+spawn_driver(instances=\['instance1'\],credentials={},persist=True)
 
 ## Overview
 
