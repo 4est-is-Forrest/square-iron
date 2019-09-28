@@ -34,7 +34,7 @@ Thus, a Selenium Webdriver seemed to be the only automation option available for
 
 **_JSON Web Service Authentication_**
 
-I eventually discovered the JSON Web Service was perfectly accessible so long as the HTTP requests were accompanied with valid authentication cookies for the instance. This lead to many of my tools and scripts being completely rewritten to utilize this method as much as possible.
+I eventually discovered the JSON Web Service was perfectly accessible so long as the HTTP requests were accompanied with valid authentication cookies for their respective ServiceNow instance. This lead to many of my tools and scripts being completely rewritten to utilize this method as much as possible.
 
 **_Selenium Webdriver & JSON Web Service Together_**
 
