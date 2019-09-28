@@ -92,11 +92,11 @@ A big reason for collecting the credentials in the first place is to return them
     else:
         logins = instances
 
-If the Driver's 'Cookies' file exists, use a Session to import them and perform a JSON query. Any return code other than 200 adds the instance to the 'logins' list. If the 'Cookies' file does not exist, naturally, all instances are added to 'logins' list.
+If the file 'Cookies' exists, a Session object imports cookies associated with the provided instance (can be empty) and performs a lightweight JSON query. Any return code other than 200 adds the instance to the 'logins' list. If the 'Cookies' file does not exist, naturally, all instances are added to 'logins' list.
 
-The Session offers a quick way to test whether cookies have expired and it will be used very often in this module.
+The Session query offers a quick way to test the state of cookies.
 
-Aside from saving time with logging in, knowing login states ahead of time simplifies what exactly the Driver should expect, thus handling potential redirects is no longer necessary.
+Aside from saving time with logging in, knowing login states ahead of time helps in defining what the Driver should expect and what redirects to anticipate. 
 
 **_Instance1's Annoying Redirect_**
 
@@ -138,7 +138,7 @@ Only erasing the domain's cookies does the redirect cease. Since 'instance1' is 
             driver.quit()
             return credentials
 
-Each instance has unique login portals. Because 'instance1' requires a PKI card login and its cookies last quite a while, it's simpler for the user to handle the login, hence the 120 second timeout to do so.
+Each instance has unique login portals. Because 'instance1' requires a PKI card login and its cookies last quite a while, it's simpler for the user and driver to negotiate authentication, hence the 120 second timeout.
 
 Finally, by default the driver remains open but can be closed for when a Session simply needs good cookies.
 
