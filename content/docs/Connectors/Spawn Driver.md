@@ -4,9 +4,9 @@ layout: docs
 weight: 1
 
 ---
-    def spawn_driver(instances=['instance1'],credentials={},persist=True):
-
 ## Overview
+
+**spawn_driver(instances=\['instance1'\],credentials={},persist=True)**
 
 #### **_Arguments:_**
 
