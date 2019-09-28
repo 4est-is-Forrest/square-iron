@@ -5,8 +5,6 @@ weight:
 subtitle: ''
 
 ---
-_spawn_session(inst='instance1', login_action=False,credentials={})_
-
 ## Overview
 
 An essential module I use to simplify authentication with different ServiceNow instances in order to use the instances' JSON Web Services (Session) and/or navigate their GUI's (Webdriver).
@@ -21,7 +19,9 @@ Comprised of three functions:
 
 <hr />
 
-## Details
+## Context Summary
+
+_See Doc: General Context for more details on the following._
 
 #### **_Environment_**
 
