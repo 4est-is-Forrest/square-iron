@@ -8,11 +8,13 @@ _spawn_session(inst='instance1',login_action=False,credentials={})_
 
 ## Overview
 
+Tries to import good cookies from the Driver, failing that, the user's Chrome browser. Optionally, a Driver launches temporarily to perform a login and closes once good cookies are available for the Session to import.
+
 #### **_Arguments:_**
 
-* Instances: list of one or more expected ServiceNow instances; Default: The most used instance: 'instance1'
-* Credentials: (optional) dictionary of credentials for instances other than 'instance1.' Default is none. Dictionary key nomenclature is simply: instance_usr/pwd
-* Persist: Whether the Driver should be kept open after completed login/logins; Default is True
+* Instance: Unlike 'spawn_driver,' only one instance can be passed
+* Login Action (optional): If True, a temporary driver opens for the purpose of logging into the relevant instance; closed once cookies are saved
+* Credentials (optional): Typically used 
 
 #### **_Functionality:_**
 
