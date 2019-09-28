@@ -5,7 +5,7 @@ weight:
 subtitle: ''
 
 ---
-_spawn_session(inst='atosnam',login_action=False,credentials={})_
+_spawn_session(inst='instance1', login_action=False,credentials={})_
 
 ## Overview
 
