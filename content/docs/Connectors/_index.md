@@ -4,7 +4,9 @@ layout: docs
 weight: 
 
 ---
-## Purpose
+An essential module I use to simplify authentication with ServiceNow, through a Selenium WebDriver and/or Requests Session.
+
+## Summary
 
 * Two functions to connect to various ServiceNow instances through a Selenium WebDriver or a Requests Session.
 * The Driver method minimizes login effort and after success, asserts cookies are saved locally, usually for a Session to import them.
