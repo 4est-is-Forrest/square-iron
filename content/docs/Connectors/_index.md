@@ -2,7 +2,7 @@
 title: Connectors (Module)
 layout: docs
 weight: 
-subtitle: heck
+subtitle: ''
 
 ---
 An essential module I use to simplify authentication with different ServiceNow instances in order to use the JSON Web Service (Session) and/or navigate the GUI (Webdriver).
