@@ -138,7 +138,7 @@ Only erasing the domain's cookies does the redirect cease. Since 'instance1' is 
             driver.quit()
             return credentials
 
-Each instance has unique login portals. Because 'instance1' requires a PKI card login and its cookies last quite a while, it's simpler for the user and driver to negotiate authentication, hence the 120 second timeout.
+Each instance has unique login portals. Because 'instance1' requires a PKI card login and its cookies last quite a while, it's simpler for the user and driver to handle the authentication process themselves, hence the 120 second timeout.
 
 Finally, by default the driver remains open but can be closed for when a Session simply needs good cookies. Regardless of whether it closes or not, no action is taken until the cookies have been saved to file.
 
