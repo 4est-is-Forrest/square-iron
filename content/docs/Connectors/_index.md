@@ -46,4 +46,4 @@ When I was unaware of the 30 second interval, I was very confused why Sessions w
 
 ##### **_Ultimately_**
 
-A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this same environment, and this module made creating and managing these connections much simpler.
+A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this same environment, and this module makes creating and managing these connections much simpler and more readily available.
