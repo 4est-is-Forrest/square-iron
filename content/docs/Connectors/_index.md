@@ -6,14 +6,14 @@ weight:
 ---
 ## Purpose
 
-- Functions to connect to various ServiceNow instances through a Selenium WebDriver object or a Requests Session.
-- The Driver method minimizes login effort and after success, asserts cookies are saved locally.
-- The Session method tries to import good cookies from various locations, optional login action
+* Two functions to connect to various ServiceNow instances through a Selenium WebDriver or a Requests Session.
+* The Driver method minimizes login effort and after success, asserts cookies are saved locally, usually for a Session to import them.
+* The Session method tries to import good cookies from the Driver and the user's Chrome browser. Optional 'login action' launches a temporary Driver until good cookies are saved.
 
 ## Details
 
-This is a module specific to the work environment and most other scripts/tools depend on it. Chromedriver is the only Webdriver ever used in my code.
+This is a module specific to my help desk environment and most other scripts/tools for said environment depend on it. Chromedriver is my preferred Webdriver.
 
-The general idea is to have reliable methods to initiate authenticated Sessions and/or Driver sessions with three different ServiceNow instances. It asserts that cookies are saved locally so that subsequent runs do not require login. Sessions can also import these cookies in order to communicate with the respective instance's JSON web service. Sessions also handle checking the validation of any existing cookies.
+The general idea is to have reliable methods to initiate authenticated Sessions and/or Driver sessions with three different ServiceNow instances (while making it simple to include more). It asserts that cookies are saved locally so that subsequent runs do not require login action but more importantly so Sessions can also import these cookies in order to communicate with the respective instance's JSON web service. Sessions also handle checking the validation of any existing cookies.
 
 When only a Session is needed, cookies from the user's Chrome browser will also be considered a potential cookie source. The Session method also has an optional login action, using a Driver for logging in and closing it only after the cookies have been saved locally (referred to as persisting in the code).
