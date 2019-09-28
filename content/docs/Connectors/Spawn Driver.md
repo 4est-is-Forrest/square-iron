@@ -8,6 +8,8 @@ _spawn_driver(instances=\['instance1'\],credentials={},persist=True)_
 
 ## Overview
 
+Minimizes login effort and, after successful login, asserts cookies are saved locally, usually in order for a Session to import them.
+
 #### **_Arguments:_**
 
 * Instances: list of one or more expected ServiceNow instances; Default: The most used instance: 'instance1'
