@@ -19,7 +19,7 @@ Comprised of three functions:
 
     spawn_session(inst='instance1',login_action=False,credentials={})
 
-* A 'cookie persist' method, primarily used by the Driver method, to repeatedly test and wait until expected authentication cookies have been saved to the Driver's 'Cookies' file. Details on this can be found below.
+* A 'cookie persist' method, primarily used by the Driver method, to repeatedly test and wait until expected authentication cookies have been saved to the Driver's 'Cookies' file. Details on this method can be found below.
 
     driver_cookie_persist(inst='instance1')
 
