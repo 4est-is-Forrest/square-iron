@@ -23,7 +23,7 @@ This is a module specific to a help desk environment and most other scripts/tool
 
 Simply due to policy, it was not possible for simple authentication with ServiceNow's various web services to be enabled for anyone beyond SNOW admins and developers. With the help of cookies however, access to the JSON Web Service via Requests is possible. This is true for all instances of ServiceNow utilized in this environment.
 
-**_Then why Driver?_**
+**_Then why a Driver too?_**
 
 The JSON web service has three important limitations:
 
