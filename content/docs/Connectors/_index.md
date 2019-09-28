@@ -31,10 +31,6 @@ The JSON web service has three important limitations:
 2. Attaching items to ServiceNow records is not possible via JSON yet often necessary
 3. ServiceNow records can not be changed to a resolved/closed state outside of the GUI for 'itil' users (I theorize) 
 
-**_Ultimately_**
-
-A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this same environment, and this module made creating and managing these connections much simpler.
-
 **_Cookie persistence_**
 
 **Note:** I refer to a browser writing cookies locally as 'cookies persisting.'
@@ -42,3 +38,7 @@ A Webdriver that runs concurrently with a Session is often necessary for many of
 Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing to its 'Cookies' file. After a successful login, a Session queries the instance's JSON service repeatedly until a status code 200. 
 
 When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time. I eventually noticed that the cookies were almost always bad if the Driver was immediately closed after login, implying some timing issue. Thankfully, a simple Google search revealed Chrome's 30-second interval and adjusted the module accordingly.
+
+**_Ultimately_**
+
+A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this same environment, and this module made creating and managing these connections much simpler.
