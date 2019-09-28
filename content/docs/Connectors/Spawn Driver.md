@@ -4,7 +4,6 @@ layout: docs
 weight: 1
 
 ---
-
 #### _Function: Spawn Driver_
 
     def spawn_driver(instances=['instance1'],credentials={},persist=True):
@@ -22,6 +21,8 @@ The function is tailored for three specific instances with differentiating login
 * Instance1: PKI card login with pin (most used)
 * Instance2: Username & Password
 * Instance3: Username & Password
+
+**_Global Constants & Imports_**
 
 </hr>
 
