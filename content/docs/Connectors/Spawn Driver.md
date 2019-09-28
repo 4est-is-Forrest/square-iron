@@ -142,4 +142,4 @@ Each instance has unique login portals. Because 'instance1' requires a PKI card 
 
 Finally, by default the driver remains open but can be closed for when a Session simply needs good cookies. Regardless of whether it closes or not, no action is taken until the cookies have been saved to file.
 
-Again, returning credentials is useful for when sustained login over long periods of time is necessary and credentials are not defined ahead of time. 'Instance1' is an exception of course.
+Again, returning credentials is useful for when sustained login over long periods of time is necessary and credentials are not defined ahead of time. 'Instance1' is the exception to this, however.
