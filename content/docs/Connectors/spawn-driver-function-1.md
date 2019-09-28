@@ -67,25 +67,17 @@ The new Session's proxy settings are set to the Px-Proxy (See Doc: 'General Cont
     if r.status_code == 200:
         return s
 
-Cookies are extracted using the 'browser-cookie' library (See Parent Doc: 
+Cookies are extracted using the 'browser-cookie' library (See Doc: 'Connectors (Module)'). A simple GET query is sent and if the response code is 200, stop and return the Session, otherwise, next.
 
-#### **_Test Login State_**
+#### **_Chromedriver's Cookies_**
 
-    if os.path.exists(COOKIE_FILE): # If the driver Cookie file exists (indicating a first run or not), import the cookies and perform a SNOW Get
-        s = requests.Session()
-        s.proxies['https'] = PROXY
-        logins = []
-        for inst in instances:
-            domain = '{}.service-now.com'.format(inst)
-            url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
-            cookies = browser_cookie3.chrome(COOKIE_FILE, domain)
-            for cookie in cookies:
-                s.cookies.set(cookie.name, cookie.value)
-            r = s.get(url)
-            if r.status_code != 200:
-                logins.append(inst)
-    else:
-        logins = instances
+    if os.path.exists(COOKIE_FILE):
+        cookies = browser_cookie3.chrome(COOKIE_FILE,domain_name=domain)
+        for cookie in cookies:
+            s.cookies.set(cookie.name, cookie.value)
+        r = s.get(url)
+        if r.status_code == 200:
+            return s
 
 If the file 'Cookies' exists, a Session object imports cookies associated with the provided instance (can be empty) and performs a lightweight JSON query. Any return code other than 200 adds the instance to the 'logins' list. If the 'Cookies' file does not exist, naturally, all instances are added to 'logins' list.
 
