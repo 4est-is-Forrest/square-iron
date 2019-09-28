@@ -4,7 +4,7 @@ title = "Constants & Imports"
 weight = 1
 
 +++
-Additional information regarding imports and constants. 
+Additional information regarding imports and constants.
 
 #### _Imports_
 
