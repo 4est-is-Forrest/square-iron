@@ -8,7 +8,7 @@ weight: 1
 
 #### **_Arguments:_**
 
-* Instances: list of one or more expected ServiceNow instances; Default: The most used instance
+* Instances: list of one or more expected ServiceNow instances; Default: The most used instance: 'instance1'
 * Credentials: (optional) dictionary of credentials for instances other than 'instance1.' Default is none. Dictionary key nomenclature is simply: instance_usr/pwd
 * Persist: Whether the Driver should be kept open after completed login/logins; Default is True
 
