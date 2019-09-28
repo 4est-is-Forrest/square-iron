@@ -15,15 +15,15 @@ Two Functions:
 
 ## Details
 
-**_Environment_**
+##### **_Environment_**
 
 This is a module specific to a help desk environment and most other scripts/tools for said environment depend on it. Chromedriver is my preferred Webdriver.
 
-**_Why JSON?_**
+##### **_Why JSON?_**
 
 Simply due to policy, it was not possible for simple authentication with ServiceNow's various web services to be enabled for anyone beyond SNOW admins and developers. With the help of cookies however, access to the JSON Web Service via Requests is possible. This is true for all instances of ServiceNow utilized in this environment.
 
-**_Then why a Driver too?_**
+##### **_Then why a Driver too?_**
 
 The JSON web service has three important limitations:
 
@@ -31,7 +31,7 @@ The JSON web service has three important limitations:
 2. Attaching items to ServiceNow records is not possible via JSON yet often necessary
 3. ServiceNow records can not be changed to a resolved/closed state outside of the GUI for 'itil' users (I theorize) 
 
-**_Cookie persistence_**
+##### **_Cookie persistence_**
 
 **Note:** I refer to a browser writing cookies locally as 'cookies persisting.'
 
@@ -39,6 +39,6 @@ Cookies persistence must be asserted due to Google Chrome's 30-second intervals 
 
 When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time. I eventually noticed that the cookies were almost always bad if the Driver was immediately closed after login, implying some timing issue. Thankfully, a simple Google search revealed Chrome's 30-second interval and adjusted the module accordingly.
 
-**_Ultimately_**
+##### **_Ultimately_**
 
 A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this same environment, and this module made creating and managing these connections much simpler.
