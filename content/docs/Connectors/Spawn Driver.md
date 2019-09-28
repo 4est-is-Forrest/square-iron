@@ -4,17 +4,15 @@ layout: docs
 weight: 1
 
 ---
-#### _Function: Spawn Driver_
-
     def spawn_driver(instances=['instance1'],credentials={},persist=True):
 
-**Arguments:**
+#### **_Arguments:_**
 
 * Instances: list of one or more expected ServiceNow instances; Default: The most used instance
 * Credentials: (optional) dictionary of credentials for instances other than 'instance1.' Default is none. Dictionary key nomenclature is simply: instance_usr/pwd
 * Persist: Whether the Driver should be kept open after completed login/logins; Default is True
 
-**Functionality:**
+#### **_Functionality:_**
 
 The function is tailored for three specific instances with differentiating login methods and landing pages. Other instances can be added with relative ease, needing only to define the login process and whether the instance requires username and password credentials.
 
@@ -22,7 +20,7 @@ The function is tailored for three specific instances with differentiating login
 * Instance2: Username & Password
 * Instance3: Username & Password
 
-**_Global Constants & Imports_**
+#### **_Global Constants & Imports_**
 
 </hr>
 
