@@ -39,7 +39,9 @@ The JSON web service has three important limitations:
 2. Attaching items to ServiceNow records is not possible via JSON yet often necessary
 3. ServiceNow records can not be changed to a resolved/closed state outside of the GUI for 'itil' users (I theorize)
 
-#### **_Cookie persistence_**
+## **Cookie persistence**
+
+_Not covered in Doc: General Context_
 
 **Note:** I refer to a browser writing cookies locally as 'cookies persisting.'
 
