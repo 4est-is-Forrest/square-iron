@@ -18,11 +18,7 @@ Tries to import good cookies from the Driver, failing that, the user's Chrome br
 
 #### **_Functionality:_**
 
-The function is tailored for three specific instances with differentiating login methods and landing pages. Other instances can be added with relative ease, needing only to define the login process and whether the instance requires username and password credentials.
-
-* Instance1: PKI card login with pin (most used)
-* Instance2: Username & Password
-* Instance3: Username & Password
+This function uses a series of Sessions to first test the user's regular Chrome cookies, then the Driver's cookies, and returns an authenticated Session with necessary proxy configuration as soon as good cookies are found. Credentials can be set to make the 'login_action' completely automatic. That is, Spawn Driver is called with the persist argument set to False.
 
 </hr>
 
