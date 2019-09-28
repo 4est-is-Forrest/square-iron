@@ -21,7 +21,7 @@ A function used to authenticate with ServiceNow instances via Chromedriver and e
     from getpass import getpass
     import time
 
-The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously) providing two important capabilities I required. Firstly, it offered a way to validate and test cookies with the help of Sessions and secondly, also offered a way to import regular Chrome cookies, which is mostly just a convenience.
+The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously) providing two important capabilities I required. Firstly, it offered a way to validate and test cookies with the help of Sessions and secondly, importing regular Chrome cookies for Sessions became possible. The latter is mostly just a nice convenience.
 
 #### _Constants_
 
@@ -33,7 +33,7 @@ The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library i
     CHROME_OPTIONS = webdriver.ChromeOptions()
     CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
 
-Px-proxy is necessary for Sessions to play nice with an NTLM Proxy. See document 'General Context' for details on both.
+[Px-proxy](https://github.com/genotrance/px) is necessary for Sessions to play nice with an NTLM Proxy. See document 'General Context' for details on both.
 
 There is a separate script for new Python installations that ensures 'resources' exists in the script user's home path (among other things). Essentially a uniform location to house multiple assets for multiple tools/scripts.
 
