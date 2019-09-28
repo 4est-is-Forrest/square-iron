@@ -1,7 +1,7 @@
 ---
 title: Spawn Driver (Function)
 layout: docs
-weight:1
+weight: 1
 ---
 
 ## Walk Through
