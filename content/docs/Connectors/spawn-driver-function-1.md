@@ -14,7 +14,7 @@ Tries to import good cookies from the Driver, failing that, the user's Chrome br
 
 * Instance: Unlike 'spawn_driver,' only one instance can be passed
 * Login Action (optional): If True, a temporary driver opens for the purpose of logging into the relevant instance; closed once cookies are saved
-* Credentials (optional): Typically used 
+* Credentials (optional): Primarily used when 'login_action' is True.
 
 #### **_Functionality:_**
 
