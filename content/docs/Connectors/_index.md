@@ -33,7 +33,7 @@ A Webdriver that runs concurrently with a Session is often necessary for many of
 
 ## Details
 
-This is a module specific to my help desk environment and most other scripts/tools for said environment depend on it. Chromedriver is my preferred Webdriver.
+This is a module specific to a help desk environment and most other scripts/tools for said environment depend on it. Chromedriver is my preferred Webdriver.
 
 The general idea is to have reliable methods to initiate authenticated Sessions and/or Driver sessions with three different ServiceNow instances (while making it simple to add more). It also asserts that cookies are saved locally so that subsequent runs do not require a login action and, more importantly, so Sessions can also import these cookies in order to access the instance's JSON web service.
 
