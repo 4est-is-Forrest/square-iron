@@ -28,10 +28,14 @@ With help of the author's '.bat' file held in Px-Proxy's repository, I created a
 
 For quite sometime, I believed ServiceNow's GUI was the only way to interact with its data, mostly because the first service I requested access to was the REST API, in which I was denied access. Naturally, anyone beyond ServiceNow admins and developers would be denied simple authentication access to any of ServiceNow's multiple web services.
 
+**_Initially All Selenium_**
+
 Thus, a Selenium Webdriver seemed to be the only automation option available for this environment. Tools and scripts using this method were certainly crude and error-prone at first, but they did become more refined as I gained experience, eventually interacting with ServiceNow mostly through JavaScript. Still, I never felt satisfied using this method and fervently searched for alternatives when I had the time.
+
+**_JSON Web Service Authentication_**
 
 I eventually discovered the JSON Web Service was perfectly accessible so long as the HTTP requests were accompanied with valid authentication cookies for the instance. This lead to many of my tools and scripts being completely rewritten to utilize this method as much as possible.
 
-The Webdriver is still necessary due to the JSON Service having three limitations. First, there is no way to negotiate authentication in this particular environment. Second, attaching files to ServiceNow records is not possible via JSON. And third, it is not possible to change a record's state to anything synonymous with closed or resolved.
+**_Selenium Webdriver & JSON Web Service Together_**
 
-Simply due to policy, it was not possible for simple authentication with ServiceNow's various web services to be enabled for anyone beyond SNOW admins and developers. With the help of cookies however, access to the JSON Web Service via Requests is possible. This is true for all instances of ServiceNow utilized in this environment.
+The Webdriver is still necessary due to the JSON Service having three limitations. First, there is no way to negotiate authentication in this particular environment. Second, attaching files to ServiceNow records is not possible via JSON. And third, it is not possible to change a record's state to anything synonymous with closed or resolved. A Driver is used to handle these three cases but the vast majority of my code utilizes the JSON Web Service.
