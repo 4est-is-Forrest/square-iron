@@ -13,15 +13,13 @@ Comprised of three functions:
 
 * A Driver method that minimizes login effort and, after success, asserts cookies are saved locally, usually in order for a Session to import them.
 
-    spawn_driver(instances=['instance1'],credentials={},persist=True)
-
+      spawn_driver(instances=['instance1'],credentials={},persist=True)
 * A Session method that tries to import good cookies from the Driver, failing that, the user's Chrome browser. Optionally, a Driver launches temporarily to perform a login and closes once good cookies are available for the Session.
 
-    spawn_session(inst='instance1',login_action=False,credentials={})
-
+      spawn_session(inst='instance1',login_action=False,credentials={})
 * A 'cookie persist' method, primarily used by the Driver method, to repeatedly test and wait until expected authentication cookies have been saved to the Driver's 'Cookies' file. Details on this method can be found below.
 
-    driver_cookie_persist(inst='instance1')
+      driver_cookie_persist(inst='instance1')
 
 ## Details
 
