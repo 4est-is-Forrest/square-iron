@@ -55,7 +55,7 @@ The function is tailored for three specific instances with differentiating login
 
 This function is just a short hand for the 'WebDriverWait' method, my preferred method in selecting HTML elements whenever Selenium is utilized. It looks neater and is convenient to use in the console.
 
-**_Credential Handling_**
+#### **_Credential Handling_**
 
     for inst in instances:
         if inst in ['instance2','instance3']:
@@ -74,7 +74,7 @@ Along with making sure credentials are available/collected, it does that before 
 
 A big reason for collecting the credentials in the first place is to return them for scripts and tools meant to run for extended periods of time. This way, should the session expire, logging in again can be automated.
 
-**_Test Login State_**
+#### **_Test Login State_**
 
     if os.path.exists(COOKIE_FILE): # If the driver Cookie file exists (indicating a first run or not), import the cookies and perform a SNOW Get
         s = requests.Session()
@@ -98,7 +98,7 @@ The Session query offers a quick way to test the state of cookies.
 
 Aside from saving time with logging in, knowing login states ahead of time helps in defining what the Driver should expect and what redirects to anticipate.
 
-**_Instance1's Annoying Redirect_**
+#### **_Instance1's Annoying Redirect_**
 
        if 'instance1' in logins:
         try:
@@ -110,7 +110,7 @@ The 'Cookies' file is erased if 'instance1' login is required. This is due to th
 
 Only erasing the domain's cookies does the redirect cease. Since 'instance1' is the most used and has cookies with the longest lifetime, it's safe to assume all other instance cookies have also expired.
 
-**_Execute logins; return Driver and/or Credentials_**
+#### **_Execute logins; return Driver and/or Credentials_**
 
     driver = webdriver.Chrome(CHROME_DRIVER,options=CHROME_OPTIONS)
     for inst in logins:
