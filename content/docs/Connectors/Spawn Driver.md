@@ -6,6 +6,8 @@ weight: 1
 ---
     def spawn_driver(instances=['instance1'],credentials={},persist=True):
 
+## Overview
+
 #### **_Arguments:_**
 
 * Instances: list of one or more expected ServiceNow instances; Default: The most used instance: 'instance1'
@@ -19,6 +21,10 @@ The function is tailored for three specific instances with differentiating login
 * Instance1: PKI card login with pin (most used)
 * Instance2: Username & Password
 * Instance3: Username & Password
+
+</hr>
+
+## Breakdown
 
 #### **_Global Constants & Imports_**
 
@@ -41,9 +47,7 @@ The function is tailored for three specific instances with differentiating login
     CHROME_OPTIONS = webdriver.ChromeOptions()
     CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
 
-</hr>
-
-**_Local Functions_**
+**_Local Function_**
 
     def wait(x,y,z):
         els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
@@ -68,7 +72,7 @@ Instances requiring a username and password to login are defined in this loop's 
 
 Along with making sure credentials are available/collected, it does that before Chromedriver is opened, ensuring the credential prompt is not covered by the Driver window.
 
-A big reason for collecting the credentials in the first place is to return them for scripts and tools meant to run for extended periods of time. This way, should the session expire without the user present, logging in again can be automatic.
+A big reason for collecting the credentials in the first place is to return them for scripts and tools meant to run for extended periods of time. This way, should the session expire, logging in again can be automated.
 
 **_Test Login State_**
 
