@@ -17,6 +17,8 @@ Comprised of three functions:
 * **A Session method** that tries to import good cookies from the Driver, failing that, the user's Chrome browser. Optionally, a Driver launches temporarily to perform a login and closes once good cookies are available for the Session.
 * **A 'cookie persist' method**, primarily used by the Driver method, to repeatedly test and wait until expected authentication cookies have been saved to the Driver's 'Cookies' file. Details on this method can be found below.
 
+A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this environment, and this module makes creating and managing these connections simple, even from the console.
+
 <hr />
 
 ## Context Summary
@@ -50,7 +52,3 @@ The third function of this module specifically addresses this factor.
 Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing to its 'Cookies' file. After a login is successful, a Session queries the instance's JSON service repeatedly until a status code 200.
 
 When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time. I eventually noticed that the local cookies were almost always bad if the Driver was immediately closed after login, implying some timing issue. Thankfully, a simple Google search revealed Chrome's 30-second interval and I adjusted the module accordingly.
-
-**_Ultimately_**
-
-A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this same environment, and this module makes creating and managing these connections much simpler and readily available.
