@@ -11,7 +11,7 @@ An essential module I use to simplify authentication with different ServiceNow i
 
 Comprised of three functions:
 
-* **A Driver method** that minimizes login effort and, after success, asserts cookies are saved locally, usually in order for a Session to import them.
+* **A Driver method** that minimizes login effort and, after successful login, asserts cookies are saved locally, usually in order for a Session to import them.
 * **A Session method** that tries to import good cookies from the Driver, failing that, the user's Chrome browser. Optionally, a Driver launches temporarily to perform a login and closes once good cookies are available for the Session.
 * **A 'cookie persist' method**, primarily used by the Driver method, to repeatedly test and wait until expected authentication cookies have been saved to the Driver's 'Cookies' file. Details on this method can be found below.
 
@@ -43,7 +43,7 @@ The third function exists specifically to address this.
 
 Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing to its 'Cookies' file. After a login is successful, a Session queries the instance's JSON service repeatedly until a status code 200.
 
-When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time. I eventually noticed that the local cookies were almost always bad if the Driver was immediately closed after login, implying some timing issue. Thankfully, a simple Google search revealed Chrome's 30-second interval and I adjusted the module accordingly. 
+When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time. I eventually noticed that the local cookies were almost always bad if the Driver was immediately closed after login, implying some timing issue. Thankfully, a simple Google search revealed Chrome's 30-second interval and I adjusted the module accordingly.
 
 **_Ultimately_**
 
