@@ -5,6 +5,10 @@ weight:
 subtitle: ''
 
 ---
+_spawn_session(inst='atosnam',login_action=False,credentials={})_
+
+## Overview
+
 An essential module I use to simplify authentication with different ServiceNow instances in order to use the instances' JSON Web Services (Session) and/or navigate their GUI's (Webdriver).
 
 ## Summary
