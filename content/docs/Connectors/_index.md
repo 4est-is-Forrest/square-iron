@@ -15,7 +15,7 @@ Comprised of three functions:
 * **A Session method** that tries to import good cookies from the Driver, failing that, the user's Chrome browser. Optionally, a Driver launches temporarily to perform a login and closes once good cookies are available for the Session.
 * **A 'cookie persist' method**, primarily used by the Driver method, to repeatedly test and wait until expected authentication cookies have been saved to the Driver's 'Cookies' file. Details on this method can be found below.
 
-</hr>
+<hr />
 
 ## Details
 
