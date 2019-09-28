@@ -81,19 +81,15 @@ If no cookies are found, 'None' is returned which still results in the function 
         if r.status_code == 200:
             return s
 
-If the file 'Cookies' exists, the Session imports cookies associated with the provided instance (can be empty) and performs a lightweight JSON query. Any return code other than 200 adds the instance to the 'logins' list. If the 'Cookies' file does not exist, naturally, all instances are added to 'logins' list.
-
-The Session query offers a quick way to test the state of cookies.
-
-Aside from saving time with logging in, knowing login states ahead of time helps in defining what the Driver should expect and what redirects to anticipate.
+Cookies associated with the passed instance are extracted using the 'browser-cookie' library (See Doc: 'Connectors (Module)') from the Driver's 'Cookies' file, assuming it exists. Another query is performed and any return code other than 200 results in the function proceeding to the next step.
 
 #### **_Instance1's Annoying Redirect_**
 
-       if 'instance1' in logins:
-        try:
-            os.remove(COOKIE_FILE)
-        except:
-            pass
+    if login_action:
+        spawn_driver(instances=[inst],persist=False,credentials=credentials)
+        return spawn_session(inst=inst,credentials=credentials)
+    else:
+        return None
 
 The 'Cookies' file is erased if 'instance1' login is required. This is due to this particular instance's tendency to sometimes redirect those with expired cookies to a 'successful logged out page' regardless of URL being accessed (including the login URL).
 
