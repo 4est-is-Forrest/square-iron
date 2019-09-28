@@ -21,7 +21,7 @@ A function used to authenticate with ServiceNow instances via Chromedriver and e
     from getpass import getpass
     import time
 
-The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously), but it specifically gave me two important capabilities. It offered a way to assert that cookies have been saved locally (Chrome writes cookies in 30 second intervals) and also offered a way to import my actual browser's cookies, which is mostly just a convenience.
+The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously) providing two important capabilities I required. Firstly, it offered a way to validate and test cookies with the help of Sessions and secondly, also offered a way to import regular Chrome cookies, which is mostly just a convenience.
 
 #### _Constants_
 
