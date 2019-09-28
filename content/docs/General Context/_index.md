@@ -1,20 +1,24 @@
 ---
 title: General Context
-weight:
+weight: 
 template: docs
+
 ---
+## Environment
 
-## Technical Environment
+Most of these tools and scripts are meant to be run by any individual in a help desk environment. Meaning, they can be run reliably across a team regardless of the what local machine they are used on. 
 
-Most of these tools and scripts are meant to be run by several individuals. Most have the capacity to be used across a team regardless of environment.with the capacity to be run across the team as seamlessly as possible without much user interaction aside from simple binary questions.
+They must also be simple to use due to a global lack of coding knowledge among the intended users.
 
-The OS environment is Windows 7/10 which isn't much of a factor.
+The OS environment is a mix of Windows 7 and Windows 10, with Windows 10 increasingly becoming the norm/required.
 
 ## Necessary Workarounds
 
-#### _Proxy Issues_
+#### _Proxy Issues: Px-Proxy Solution_
 
-The networking environment is typical for any large organization but I ran into fatal issues using Pip and Requests due to our traffic being required to pass through an NTLM proxy.
+Requests Sessions and Pip requests, by themselves, are unable to negotiate authentication with the environment's NTLM proxy, thus they fail. 
+
+The software, [CNTLM](http://cntlm.sourceforge.net/), offered a method to address this by acting as an intermediary proxy that handled the authentication. So long as the configured credentials for CNTLM were kept up to date, Pip and Requests could be pointed at it and reach their destinations.
 
 Thankfully, I found a permanent solution utilizing [Px-Proxy](https://github.com/genotrance/px "Px-Proxy") in executable form as a Windows Service (start up). Utilizing PX's white list configuration, I gained the capability to use Pip and Requests without constant maintenance of a different service (CNTLM) on individual machines.
 
