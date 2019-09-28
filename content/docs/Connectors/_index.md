@@ -4,7 +4,7 @@ layout: docs
 weight: 
 
 ---
-An essential module I use to simplify authentication with different ServiceNow instances.
+An essential module I use to simplify authentication with different ServiceNow instances through a Requests Session and/or Selenium Webdriver.
 
 ## Context/Problem
 
