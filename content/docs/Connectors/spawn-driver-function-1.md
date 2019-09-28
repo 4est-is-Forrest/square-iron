@@ -51,11 +51,12 @@ Unlike the Spawn Driver function, credentials are not returned simply because if
 
 #### **_Local Function: wait =_** WebDriverWait
 
-    def wait(x,y,z):
-        els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
-        return WebDriverWait(driver, x).until(EC.presence_of_element_located((els[y], z)))
+    s = requests.Session()
+    s.proxies['https'] = PROXY
+    domain = '{}.service-now.com'.format(inst)
+    url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
 
-This function is just a short hand for the 'WebDriverWait' method, my preferred method in selecting HTML elements whenever Selenium is utilized. It looks neater and is convenient to use in the console.
+Here, local 
 
 #### **_Credential Handling_**
 
