@@ -4,11 +4,27 @@ layout: docs
 weight: 
 
 ---
-An essential module I use to simplify authentication with ServiceNow, through a Selenium WebDriver and/or Requests Session.
+An essential module I use to simplify authentication with different ServiceNow instances.
+
+## Context/Problem
+
+**_Why JSON?_**
+
+Simply due to policy, it was not possible for simple authentication with ServiceNow's various web services be enabled for anyone beyond SNOW admins and developers. With the help of cookies however, access to the JSON Web Service via Requests is possible. 
+
+**_Then why Driver?_**
+
+The JSON web service has three important limitations: 
+
+1. Obviously, something else must negotiate login and obtain cookies
+2. Attaching items to ServiceNow records is not possible via JSON yet often necessary
+3. ServiceNow records can not be changed to a resolved/closed state outside of the GUI for 'itil' users
+
+Ultimately, a Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this same environment.
 
 ## Summary
 
-* Two functions to connect to various ServiceNow instances through a Selenium WebDriver or a Requests Session.
+* Two functions to connect to various ServiceNow instances through a Selenium WebDriver and/or a Requests Session, 
 * The Driver method minimizes login effort and after success, asserts cookies are saved locally, usually for a Session to import them.
 * The Session method tries to import good cookies from the Driver and the user's Chrome browser. Optional 'login action' launches a temporary Driver until good cookies are saved.
 
