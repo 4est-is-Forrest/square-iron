@@ -26,4 +26,8 @@ With help of the author's '.bat' file held in Px-Proxy's repository, I created a
 
 #### _ServiceNow JSON Web Service_
 
-For quite sometime, I believed ServiceNow's GUI was the only way to interact with its data. I came to this conclusion primarily because I tried and was unable to access the REST API  Because of this, arly forms of my automation tools solely 
+For quite sometime, I believed ServiceNow's GUI was the only way to interact with its data, mostly because the first service I requested access to was the REST API, in which I was denied access. Naturally, anyone beyond ServiceNow admins and developers would be denied simple authentication access to any of ServiceNow's multiple web services.
+
+Thus, a Selenium Webdriver seemed to be the only automation option available for this environment. Tools and scripts using this method were certainly crude and error-prone at first, but they did become more refined as I gained experience.
+
+Simply due to policy, it was not possible for simple authentication with ServiceNow's various web services to be enabled for anyone beyond SNOW admins and developers. With the help of cookies however, access to the JSON Web Service via Requests is possible. This is true for all instances of ServiceNow utilized in this environment.
