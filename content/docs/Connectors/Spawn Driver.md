@@ -22,6 +22,25 @@ The function is tailored for three specific instances with differentiating login
 
 #### **_Global Constants & Imports_**
 
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.support import expected_conditions as EC
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.common.keys import Keys
+    import requests
+    import os,sys
+    import browser_cookie3
+    from getpass import getpass
+    import time
+    
+    PROXY = '<My Local Machine>:<Px-Proxy Port>'
+    RESOURCES = os.environ['homepath'] + '/__resources__'
+    CHROME_DRIVER = RESOURCES + '/chromedriver.exe'
+    DRIVER_DATA = os.environ['homepath'] + '/Driver Data'
+    COOKIE_FILE = DRIVER_DATA + '/Default/Cookies'
+    CHROME_OPTIONS = webdriver.ChromeOptions()
+    CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
+
 </hr>
 
 **_Local Functions_**
