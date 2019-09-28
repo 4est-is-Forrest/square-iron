@@ -67,7 +67,7 @@ The new Session's proxy settings are set to the Px-Proxy (See Doc: 'General Cont
     if r.status_code == 200:
         return s
 
-Cookies are extracted using the 'browser-cookie' library (See Doc: 'Connectors (Module)'). A simple GET query is sent and if the response code is 200, stop and return the Session, otherwise, next.
+Cookies associated with the passed instance are extracted using the 'browser-cookie' library (See Doc: 'Connectors (Module)') from the user's Chrome Browser. A simple GET query is sent and if the response code is 200, stop and return the Session, otherwise, next.
 
 #### **_Chromedriver's Cookies_**
 
@@ -79,7 +79,7 @@ Cookies are extracted using the 'browser-cookie' library (See Doc: 'Connectors (
         if r.status_code == 200:
             return s
 
-If the file 'Cookies' exists, a Session object imports cookies associated with the provided instance (can be empty) and performs a lightweight JSON query. Any return code other than 200 adds the instance to the 'logins' list. If the 'Cookies' file does not exist, naturally, all instances are added to 'logins' list.
+If the file 'Cookies' exists, the Session imports cookies associated with the provided instance (can be empty) and performs a lightweight JSON query. Any return code other than 200 adds the instance to the 'logins' list. If the 'Cookies' file does not exist, naturally, all instances are added to 'logins' list.
 
 The Session query offers a quick way to test the state of cookies.
 
