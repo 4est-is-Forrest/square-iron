@@ -1,11 +1,10 @@
 +++
-draft = true
 layout = "docs"
-title = "Spawn Driver (Function)"
+title = "Spawn Session (Function)"
 weight = 1
 
 +++
-_spawn_driver(instances=\['instance1'\],credentials={},persist=True)_
+_spawn_session(inst='instance1',login_action=False,credentials={})_
 
 ## Overview
 
