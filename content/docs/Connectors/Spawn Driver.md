@@ -47,7 +47,7 @@ The function is tailored for three specific instances with differentiating login
     CHROME_OPTIONS = webdriver.ChromeOptions()
     CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
 
-**_Local Function_**
+#### **_Local Function: wait =_** WebDriverWait
 
     def wait(x,y,z):
         els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
@@ -96,7 +96,7 @@ If the file 'Cookies' exists, a Session object imports cookies associated with t
 
 The Session query offers a quick way to test the state of cookies.
 
-Aside from saving time with logging in, knowing login states ahead of time helps in defining what the Driver should expect and what redirects to anticipate. 
+Aside from saving time with logging in, knowing login states ahead of time helps in defining what the Driver should expect and what redirects to anticipate.
 
 **_Instance1's Annoying Redirect_**
 
