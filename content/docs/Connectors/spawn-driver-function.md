@@ -6,7 +6,7 @@ weight = 1
 +++
 Additional information regarding imports and constants.
 
-### _Imports_
+## _Imports_
 
     from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.chrome.options import Options
@@ -21,7 +21,7 @@ Additional information regarding imports and constants.
 
 The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously) providing two important capabilities I required. Firstly, it offered a way to validate and test cookies with the help of Sessions and secondly, importing regular Chrome cookies for Sessions became possible. The latter is mostly just a nice convenience.
 
-### _Constants_
+## _Constants_
 
     PROXY = '<My Local Machine>:<Px-Proxy Port>'
     RESOURCES = os.environ['homepath'] + '/__resources__'
