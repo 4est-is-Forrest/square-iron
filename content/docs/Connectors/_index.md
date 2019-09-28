@@ -35,10 +35,12 @@ The JSON web service has three important limitations:
 
 A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this same environment, and this module made creating and managing these connections much simpler.
 
-The general idea is to have reliable methods to initiate authenticated Sessions and/or Driver sessions with three different ServiceNow instances (while making it simple to add more). It also asserts that cookies are saved locally so that subsequent runs do not require a login action and, more importantly, so Sessions can also import these cookies in order to access the instance's JSON web service.
-
-**Cookie persistence** must be asserted due to Google Chrome's 30-second intervals of writing to its 'Cookies' file. Sessions handle and validate the cookies before anything else takes place, otherwise bad or 'non-existent' cookies would likely be imported to the Session, resulting in failure of the entire goal.
-
-When only a Session is needed, cookies from the user's Chrome browser will also be considered a potential cookie source. The Session method has an optional login action, using a Driver for logging in and closing it only after the cookies have been saved locally.
+**_Cookie persistence_**
 
 **Note:** I refer to saving cookies locally as 'persisting.'
+
+Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing to its 'Cookies' file. After a successful login, a Session queries the instance's JSON service repeatedly until a status code 200. 
+
+When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time.
+
+When only a Session is needed, cookies from the user's Chrome browser will also be considered a potential cookie source. The Session method has an optional login action, using a Driver for logging in and closing it only after the cookies have been saved locally.
