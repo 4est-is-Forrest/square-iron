@@ -1,5 +1,5 @@
 ---
-title: Connectors.py (Module)
+title: Connectors (Module)
 layout: docs
 weight: 
 
