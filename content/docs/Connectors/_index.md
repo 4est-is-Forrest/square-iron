@@ -17,15 +17,15 @@ Comprised of three functions:
 
 ## Details
 
-##### **_Environment_**
+#### **_Environment_**
 
 This is a module specific to a help desk environment and most other scripts/tools for said environment depend on it. Chromedriver is my preferred Webdriver.
 
-##### **_Why JSON?_**
+#### **_Why JSON?_**
 
 Simply due to policy, it was not possible for simple authentication with ServiceNow's various web services to be enabled for anyone beyond SNOW admins and developers. With the help of cookies however, access to the JSON Web Service via Requests is possible. This is true for all instances of ServiceNow utilized in this environment.
 
-##### **_Then why a Driver too?_**
+#### **_Then why a Driver too?_**
 
 The JSON web service has three important limitations:
 
@@ -33,7 +33,7 @@ The JSON web service has three important limitations:
 2. Attaching items to ServiceNow records is not possible via JSON yet often necessary
 3. ServiceNow records can not be changed to a resolved/closed state outside of the GUI for 'itil' users (I theorize)
 
-##### **_Cookie persistence_**
+#### **_Cookie persistence_**
 
 **Note:** I refer to a browser writing cookies locally as 'cookies persisting.'
 
