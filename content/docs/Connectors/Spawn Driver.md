@@ -242,11 +242,11 @@ Adding instances is just a matter of defining more 'elif' blocks for each and ac
 #### **_Return Credential and/or Driver_**
 
 ```python
-    if persist:
-    	return driver,credentials
-    else:
-    	driver.quit()
-        return credentials
+if persist:
+	return driver,credentials
+else:
+	driver.quit()
+	return credentials
 ```
 
 **Always returns credentials, passed 'persist' argument determines if Driver with be returned or closed.**
