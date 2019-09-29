@@ -6,17 +6,19 @@ weight = 1
 +++
 Creates an authenticated Request's Session for a specific instance of ServiceNow.
 
-#### **_Arguments:_**
+## Arguments:
 
 * Instance: Unlike 'spawn_driver,' only one instance can be passed
 * Login Action (optional): If True, a temporary driver opens for the purpose of logging into the relevant instance; closed once cookies are saved
 * Credentials (optional): Primarily used when 'login_action' is True.
 
-#### **_Functionality:_**
+## Functionality:
 
 A series of Sessions test the user's regular Chrome cookies, followed by the local Driver's cookies. In either case, the Session is returned. Credentials can be passed for use by the 'login action,' passing the instance to 'Spawn Driver' with 'persist' set to False.
 
 Only one instance may be passed due to cookies from different instances having common names. One instance is usually all that's needed, but for cases where multiple are necessary, spawning multiple Sessions is easy enough.
+
+## Context
 
 Credentials are not returned simply because if they are needed, a Driver function will be called anyway.
 
