@@ -26,6 +26,8 @@ Requests Sessions and Pip requests, by themselves, are unable to negotiate authe
 
 **Implementation:** With help of the author's '.bat' file held in Px-Proxy's Git repository, I created an executable of Px-Proxy and added it as a Windows Startup Service. This, together with white listing subnets expected to use my scripts, resulted in a constant and reliable path for Pip and Requests to pass through across the team, with very minimal maintenance.
 
+<hr/>
+
 ## Python & ServiceNow
 
 [JSON Web Service Docs](https://docs.servicenow.com/bundle/newyork-application-development/page/integrate/inbound-other-web-services/concept/c_JSONv2WebService.html)
