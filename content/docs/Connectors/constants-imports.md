@@ -1,6 +1,6 @@
 +++
 layout = "docs"
-title = "Constants & Imports"
+title = "Global Constants & Imports"
 weight = 2
 
 +++
