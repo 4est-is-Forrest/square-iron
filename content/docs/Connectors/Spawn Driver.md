@@ -146,16 +146,16 @@ This function is really just shorthand for the Selenium 'WebDriverWait' method, 
 #### **_Credential Handling_**
 
 ```python
-	for inst in instances:
-		if inst in ['instance2','instance3']: #Username/Password Instances
-			try:
-				usr = credentials['{}_usr'.format(inst)]
-				pwd = credentials['{}_pwd'.format(inst)]
-			except:
-				usr = input('Username ({}): '.format(inst))
-				credentials['{}_usr'.format(inst)] = usr
-				pwd = getpass('Password ({}): '.format(inst))
-				credentials['{}_pwd'.format(inst)] = pwd
+for inst in instances:
+	if inst in ['instance2','instance3']: #Username/Password Instances
+		try:
+			usr = credentials['{}_usr'.format(inst)]
+			pwd = credentials['{}_pwd'.format(inst)]
+		except:
+			usr = input('Username ({}): '.format(inst))
+			credentials['{}_usr'.format(inst)] = usr
+			pwd = getpass('Password ({}): '.format(inst))
+			credentials['{}_pwd'.format(inst)] = pwd
 ```
 
 **This block determines whether credentials have been supplied and, if not, collects them appropriately.**
