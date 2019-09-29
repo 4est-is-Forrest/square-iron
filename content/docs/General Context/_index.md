@@ -8,7 +8,7 @@ template: docs
 
 **_Distribution:_** Sometimes executables are distributed but it's simpler to have users install Python and run a setup.py specific to this environment.
 
-**_Simple: _**They must also be simple to use due to a global lack of coding knowledge among the intended users.
+**_Simple:_** They must also be simple to use due to a global lack of coding knowledge among the intended users.
 
 **_OS:_** The OS environment is a mix of Windows 7 and Windows 10, with Windows 10 increasingly becoming the norm/required.
 
