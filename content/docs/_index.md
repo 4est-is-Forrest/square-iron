@@ -9,8 +9,6 @@ menu:
     weight: 1
 
 ---
-***
-
 Greetings,
 
 The following documents and sections contain some examples of Python code I've written. Much of the initial code will be within the context of a help desk environment.
