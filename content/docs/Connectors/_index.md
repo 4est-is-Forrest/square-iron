@@ -7,6 +7,8 @@ subtitle: ''
 ---
 This is an essential module I created and use to simplify authentication with different ServiceNow instances in order to use the instances' JSON Web Services (Session) and/or navigate their GUI's (Webdriver). **Nearly every script active in this environment depends on this module.**
 
+<hr />
+
 ## Summary
 
 Comprised of three functions:
@@ -26,3 +28,5 @@ _See 'General Context' for information on why Sessions and Webdrivers are both n
 **Note:** I refer to a browser writing cookies locally as 'cookies persisting.' The third function of this module specifically addresses this and is really only used within the Spawn Driver function.
 
 **Chrome's Interval:** Cookies persistence must be asserted due to Google Chrome's 30-second interval when writing cookies to its 'Cookies' file. After a login is successful via a Driver, a Session will query the relevant instance's JSON service repeatedly until a status code 200 is returned. This is to ensure subsequent Sessions may immediately import these cookies so as to communicate with ServiceNow via JSON.
+
+<hr />
