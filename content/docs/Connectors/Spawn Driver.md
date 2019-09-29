@@ -51,7 +51,7 @@ The function is tailored for three specific instances with differentiating login
         els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
         return WebDriverWait(driver, x).until(EC.presence_of_element_located((els[y], z)))
 
-This function is just a short hand for the 'WebDriverWait' method, my preferred method in selecting HTML elements whenever Selenium is utilized. It looks neater and is convenient to use in the console.
+This function is really just shorthand for the Selenium 'WebDriverWait' method, my preferred method in selecting HTML elements. It looks neater and is convenient to use in the console.
 
 #### **_Credential Handling_**
 
