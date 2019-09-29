@@ -8,7 +8,7 @@ spawn_session(inst='instance1',login_action=False,credentials={})
 
 ## Overview
 
-Tries to import good cookies from the Driver, failing that, the user's Chrome browser. Optionally, a Driver launches temporarily to perform a login and closes once good cookies are available for the Session to import.
+Tries to import good cookies from the user's Chrome Browser, failing that, tries from the Driver's cookies. Optionally, a Driver launches temporarily to perform a login and closes once good cookies are available for the Session to import.
 
 #### **_Arguments:_**
 
@@ -58,7 +58,7 @@ The 'login_action' is not often used within scripts. Since a Driver is almost al
     domain = '{}.service-now.com'.format(inst)
     url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
 
-The new Session's proxy settings are set to the Px-Proxy (See Doc: 'General Context'). Local constants are set appropriately. 
+The new Session's proxy settings are set to the Px-Proxy (See Doc: 'General Context'). Local constants are set appropriately.
 
 #### **_Regular Chrome's Cookies_**
 
