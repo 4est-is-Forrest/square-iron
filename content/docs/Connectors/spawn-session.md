@@ -141,4 +141,6 @@ else:
 	return None
 ```
 
-At this point, either 'None' is returned or a 'login action' is performed, essentially calling the Spawn Driver method while passing the necessary instance and, optionally, passing credentials. The 'Persist' argument is set to False so that the driver is closed. <hr />
+At this point, either 'None' is returned or a 'login action' is performed, essentially calling the Spawn Driver method while passing the necessary instance and, optionally, passing credentials. The 'Persist' argument is set to 'False.'
+
+<hr />
