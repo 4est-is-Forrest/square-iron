@@ -36,9 +36,7 @@ Naturally, anyone beyond ServiceNow admins and developers would be denied simple
 
 **_Selenium:_** A Selenium Webdriver initially seemed to be the only automation option available for this environment when it came to interacting with ServiceNow. The initial scripts written under this pretense navigated ServiceNow's GUI and favored sending JavaScript to a page in order to accomplish its objective.
 
-**_JSON & Requests:_** I eventually discovered ServiceNow's JSON Web Service was perfectly accessible so long as the HTTP requests were accompanied with valid authentication cookies imported from a browser. This lead to major script revisions favoring the Requests library over Selenium as much as possible.
-
-**_Selenium Webdriver & JSON Web Service Together_**
+**_Requests:_** I eventually discovered ServiceNow's JSON Web Service was perfectly accessible so long as the HTTP requests were accompanied with valid authentication cookies imported from a browser. This lead to major script revisions favoring the Requests library over Selenium as much as possible.
 
 The JSON Web Service has three important limitations (for 'itil' users at least). 
 
