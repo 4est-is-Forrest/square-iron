@@ -20,7 +20,7 @@ Requests Sessions and Pip requests, by themselves, are unable to negotiate authe
 
 **_CNTLM:_**
 
-The software, [CNTLM](http://cntlm.sourceforge.net/), offered a method to address this by acting as an intermediary proxy and handling authentication. So long as the configured user credentials for CNTLM were kept up to date, Pip and Requests could be pointed at it and reliably reach their destinations.
+The software, [CNTLM](http://cntlm.sourceforge.net/), offered a method to address this by acting as an intermediary proxy and handling authentication. So long as the configured user credentials for CNTLM were kept up to date, Pip and Requests could pass through it and reliably reach their destinations.
 
 **_Px-Proxy_**
 
