@@ -27,6 +27,7 @@ fields:
   config:
     required: true
 pages:
+- content/docs/_index.md
 - content/docs/community/_index.md
 - content/docs/faq/_index.md
 - content/docs/manage-content/_index.md
@@ -35,4 +36,3 @@ pages:
 - content/docs/tools/starter-theme.md
 - content/docs/ui-components/_index.md
 - content/docs/ui-components/typography.md
-- content/docs/_index.md

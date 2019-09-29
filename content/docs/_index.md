@@ -1,14 +1,20 @@
 ---
 title: Introduction
 layout: docs
-weight:
-excerpt: ""
+weight: 
+excerpt: ''
 menu:
   main:
     name: Docs
     weight: 1
----
 
 ---
+***
 
-Thank you for stopping by. The following sections aim to provide code samples together with some clarity and context.
+Greetings,
+
+The following documents and sections contain some examples of Python code I've written. Much of the initial code will be within the context of a help desk environment.
+
+I will be working to include more and more sections when I can.
+
+<hr />
