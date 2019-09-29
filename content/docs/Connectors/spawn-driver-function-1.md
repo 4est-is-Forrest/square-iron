@@ -18,7 +18,7 @@ A series of Sessions test the user's regular Chrome cookies, followed by the loc
 
 Only one instance may be passed due to cookies from different instances having common names. One instance is usually all that's needed, but for cases where multiple are necessary, spawning multiple Sessions is easy enough.
 
-Unlike the Spawn Driver function, credentials are not returned simply because if they are needed, a Driver function will be called anyways should capturing credentials be needed.
+Credentials are not returned simply because if they are needed, a Driver function will be called anyway.
 
 The 'login_action' is not often used within scripts. Since a Driver is almost always needed anyway, this Session function is simply called after the Driver has been returned, guaranteeing cookies will be available. Any other functionality is really just for utility and convenience when calling the function from console.
 
