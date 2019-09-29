@@ -4,7 +4,7 @@ title = "Module Code"
 weight = 1
 
 +++
-Complete module code with light annotations.
+Complete code with light annotations.
 
 <hr />
 
