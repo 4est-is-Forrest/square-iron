@@ -149,8 +149,8 @@ Adding instances is just a matter of defining more 'elif' blocks for each and ac
     	driver.quit()
         return credentials
 
-**Returns Driver by default, always returns credentials.**
+**Always returns credentials, passed 'persist' argument determines if Driver with be returned or closed.**
 
-By default, the driver remains open (and is returned) but can be closed for when a Session simply needs good cookies. Regardless of whether it closes or not, no action is taken until the cookies have been saved to file.
+Returning credentials is useful for when sustained login over long periods of time is necessary and credentials are not defined ahead of time. 'Instance1' is the exception to this, however.
 
-Again, returning credentials is useful for when sustained login over long periods of time is necessary and credentials are not defined ahead of time. 'Instance1' is the exception to this, however.
+In most cases, after the Spawn Driver function has finished, Spawn Session is called immediately afterward.
