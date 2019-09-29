@@ -24,7 +24,7 @@ Only one instance may be passed due to cookies from different instances having c
 
 Unlike the Spawn Driver function, credentials are not returned simply because if they are needed, a Driver function will be called anyways should capturing credentials be needed.
 
-The 'login_action' is not often used within scripts. Since a Driver is almost always needed anyway, this Session function is simply called after the Driver has been returned. Any other functionality is really just for utility and convenience when calling the function from console.
+The 'login_action' is not often used within scripts. Since a Driver is almost always needed anyway, this Session function is simply called after the Driver has been returned, guaranteeing cookies will be available. Any other functionality is really just for utility and convenience when calling the function from console.
 
 </hr>
 
