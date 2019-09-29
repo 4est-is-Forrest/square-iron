@@ -4,15 +4,15 @@ weight:
 template: docs
 
 ---
-**Global Use:** The tools and scripts in the sections ahead are meant to be run by any individual in a help desk environment. Meaning, they can be run reliably across a team, regardless of the local system.
+**_Global Use:_** The tools and scripts in the sections ahead are meant to be run by any individual in a help desk environment. Meaning, they can be run reliably across a team, regardless of the local system.
 
-**Distribution:** Sometimes executables are distributed but it's simpler to have users install Python and run a setup.py specific to this environment.
+**_Distribution:_** Sometimes executables are distributed but it's simpler to have users install Python and run a setup.py specific to this environment.
 
-**Simple:** They must also be simple to use due to a global lack of coding knowledge among the intended users.
+**_Simple: _**They must also be simple to use due to a global lack of coding knowledge among the intended users.
 
-**OS:** The OS environment is a mix of Windows 7 and Windows 10, with Windows 10 increasingly becoming the norm/required.
+**_OS:_** The OS environment is a mix of Windows 7 and Windows 10, with Windows 10 increasingly becoming the norm/required.
 
-**ServiceNow:** Because the following scripts are for a help desk environment, the vast majority of them involve interacting with some instance of ServiceNow.
+**_ServiceNow:_** Because the following scripts are for a help desk environment, the vast majority of them involve interacting with some instance of ServiceNow.
 
 <hr/>
 
@@ -20,11 +20,11 @@ template: docs
 
 Requests Sessions and Pip requests, by themselves, are unable to negotiate authentication with the environment's NTLM proxy, thus they fail.
 
-**CNTLM:** The software, [CNTLM](http://cntlm.sourceforge.net/), offered a method to address this by acting as an intermediary proxy and handling authentication. So long as the configured user credentials for CNTLM were kept up to date, Pip and Requests could pass through it and reliably reach their destinations.
+**_CNTLM:_** The software, [CNTLM](http://cntlm.sourceforge.net/), offered a method to address this by acting as an intermediary proxy and handling authentication. So long as the configured user credentials for CNTLM were kept up to date, Pip and Requests could pass through it and reliably reach their destinations.
 
 **_Px-Proxy:_** While CNTLM was a perfectly effective solution, I opted to utilize [Px-Proxy](https://github.com/genotrance/px "Px-Proxy") (basically a Python version of CNTLM) instead because of its capability to use the current user's credentials without any configuration.
 
-**Implementation:** With help of the author's '.bat' file held in Px-Proxy's Git repository, I created an executable of Px-Proxy and added it as a Windows Startup Service. This, together with white listing subnets expected to use my scripts, resulted in a constant and reliable path for Pip and Requests to pass through across the team, with very minimal maintenance.
+**_Implementation:_** With help of the author's '.bat' file held in Px-Proxy's Git repository, I created an executable of Px-Proxy and added it as a Windows Startup Service. This, together with white listing subnets expected to use my scripts, resulted in a constant and reliable path for Pip and Requests to pass through across the team, with very minimal maintenance.
 
 <hr/>
 
