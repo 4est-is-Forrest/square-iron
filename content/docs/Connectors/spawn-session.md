@@ -4,7 +4,6 @@ title = "Spawn Session (Function)"
 weight = 4
 
 +++
-
 Creates an authenticated Request's Session for a specific instance of ServiceNow.
 
 <hr />
@@ -17,7 +16,7 @@ Creates an authenticated Request's Session for a specific instance of ServiceNow
         s.proxies['https'] = PROXY
         domain = '{}.service-now.com'.format(inst)
         url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
-
+    
         """Chrome(browser) Cookies Test/Return"""
         cookies = browser_cookie3.chrome(domain_name=domain)
         for cookie in cookies:
@@ -25,7 +24,7 @@ Creates an authenticated Request's Session for a specific instance of ServiceNow
         r = s.get(url)
         if r.status_code == 200:
             return s
-
+    
         """Driver Cookies Test/Return"""
         if os.path.exists(COOKIE_FILE):
             cookies = browser_cookie3.chrome(COOKIE_FILE,domain_name=domain)
@@ -34,7 +33,7 @@ Creates an authenticated Request's Session for a specific instance of ServiceNow
             r = s.get(url)
             if r.status_code == 200:
                 return s
-
+    
         """Optional Login Action"""
         if login_action:
             spawn_driver(instances=[inst],persist=False,credentials=credentials)
@@ -44,9 +43,9 @@ Creates an authenticated Request's Session for a specific instance of ServiceNow
 
 ## Arguments
 
-- Instance: Unlike 'spawn_driver,' only one instance can be passed
-- Login Action (optional): If True, a temporary driver opens for the purpose of logging into the relevant instance; closed once cookies are saved
-- Credentials (optional): Primarily used when 'login_action' is True.
+* Instance: Unlike 'spawn_driver,' only one instance can be passed
+* Login Action (optional): If True, a temporary driver opens for the purpose of logging into the relevant instance; closed once cookies are saved
+* Credentials (optional): Primarily used when 'login_action' is True.
 
 ## Functionality
 
@@ -76,7 +75,7 @@ The 'login action' argument is primarily for use within a console, not a script.
     import browser_cookie3
     from getpass import getpass
     import time
-
+    
     PROXY = '<My Local Machine>:<Px-Proxy Port>'
     RESOURCES = os.environ['homepath'] + '/__resources__'
     CHROME_DRIVER = RESOURCES + '/chromedriver.exe'
@@ -132,3 +131,4 @@ Cookies associated with the passed instance are extracted using the 'browser-coo
         return None
 
 At this point, either 'None' is returned or a 'login action' is performed, essentially calling the Spawn Driver method while passing the necessary instance and, optionally, credentials. The 'Persist' argument is set to False so that the driver is closed.
+<hr />
