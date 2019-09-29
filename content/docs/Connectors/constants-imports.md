@@ -7,6 +7,7 @@ weight = 2
 Information regarding imports and constants for the module 'connectors.'
 
 ## _Imports_
+
 ```python
     from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.chrome.options import Options
@@ -19,9 +20,11 @@ Information regarding imports and constants for the module 'connectors.'
     from getpass import getpass
     import time
 ```
+
 The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously) thus, offering two important capabilities. Firstly, it offered a way to validate and test cookies with the help of Sessions and secondly, importing regular Chrome cookies for Sessions became possible. The latter is mostly just a nice convenience. So long as I was logged in to the instance via my preferred browser, I could easily interface with the JSON web service the moment I needed to.
 
 ## _Constants_
+
 ```python
     PROXY = '<My Local Machine>:<Px-Proxy Port>'
     RESOURCES = os.environ['homepath'] + '/__resources__'
@@ -31,6 +34,7 @@ The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library i
     CHROME_OPTIONS = webdriver.ChromeOptions()
     CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
 ```
+
 #### **_Px-Proxy_**
 
 [Px-proxy](https://github.com/genotrance/px) is necessary for Sessions to play nice with the environment's NTLM proxy. As the author, Genotrance, describes it, "An HTTP proxy server to automatically authenticate through an NTLM proxy."
@@ -44,3 +48,5 @@ There is a separate script distributed to users in order to make it easy to keep
 #### **_Chromedriver Profile Directory_**
 
 Chromedriver will create the profile directory if one does not already exist. The profile allows the Driver to behave like a regular browser in the sense that cookies, history, and other objects of that nature are retained. It is also independent of the user's default Chrome profile, primarily because regular Chrome and the Driver cannot access the same profile concurrently.
+
+<hr />
