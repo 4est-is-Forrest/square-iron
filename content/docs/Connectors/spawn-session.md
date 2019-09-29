@@ -143,4 +143,6 @@ else:
 
 At this point, either 'None' is returned or a 'login action' is performed, essentially calling the Spawn Driver method while passing the necessary instance and, optionally, passing credentials. The 'Persist' argument is set to 'False.'
 
+Typically utilized for command line/console use.
+
 <hr />
