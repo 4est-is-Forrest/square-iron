@@ -1,9 +1,9 @@
 ---
 title: Spawn Driver (Function)
 layout: docs
-weight: 1
-
+weight: 3
 ---
+
 Minimizes login effort and, after successful login, asserts cookies are saved locally, usually in order for a Session to import them.
 
 <hr/>
@@ -19,7 +19,7 @@ Minimizes login effort and, after successful login, asserts cookies are saved lo
         def wait(x,y,z):
             els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
             return WebDriverWait(driver, x).until(EC.presence_of_element_located((els[y], z)))
-        
+
         """Resolve/Collect credentials as necessary"""
         for inst in instances:
             if inst in ['instance2','instance3']: #Username/Password Instances
@@ -31,7 +31,7 @@ Minimizes login effort and, after successful login, asserts cookies are saved lo
                     credentials['{}_usr'.format(inst)] = usr
                     pwd = getpass('Password ({}): '.format(inst))
                     credentials['{}_pwd'.format(inst)] = pwd
-                    
+
         """Test Driver Cookies per instance"""
         if os.path.exists(COOKIE_FILE):
             s = requests.Session()
@@ -48,14 +48,14 @@ Minimizes login effort and, after successful login, asserts cookies are saved lo
                     logins.append(inst)
         else:
             logins = instances
-            
+
         """Reset Cookies for instance1 if login needed"""
         if 'instance1' in logins:
             try:
                 os.remove(COOKIE_FILE)
             except:
                 pass
-            
+
         """Execute Logons"""
         driver = webdriver.Chrome(CHROME_DRIVER,options=CHROME_OPTIONS)
         for inst in logins:
@@ -77,7 +77,7 @@ Minimizes login effort and, after successful login, asserts cookies are saved lo
                 wait(10,0,'//*[@id="password"]').send_keys(Keys.ENTER)
                 wait(20,0,'//*[@id="filter"]')
             driver_cookie_persist(inst)
-        #Return credentials and/or Driver    
+        #Return credentials and/or Driver
         if persist:
             return driver,credentials
         else:
@@ -86,9 +86,9 @@ Minimizes login effort and, after successful login, asserts cookies are saved lo
 
 ## **Arguments**
 
-* Instances: list of one or more expected ServiceNow instances; Default: The most used instance: 'instance1'
-* Credentials: (optional) dictionary of credentials for instances other than 'instance1.' Default is none. Dictionary key nomenclature is simply: instance_usr/pwd
-* Persist: Whether the Driver should be kept open after completed login/logins; Default is True
+- Instances: list of one or more expected ServiceNow instances; Default: The most used instance: 'instance1'
+- Credentials: (optional) dictionary of credentials for instances other than 'instance1.' Default is none. Dictionary key nomenclature is simply: instance_usr/pwd
+- Persist: Whether the Driver should be kept open after completed login/logins; Default is True
 
 ## **Functionality**
 
@@ -98,9 +98,9 @@ The general process consists of testing a Driver's 'Cookies' file with temporary
 
 ## **Context**
 
-* Instance1: PKI card login with pin (most used)
-* Instance2: Username & Password
-* Instance3: Username & Password
+- Instance1: PKI card login with pin (most used)
+- Instance2: Username & Password
+- Instance3: Username & Password
 
 ServiceNow Instance URL = https://"instance".service-now.com/
 
@@ -120,7 +120,7 @@ ServiceNow Instance URL = https://"instance".service-now.com/
     import browser_cookie3
     from getpass import getpass
     import time
-    
+
     PROXY = '<My Local Machine>:<Px-Proxy Port>'
     RESOURCES = os.environ['homepath'] + '/__resources__'
     CHROME_DRIVER = RESOURCES + '/chromedriver.exe'
