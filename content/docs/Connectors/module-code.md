@@ -33,7 +33,7 @@ CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
 """
 Functions
 """
-#Spawn Authenticated Driver for one or more Snow instances
+#Spawn authenticated Driver for one or more Snow instances
 def spawn_driver(instances=['instance1'],credentials={},persist=True):
 	"""
 	Functions
