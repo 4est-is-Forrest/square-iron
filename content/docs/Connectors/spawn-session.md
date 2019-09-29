@@ -101,12 +101,12 @@ The new Session's proxy settings are set to the Px-Proxy (See Doc: 'General Cont
 #### **_Regular Chrome's Cookies_**
 
 ```python
-    cookies = browser_cookie3.chrome(domain_name=domain)
-    for cookie in cookies:
-        s.cookies.set(cookie.name, cookie.value)
-    r = s.get(url)
-    if r.status_code == 200:
-        return s
+cookies = browser_cookie3.chrome(domain_name=domain)
+for cookie in cookies:
+	s.cookies.set(cookie.name, cookie.value)
+r = s.get(url)
+if r.status_code == 200:
+	return s
 ```
 
 **Test user's Chrome cookies, return Session if cookies are good.**
@@ -118,13 +118,13 @@ If no cookies are found, 'None' is returned which still results in the function 
 #### **_Chromedriver's Cookies_**
 
 ```python
-    if os.path.exists(COOKIE_FILE):
-        cookies = browser_cookie3.chrome(COOKIE_FILE,domain_name=domain)
-        for cookie in cookies:
-            s.cookies.set(cookie.name, cookie.value)
-        r = s.get(url)
-        if r.status_code == 200:
-            return s
+if os.path.exists(COOKIE_FILE):
+	cookies = browser_cookie3.chrome(COOKIE_FILE,domain_name=domain)
+	for cookie in cookies:
+		s.cookies.set(cookie.name, cookie.value)
+	r = s.get(url)
+	if r.status_code == 200:
+		return s
 ```
 
 **Test Driver's cookies, return Session if cookies are good.**
@@ -134,11 +134,11 @@ Cookies associated with the passed instance are extracted using the 'browser-coo
 #### **_Optional Login Action_**
 
 ```python
-    if login_action:
-        spawn_driver(instances=[inst],persist=False,credentials=credentials)
-        return spawn_session(inst=inst,credentials=credentials)
-    else:
-        return None
+if login_action:
+	spawn_driver(instances=[inst],persist=False,credentials=credentials)
+	return spawn_session(inst=inst,credentials=credentials)
+else:
+	return None
 ```
 
 At this point, either 'None' is returned or a 'login action' is performed, essentially calling the Spawn Driver method while passing the necessary instance and, optionally, credentials. The 'Persist' argument is set to False so that the driver is closed.
