@@ -4,7 +4,7 @@ title = "Constants & Imports"
 weight = 1
 
 +++
-Additional information regarding imports and constants.
+Information regarding imports and constants for the module 'connectors.'
 
 ## _Imports_
 
