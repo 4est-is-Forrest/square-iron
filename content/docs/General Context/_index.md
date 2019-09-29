@@ -28,7 +28,7 @@ Requests Sessions and Pip requests, by themselves, are unable to negotiate authe
 
 <hr/>
 
-## Python & ServiceNow
+## Python & ServiceNow (GUI/JSON)
 
 [JSON Web Service Docs](https://docs.servicenow.com/bundle/newyork-application-development/page/integrate/inbound-other-web-services/concept/c_JSONv2WebService.html)
 
