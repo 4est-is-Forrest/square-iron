@@ -24,7 +24,7 @@ The function is tailored for three specific instances with differentiating login
 
 ## Breakdown
 
-#### **_Global Constants & Imports_**
+#### [**_Global Constants & Imports_**](/docs/connectors/spawn-driver-function/)
 
     from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.chrome.options import Options
