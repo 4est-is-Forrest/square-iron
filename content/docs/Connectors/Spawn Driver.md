@@ -106,11 +106,11 @@ Aside from saving time with logging in, knowing login states ahead of time helps
         except:
             pass
 
-**Driver cookies are erased if login to 'instance1' is necessary.**
+**Driver cookies are erased if login to 'Instance1' is necessary.**
 
-The 'Cookies' file is erased if 'instance1' login is required. This is due to this particular instance's tendency to sometimes redirect those with expired cookies to a 'successful logged out page' regardless of URL being accessed (including the login URL).
+Instance1 will sometimes redirect browsers with expired cookies to a 'successfully logged out page' regardless of URL being accessed. Erasing cookies is the simplest way around this.
 
-Only erasing the domain's cookies does the redirect cease. Since 'instance1' is the most used and has cookies with the longest lifetime, it's safe to assume all other instance cookies have also expired.
+In this environment, 'Instance1' is the most commonly used and has cookies with the longest lifetime. Erasing all cookies is logical because if this instance's cookies are expired, the same is likely true for the others.
 
 #### **_Execute logins; return Driver and/or Credentials_**
 
