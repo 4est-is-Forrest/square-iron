@@ -96,7 +96,7 @@ Collecting credentials is important for certain instances. Credentials can be re
 
 If the file 'Cookies' exists, a Session object imports cookies associated with the current instance (no cookies may be present) and performs a quick JSON query. Any return status code other than 200 adds the instance to the 'logins' list. If the 'Cookies' file does not exist, naturally, all instances are added to 'logins' list.
 
-Aside from saving time with logging in, knowing login states ahead of time helps in defining exactly what the Driver should expect and what redirects to anticipate.
+Aside from saving time with logging in, knowing login states helps in defining exactly what the Driver should expect and what redirects to anticipate.
 
 #### **_Instance1's 'Successful Logout' Redirect_**
 
