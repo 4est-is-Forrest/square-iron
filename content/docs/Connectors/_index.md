@@ -47,6 +47,6 @@ _Not covered in Doc: General Context_
 
 **Note:** I refer to a browser writing cookies locally as 'cookies persisting.' The third function of this module specifically addresses this.
 
-Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing to its 'Cookies' file. After a login is successful, a Session queries the instance's JSON service repeatedly until a status code 200.
+Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing to its 'Cookies' file. After a login is successful, a Session queries the instance's JSON service repeatedly until a status code 200 is returned.
 
 When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time. I eventually noticed that the local cookies were almost always bad if the Driver was immediately closed after login, implying some timing issue. Thankfully, a simple Google search revealed Chrome's 30-second interval and I adjusted the module accordingly.
