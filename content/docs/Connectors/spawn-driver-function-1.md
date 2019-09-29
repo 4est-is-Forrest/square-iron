@@ -4,7 +4,7 @@ title = "Spawn Session (Function)"
 weight = 1
 
 +++
-_spawn_session(inst='instance1',login_action=False,credentials={})_
+spawn_session(inst='instance1',login_action=False,credentials={})
 
 ## Overview
 
@@ -23,6 +23,8 @@ This function uses a series of Sessions to first test the user's regular Chrome 
 Only one instance may be passed due to cookies from different instances having common names. Typically, one ServiceNow instance is all that's being used, but for cases where there's two or more instances, spawning multiple Sessions is easy enough.
 
 Unlike the Spawn Driver function, credentials are not returned simply because if they are needed, a Driver function will be called anyways should capturing credentials be needed.
+
+The 'login_action' is not often used within scripts. Since a Driver is almost always needed anyway, this Session function is simply called after the Driver has been returned. Any other functionality is really just for utility and convenience when calling the function from console.
 
 </hr>
 
@@ -91,42 +93,4 @@ Cookies associated with the passed instance are extracted using the 'browser-coo
     else:
         return None
 
-The 'Cookies' file is erased if 'instance1' login is required. This is due to this particular instance's tendency to sometimes redirect those with expired cookies to a 'successful logged out page' regardless of URL being accessed (including the login URL).
-
-Only erasing the domain's cookies does the redirect cease. Since 'instance1' is the most used and has cookies with the longest lifetime, it's safe to assume all other instance cookies have also expired.
-
-#### **_Execute logins; return Driver and/or Credentials_**
-
-    driver = webdriver.Chrome(CHROME_DRIVER,options=CHROME_OPTIONS)
-    for inst in logins:
-        if inst == 'instance1':
-            driver.get('https://instance1.service-now.com/login_with_sso.do?glide_sso_id=<xxxxx>')
-            wait(120,0,'//*[@id="filter"]')
-        elif inst == 'instance2':
-            driver.get('https://instance2.service-now.com/itserviceportal/?id=<xxxxx>')
-            wait(10,0,'//*[@id="username"]').send_keys(credentials['instance2_usr'])
-            wait(10,0,'//*[@id="username"]').send_keys(Keys.ENTER)
-            wait(10,0,'//*[@id="User_ID"]').send_keys(credentials['instance2_usr'])
-            wait(10,0,'//*[@id="Password"]').send_keys(credentials['instance2_pwd'])
-            wait(10,0,'//*[@id="Password"]').send_keys(Keys.ENTER)
-            wait(20,0,'//*[@id="filter"]')
-        elif inst == 'instance3':
-            driver.get('https://instance3.service-now.com/')
-            wait(10,0,'//*[@id="username"]').send_keys('instance3_usr')
-            wait(10,0,'//*[@id="password"]').send_keys('instance3_pwd')
-            wait(10,0,'//*[@id="password"]').send_keys(Keys.ENTER)
-            wait(20,0,'//*[@id="filter"]')
-    	        driver_cookie_persist(inst)
-        if persist:
-            return driver,credentials
-        else:
-            driver.quit()
-            return credentials
-
-Each instance has unique login portals. Because 'instance1' requires a PKI card login and its cookies last quite a while, it's simpler for the user and driver to handle the authentication process themselves, hence the 120 second timeout.
-
-#### **_Finally_**
-
-By default, the driver remains open (and is returned) but can be closed for when a Session simply needs good cookies. Regardless of whether it closes or not, no action is taken until the cookies have been saved to file.
-
-Again, returning credentials is useful for when sustained login over long periods of time is necessary and credentials are not defined ahead of time. 'Instance1' is the exception to this, however.
+At this point, either 'None' is returned or a 'login action' is performed, essentially calling the Spawn Driver method while passing the necessary instance and, optionally, credentials. The 'Persist' argument is set to False so that the driver is closed.
