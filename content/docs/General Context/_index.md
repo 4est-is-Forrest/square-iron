@@ -12,9 +12,7 @@ template: docs
 
 **OS:** The OS environment is a mix of Windows 7 and Windows 10, with Windows 10 increasingly becoming the norm/required.
 
-## Workarounds
-
-#### _Proxy Issues: Px-Proxy Solution_
+## Proxy Challenge & Solution
 
 Requests Sessions and Pip requests, by themselves, are unable to negotiate authentication with the environment's NTLM proxy, thus they fail.
 
