@@ -12,7 +12,7 @@ template: docs
 
 **OS:** The OS environment is a mix of Windows 7 and Windows 10, with Windows 10 increasingly becoming the norm/required.
 
-**ServiceNow:** Because the environment for the following scripts is a help desk, the vast majority of the distributed code and scripts involve interacting with some instance of ServiceNow.
+**ServiceNow:** Because the following scripts are for a help desk environment, the vast majority of them involve interacting with some instance of ServiceNow.
 
 <hr/>
 
