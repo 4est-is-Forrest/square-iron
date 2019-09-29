@@ -40,8 +40,14 @@ A Selenium Webdriver initially seemed to be the only automation option available
 
 **_JSON Web Service & Requests_**
 
-I eventually discovered ServiceNow's JSON Web Service was perfectly accessible so long as the HTTP requests were accompanied with valid authentication cookies imported from a browser, leading to major revisions to distributed tools. 
+I eventually discovered ServiceNow's JSON Web Service was perfectly accessible so long as the HTTP requests were accompanied with valid authentication cookies imported from a browser. This lead to major script revisions favoring the Requests library over Selenium as much as possible.
 
 **_Selenium Webdriver & JSON Web Service Together_**
 
-The Webdriver is still necessary due to the JSON Service having three limitations. First, there is no way to negotiate authentication in this particular environment. Second, attaching files to ServiceNow records is not possible via JSON. And third, it is not possible to change a record's state to anything synonymous with closed or resolved. A Driver is used to handle these three cases but the vast majority of my code utilizes the JSON Web Service.
+The JSON Web Service has three important limitations (for 'itil' users at least). 
+
+1. There is no way to negotiate authentication in this environment outside of ServiceNow's GUI. 
+2. Attaching files to ServiceNow records is not possible via JSON. 
+3. It is not possible to change a record's state to anything synonymous with closed or resolved. 
+
+For these three commonly performed tasks, a Driver reliably fills the automation roll.
