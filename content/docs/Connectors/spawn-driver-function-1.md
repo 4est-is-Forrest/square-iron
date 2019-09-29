@@ -118,7 +118,7 @@ If no cookies are found, 'None' is returned which still results in the function 
 
 Cookies associated with the passed instance are extracted using the 'browser-cookie' library (See Doc: 'Connectors (Module)') from the Driver's 'Cookies' file, assuming it exists. Another query is performed and any return code other than 200 results in the function proceeding to the next step.
 
-#### **_Instance1's Annoying Redirect_**
+#### **_Optional Login Action_**
 
     if login_action:
         spawn_driver(instances=[inst],persist=False,credentials=credentials)
