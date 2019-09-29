@@ -14,9 +14,9 @@ Creates an authenticated Request's Session for a specific instance of ServiceNow
 
 #### **_Functionality:_**
 
-This function uses a series of Sessions to first test the user's regular Chrome cookies, then the Driver's cookies, and returns an authenticated Session with necessary proxy configuration as soon as good cookies are found. Credentials can be set to make the 'login_action' completely automatic. That is, Spawn Driver is called with the persist argument set to False.
+A series of Sessions test the user's regular Chrome cookies, followed by the local Driver's cookies. In either case, the Session is returned. Credentials can be passed for use by the 'login action,' passing the instance to 'Spawn Driver' with 'persist' set to False.
 
-Only one instance may be passed due to cookies from different instances having common names. Typically, one ServiceNow instance is all that's being used, but for cases where there's two or more instances, spawning multiple Sessions is easy enough.
+Only one instance may be passed due to cookies from different instances having common names. One instance is usually all that's needed, but for cases where multiple are necessary, spawning multiple Sessions is easy enough.
 
 Unlike the Spawn Driver function, credentials are not returned simply because if they are needed, a Driver function will be called anyways should capturing credentials be needed.
 
