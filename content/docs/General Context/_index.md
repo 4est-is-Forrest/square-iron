@@ -12,6 +12,8 @@ template: docs
 
 **OS:** The OS environment is a mix of Windows 7 and Windows 10, with Windows 10 increasingly becoming the norm/required.
 
+**ServiceNow:** Because this is a help desk environment, the vast majority of the distributed code and scripts involve interacting with some instance of ServiceNow.
+
 <hr/>
 
 ## Proxy Challenge & Solution
