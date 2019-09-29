@@ -10,7 +10,9 @@ sections:
     showcase some code I've written and implemented. Additional context and details
     will also be included.
   image: ''
-  actions: []
+  actions:
+  - label: Code Documents
+    url: "/docs/"
 layout: home
 
 ---
