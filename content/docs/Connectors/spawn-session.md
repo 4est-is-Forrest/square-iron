@@ -111,7 +111,7 @@ if r.status_code == 200:
 
 **Test user's Chrome cookies, return Session if cookies are good.**
 
-Cookies associated with the passed instance are extracted using the 'browser-cookie' library (See Doc: 'Connectors (Module)') from the user's Chrome Browser. A simple GET query is sent and if the response code is 200, stop and return the Session, otherwise, next step.
+Cookies associated with the passed instance are extracted using the 'browser-cookie' library from the user's Chrome Browser. A simple GET query is sent and if the response code is 200, stop and return the Session, otherwise, next step.
 
 If no cookies are found, 'None' is returned which still results in the function proceeding to the next step.
 
