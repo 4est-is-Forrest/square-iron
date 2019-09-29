@@ -83,7 +83,6 @@ Minimizes login effort and, after successful login, asserts cookies are saved lo
         else:
             driver.quit()
             return credentials
-    
 
 ## **Arguments**
 
@@ -93,17 +92,17 @@ Minimizes login effort and, after successful login, asserts cookies are saved lo
 
 ## **Functionality**
 
-The function is tailored for three specific instances with differentiating login methods and landing pages. Other instances can be added with relative ease, needing only to define the login process and whether the instance requires username and password credentials. 
+The function is tailored for three specific instances with differentiating login methods and landing pages. Other instances can be added with relative ease, needing only to define the login process and whether the instance requires username and password credentials.
 
-The general process consists of testing a Driver's 'Cookies' file with temporary Sessions for each instance passed and adding each instance to a 'login' list should its test fail. Depending on the instance's login method, credentials are collected ahead of time and iteration is performed over the 'logins' list. Cookie persistence is asserted after every successful login. 
+The general process consists of testing a Driver's 'Cookies' file with temporary Sessions for each instance passed and adding each instance to a 'login' list should its test fail. Depending on the instance's login method, credentials are collected ahead of time and iteration is performed over the 'logins' list. Cookie persistence is asserted after every successful login.
 
-## **Context** 
+## **Context**
 
 * Instance1: PKI card login with pin (most used)
 * Instance2: Username & Password
 * Instance3: Username & Password
 
-ServiceNow Instance URL = https://<instance>.service-now.com/
+ServiceNow Instance URL = https://"instance".service-now.com/
 
 <hr/>
 
