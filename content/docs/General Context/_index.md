@@ -32,7 +32,7 @@ Requests Sessions and Pip requests, by themselves, are unable to negotiate authe
 
 [JSON Web Service Docs](https://docs.servicenow.com/bundle/newyork-application-development/page/integrate/inbound-other-web-services/concept/c_JSONv2WebService.html)
 
-Naturally, anyone beyond ServiceNow admins and developers would be denied simple authentication access to any of ServiceNow's multiple web services.
+Naturally, anyone beyond ServiceNow admins and developers would be denied simple authentication access to any of ServiceNow's multiple web services (JSON, REST, etc).
 
 **_Selenium_**
 
