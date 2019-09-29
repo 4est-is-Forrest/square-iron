@@ -4,11 +4,11 @@ weight:
 template: docs
 
 ---
-Most of these tools and scripts are meant to be run by any individual in a help desk environment. Meaning, they can be run reliably across a team regardless of the what local machine they are used on.
+**Global Use:** The tools and scripts in the sections ahead are meant to be run by any individual in a help desk environment. Meaning, they can be run reliably across a team regardless of the what local machine they are used on.
 
-They must also be simple to use due to a global lack of coding knowledge among the intended users.
+**Simple:** They must also be simple to use due to a global lack of coding knowledge among the intended users.
 
-The OS environment is a mix of Windows 7 and Windows 10, with Windows 10 increasingly becoming the norm/required.
+**OS:** The OS environment is a mix of Windows 7 and Windows 10, with Windows 10 increasingly becoming the norm/required.
 
 ## Workarounds
 
