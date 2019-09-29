@@ -30,7 +30,7 @@ Requests Sessions and Pip requests, by themselves, are unable to negotiate authe
 
 For quite sometime, I believed ServiceNow's GUI was the only way to interact with its data, mostly because the first service I requested access to was the REST API, in which I was denied access. Naturally, anyone beyond ServiceNow admins and developers would be denied simple authentication access to any of ServiceNow's multiple web services.
 
-**_Initially All Selenium_**
+**_Selenium_**
 
 Thus, a Selenium Webdriver seemed to be the only automation option available for this environment. Tools and scripts using this method were certainly crude and error-prone at first, but they did become more refined as I gained experience, eventually interacting with ServiceNow mostly through JavaScript. Still, I never felt satisfied using this method and fervently searched for alternatives when I had the time.
 
