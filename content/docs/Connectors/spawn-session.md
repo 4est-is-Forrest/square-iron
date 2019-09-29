@@ -90,10 +90,10 @@ CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
 #### **_Local Constants_**
 
 ```python
-    s = requests.Session()
-    s.proxies['https'] = PROXY
-    domain = '{}.service-now.com'.format(inst)
-    url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
+s = requests.Session()
+s.proxies['https'] = PROXY
+domain = '{}.service-now.com'.format(inst)
+url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
 ```
 
 The new Session's proxy settings are set to the Px-Proxy (See Doc: 'General Context'). Local constants are set appropriately.
