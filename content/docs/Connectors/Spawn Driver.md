@@ -134,15 +134,20 @@ In this environment, 'Instance1' is the most commonly used and has cookies with 
             wait(10,0,'//*[@id="password"]').send_keys(Keys.ENTER)
             wait(20,0,'//*[@id="filter"]')
     	        driver_cookie_persist(inst)
-        if persist:
-            return driver,credentials
-        else:
-            driver.quit()
-            return credentials
 
-Each instance has unique login portals. Because 'instance1' requires a PKI card login and its cookies last quite a while, it's simpler for the user and driver to handle the authentication process themselves, hence the 120 second timeout.
+**Iterate 'logins' list, authenticate and verify cookie persistence for each.**
 
-#### **_Finally_**
+Each instance has unique login portals. Because 'Instance1' requires a PKI card login and its cookies last quite a while, it's easiest for the user and driver to handle the authentication process, hence the 120 second timeout.
+
+Adding instances is just a matter of defining more 'elif' blocks for each and accounting for the login method.
+
+#### **_Return Credential and/or Driver_**
+
+    if persist:
+    	return driver,credentials
+    else:
+    	driver.quit()
+        return credentials
 
 By default, the driver remains open (and is returned) but can be closed for when a Session simply needs good cookies. Regardless of whether it closes or not, no action is taken until the cookies have been saved to file.
 
