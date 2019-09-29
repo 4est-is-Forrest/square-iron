@@ -22,7 +22,7 @@ Comprised of three functions:
 
 A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this environment, and this module makes creating and managing these connections simple, even from the console.
 
-_See '_[_Environment & Context_](https://jjydyhotlchyoa.instant.forestry.io/docs/general-context/)_' for information on why Sessions and Webdrivers are both necessary._
+_See '_[_Environment & Context_](/docs/general-context/)_' for information on why Sessions and Webdrivers are both necessary._
 
 <hr />
 
