@@ -10,7 +10,7 @@ Minimizes login effort and, after successful login, asserts cookies are saved lo
 
 ## Code
 ```python
-    #Spawn Authenticated Driver for one or more Snow instance/instances
+    #Spawn Authenticated Driver for one or more Snow instance
     def spawn_driver(instances=['instance1'],credentials={},persist=True):
         """
         Functions
