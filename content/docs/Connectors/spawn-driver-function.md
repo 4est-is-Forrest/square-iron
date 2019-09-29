@@ -19,7 +19,7 @@ Additional information regarding imports and constants.
     from getpass import getpass
     import time
 
-The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously) thus, offering two important capabilities. Firstly, it offered a way to validate and test cookies with the help of Sessions and secondly, importing regular Chrome cookies for Sessions became possible. The latter is mostly just a nice convenience.
+The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously) thus, offering two important capabilities. Firstly, it offered a way to validate and test cookies with the help of Sessions and secondly, importing regular Chrome cookies for Sessions became possible. The latter is mostly just a nice convenience. So long as I was logged in to the instance via my preferred browser, I could easily interface with the JSON web service the moment I needed to.
 
 ## _Constants_
 
@@ -33,7 +33,9 @@ The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library i
 
 #### **_Px-Proxy_**
 
-[Px-proxy](https://github.com/genotrance/px) is necessary for Sessions to play nice with the environment's NTLM proxy. As the author, Genotrance, describes it, "An HTTP proxy server to automatically authenticate through an NTLM proxy." See the 'General Context' document for more information on this.
+[Px-proxy](https://github.com/genotrance/px) is necessary for Sessions to play nice with the environment's NTLM proxy. As the author, Genotrance, describes it, "An HTTP proxy server to automatically authenticate through an NTLM proxy." 
+
+_See the 'General Context' document for more information on this._
 
 #### **_Chromedriver Executable Path_**
 
