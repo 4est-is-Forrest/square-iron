@@ -4,10 +4,6 @@ layout: docs
 weight: 1
 
 ---
-    spawn_driver(instances=['instance1'],credentials={},persist=True)
-
-## Overview
-
 Minimizes login effort and, after successful login, asserts cookies are saved locally, usually in order for a Session to import them.
 
 #### **_Arguments:_**
