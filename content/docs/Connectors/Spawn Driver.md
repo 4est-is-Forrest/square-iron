@@ -92,7 +92,7 @@ Collecting credentials is important for certain instances. Credentials can be re
     else:
         logins = instances
 
-**Tests any existing cookies for the instances and marks those requiring login.**
+**Tests any existing cookies for each instance and marks those that require login.**
 
 If the file 'Cookies' exists, a Session object imports cookies associated with the current instance (no cookies may be present) and performs a quick JSON query. Any return status code other than 200 adds the instance to the 'logins' list. If the 'Cookies' file does not exist, naturally, all instances are added to 'logins' list.
 
