@@ -238,3 +238,4 @@ Adding instances is just a matter of defining more 'elif' blocks for each and ac
 Returning credentials is useful for when sustained login over long periods of time is necessary and credentials are not defined ahead of time. 'Instance1' is the exception to this, however.
 
 In most cases, after the Spawn Driver function has finished, Spawn Session is called immediately afterward.
+<hr />
