@@ -10,7 +10,7 @@ Creates an authenticated Request's Session for a specific instance of ServiceNow
 
 ## Code
 ```python
-    #Spawn Authenticated Driver for any Snow instance/instances
+    #Spawn authenticated Session for any defined Snow instance
     def spawn_session(inst='instance1',login_action=False,credentials={}):
         s = requests.Session()
         s.proxies['https'] = PROXY
