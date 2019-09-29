@@ -1,11 +1,12 @@
 +++
-draft = true
 layout = "docs"
-title = "Constants & Imports"
+title = "Module Code"
 weight = 1
 
 +++
-Information regarding imports and constants for the module 'connectors.'
+Complete module code with light annotations.
+
+<hr />
 
 ## _Imports_
 
