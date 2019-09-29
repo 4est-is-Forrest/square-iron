@@ -24,9 +24,9 @@ The software, [CNTLM](http://cntlm.sourceforge.net/), offered a method to addres
 
 **_Px-Proxy_**
 
-While CNTLM was an effective solution, I opted to utilize [Px-Proxy](https://github.com/genotrance/px "Px-Proxy") (basically a Python version of CNTLM) instead because of its capability to use the current user's credentials without any configuration.
+While CNTLM was a perfectly effective solution, I opted to utilize [Px-Proxy](https://github.com/genotrance/px "Px-Proxy") (basically a Python version of CNTLM) instead because of its capability to use the current user's credentials without any configuration.
 
-With help of the author's '.bat' file held in Px-Proxy's repository, I created an executable from the Python code and added it as a Windows Startup Service. This, together with white listing subnets expected to use my scripts, all resulted in a constant and reliable path for Pip and Requests to pass through, with very minimal maintenance.
+With help of the author's '.bat' file held in Px-Proxy's repository, I created an executable of Px-Proxy and added it as a Windows Startup Service. This, together with white listing subnets expected to use my scripts, resulted in a constant and reliable path for Pip and Requests to pass through across the team, with very minimal maintenance.
 
 #### _ServiceNow JSON Web Service_
 
