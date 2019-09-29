@@ -11,36 +11,35 @@ Creates an authenticated Request's Session for a specific instance of ServiceNow
 ## Code
 
 ```python
-    #Spawn authenticated Session for any defined Snow instance
-    def spawn_session(inst='instance1',login_action=False,credentials={}):
-        s = requests.Session()
-        s.proxies['https'] = PROXY
-        domain = '{}.service-now.com'.format(inst)
-        url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
-    
-        """Chrome(browser) Cookies Test/Return"""
-        cookies = browser_cookie3.chrome(domain_name=domain)
-        for cookie in cookies:
-            s.cookies.set(cookie.name, cookie.value)
-        r = s.get(url)
-        if r.status_code == 200:
-            return s
-    
-        """Driver Cookies Test/Return"""
-        if os.path.exists(COOKIE_FILE):
-            cookies = browser_cookie3.chrome(COOKIE_FILE,domain_name=domain)
-            for cookie in cookies:
-                s.cookies.set(cookie.name, cookie.value)
-            r = s.get(url)
-            if r.status_code == 200:
-                return s
-    
-        """Optional Login Action"""
-        if login_action:
-            spawn_driver(instances=[inst],persist=False,credentials=credentials)
-            return spawn_session(inst=inst,credentials=credentials)
-        else:
-            return None
+def spawn_session(inst='instance1',login_action=False,credentials={}):
+	s = requests.Session()
+	s.proxies['https'] = PROXY
+	domain = '{}.service-now.com'.format(inst)
+	url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
+
+	"""Chrome(browser) Cookies Test/Return"""
+	cookies = browser_cookie3.chrome(domain_name=domain)
+	for cookie in cookies:
+		s.cookies.set(cookie.name, cookie.value)
+	r = s.get(url)
+	if r.status_code == 200:
+		return s
+
+	"""Driver Cookies Test/Return"""
+	if os.path.exists(COOKIE_FILE):
+		cookies = browser_cookie3.chrome(COOKIE_FILE,domain_name=domain)
+		for cookie in cookies:
+			s.cookies.set(cookie.name, cookie.value)
+		r = s.get(url)
+		if r.status_code == 200:
+			return s
+
+	"""Optional Login Action"""
+	if login_action:
+		spawn_driver(instances=[inst],persist=False,credentials=credentials)
+		return spawn_session(inst=inst,credentials=credentials)
+	else:
+		return None
 ```
 
 ## Arguments
