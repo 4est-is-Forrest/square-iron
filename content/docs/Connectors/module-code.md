@@ -138,7 +138,7 @@ def spawn_session(inst='instance1',login_action=False,credentials={}):
 	else:
 		return None
 
-#Ensure Driver cookies are locally saved
+#Ensure Driver cookies are saved locally
 def driver_cookie_persist(inst='instance1'):
 	"""
 	Constants
