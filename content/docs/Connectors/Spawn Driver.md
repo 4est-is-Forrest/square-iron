@@ -98,7 +98,7 @@ If the file 'Cookies' exists, a Session object imports cookies associated with t
 
 Aside from saving time with logging in, knowing login states ahead of time helps in defining exactly what the Driver should expect and what redirects to anticipate.
 
-#### **_Instance1's Annoying Redirect_**
+#### **_Instance1's 'Successful Logout' Redirect_**
 
        if 'instance1' in logins:
         try:
