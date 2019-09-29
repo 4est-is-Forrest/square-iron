@@ -23,7 +23,7 @@ import time
 """
 Constants
 """
-PROXY = 'MC0XWZEC:335'
+PROXY = '<My Local Machine>:<Px-Proxy Port>'
 RESOURCES = os.environ['homepath'] + '/__resources__'
 CHROME_DRIVER = RESOURCES + '/chromedriver.exe'
 DRIVER_DATA = os.environ['homepath'] + '/Driver Data'
