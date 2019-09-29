@@ -129,7 +129,7 @@ if os.path.exists(COOKIE_FILE):
 
 **Test Driver's cookies, return Session if cookies are good.**
 
-Cookies from the Driver's 'Cookies' file, if it exists, are tested. Another query is performed and any return code other than 200 results in the function proceeding to the next step.
+Cookies from the Driver's 'Cookies' file, if the file exists, are tested. Another query is performed and any return code other than 200 results in the function proceeding to the next step.
 
 #### **_Optional Login Action_**
 
