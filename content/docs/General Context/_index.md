@@ -34,7 +34,7 @@ For quite sometime, I believed ServiceNow's GUI was the only way to interact wit
 
 Thus, a Selenium Webdriver seemed to be the only automation option available for this environment. Tools and scripts using this method were certainly crude and error-prone at first, but they did become more refined as I gained experience, eventually interacting with ServiceNow mostly through JavaScript. Still, I never felt satisfied using this method and fervently searched for alternatives when I had the time.
 
-**_JSON Web Service Authentication_**
+**_JSON Web Service & Requests_**
 
 I eventually discovered the JSON Web Service was perfectly accessible so long as the HTTP requests were accompanied with valid authentication cookies for their respective ServiceNow instance. This lead to many of my tools and scripts being completely rewritten to utilize this method as much as possible.
 
