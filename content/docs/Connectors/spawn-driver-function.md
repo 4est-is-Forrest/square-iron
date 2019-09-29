@@ -19,7 +19,7 @@ Additional information regarding imports and constants.
     from getpass import getpass
     import time
 
-The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously) providing two important capabilities I required. Firstly, it offered a way to validate and test cookies with the help of Sessions and secondly, importing regular Chrome cookies for Sessions became possible. The latter is mostly just a nice convenience.
+The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously) thus, offering two important capabilities. Firstly, it offered a way to validate and test cookies with the help of Sessions and secondly, importing regular Chrome cookies for Sessions became possible. The latter is mostly just a nice convenience.
 
 ## _Constants_
 
