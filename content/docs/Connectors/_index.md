@@ -9,7 +9,7 @@ This is an essential module I created and use to simplify authentication with di
 
 **Nearly every script active in this environment rely on this module.**
 
-Module Code
+[Module Code](/docs/connectors/module-code/)
 <hr />
 
 ## Summary
