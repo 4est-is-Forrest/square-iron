@@ -4,7 +4,7 @@ title = "Spawn Session (Function)"
 weight = 4
 
 +++
-Creates an authenticated Request's Session for a specific instance of ServiceNow.
+Creates an authenticated Request's Session for a specific instance of ServiceNow. Often follows a Spawn Driver call.
 
 <hr />
 
