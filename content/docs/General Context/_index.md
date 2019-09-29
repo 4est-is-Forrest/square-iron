@@ -36,7 +36,9 @@ Naturally, anyone beyond ServiceNow admins and developers would be denied simple
 
 **_Selenium_**
 
-Thus, a Selenium Webdriver seemed to be the only automation option available for this environment. Tools and scripts using this method were certainly crude and error-prone at first, but they did become more refined as I gained experience, eventually interacting with ServiceNow mostly through JavaScript. Still, I never felt satisfied using this method and fervently searched for alternatives when I had the time.
+A Selenium Webdriver initially seemed to be the only automation option available for this environment when it came to interacting with ServiceNow. The initial scripts written under this pretense navigated ServiceNow's GUI and favored sending JavaScript to a page in order to accomplish its objective.
+
+Tools and scripts using this method were certainly crude and error-prone at first, but they did become more refined as I gained experience, eventually interacting with ServiceNow mostly through JavaScript. Still, I never felt satisfied using this method and fervently searched for alternatives when I had the time.
 
 **_JSON Web Service & Requests_**
 
