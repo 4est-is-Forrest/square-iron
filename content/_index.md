@@ -94,8 +94,5 @@ sections:
   section_id: skills_and_experience
   subtitle: ''
 layout: home
-menu:
-  main:
-    weight: 1
 
 ---
