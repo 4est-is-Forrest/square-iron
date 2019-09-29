@@ -1,12 +1,10 @@
 ---
-title: Context
+title: Environment & Context
 weight: 
 template: docs
 
 ---
-## Environment
-
-Most of these tools and scripts are meant to be run by any individual in a help desk environment. Meaning, they can be run reliably across a team regardless of the what local machine they are used on. 
+Most of these tools and scripts are meant to be run by any individual in a help desk environment. Meaning, they can be run reliably across a team regardless of the what local machine they are used on.
 
 They must also be simple to use due to a global lack of coding knowledge among the intended users.
 
@@ -16,7 +14,7 @@ The OS environment is a mix of Windows 7 and Windows 10, with Windows 10 increas
 
 #### _Proxy Issues: Px-Proxy Solution_
 
-Requests Sessions and Pip requests, by themselves, are unable to negotiate authentication with the environment's NTLM proxy, thus they fail. 
+Requests Sessions and Pip requests, by themselves, are unable to negotiate authentication with the environment's NTLM proxy, thus they fail.
 
 **_CNTLM:_**
 
