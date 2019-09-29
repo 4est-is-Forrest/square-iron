@@ -22,9 +22,9 @@ Requests Sessions and Pip requests, by themselves, are unable to negotiate authe
 
 **_Px-Proxy:_** While CNTLM was a perfectly effective solution, I opted to utilize [Px-Proxy](https://github.com/genotrance/px "Px-Proxy") (basically a Python version of CNTLM) instead because of its capability to use the current user's credentials without any configuration.
 
-**Implementation:** With help of the author's '.bat' file held in Px-Proxy's repository, I created an executable of Px-Proxy and added it as a Windows Startup Service. This, together with white listing subnets expected to use my scripts, resulted in a constant and reliable path for Pip and Requests to pass through across the team, with very minimal maintenance.
+**Implementation:** With help of the author's '.bat' file held in Px-Proxy's Git repository, I created an executable of Px-Proxy and added it as a Windows Startup Service. This, together with white listing subnets expected to use my scripts, resulted in a constant and reliable path for Pip and Requests to pass through across the team, with very minimal maintenance.
 
-#### _ServiceNow JSON Web Service_
+## Python & ServiceNow
 
 [JSON Web Service Docs](https://docs.servicenow.com/bundle/newyork-application-development/page/integrate/inbound-other-web-services/concept/c_JSONv2WebService.html)
 
