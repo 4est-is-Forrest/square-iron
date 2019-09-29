@@ -17,7 +17,7 @@ Comprised of three functions:
 
 A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this environment, and this module makes creating and managing these connections simple, even from the console.
 
-_See 'General Context' for information on why both a Session and a Webdriver are often necessary._
+_See 'General Context' for information on why Sessions and Webdrivers are used in this environment._
 
 <hr />
 
