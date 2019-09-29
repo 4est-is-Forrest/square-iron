@@ -2,14 +2,14 @@
 title: Spawn Driver (Function)
 layout: docs
 weight: 3
----
 
+---
 Minimizes login effort and, after successful login, asserts cookies are saved locally, usually in order for a Session to import them.
 
 <hr/>
 
 ## Code
-
+```python
     #Spawn Authenticated Driver for one or more Snow instance/instances
     def spawn_driver(instances=['instance1'],credentials={},persist=True):
         """
@@ -83,7 +83,7 @@ Minimizes login effort and, after successful login, asserts cookies are saved lo
         else:
             driver.quit()
             return credentials
-
+```
 ## **Arguments**
 
 - Instances: list of one or more expected ServiceNow instances; Default: The most used instance: 'instance1'
@@ -109,7 +109,7 @@ ServiceNow Instance URL = https://"instance".service-now.com/
 ## Breakdown
 
 #### [**_Global Constants & Imports_**](/docs/connectors/spawn-driver-function/)
-
+```python
     from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.chrome.options import Options
     from selenium.webdriver.support import expected_conditions as EC
@@ -128,17 +128,17 @@ ServiceNow Instance URL = https://"instance".service-now.com/
     COOKIE_FILE = DRIVER_DATA + '/Default/Cookies'
     CHROME_OPTIONS = webdriver.ChromeOptions()
     CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
-
+```
 #### **_Local Function: wait =_** WebDriverWait
-
+```python
     def wait(x,y,z):
         els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
         return WebDriverWait(driver, x).until(EC.presence_of_element_located((els[y], z)))
-
+```
 This function is really just shorthand for the Selenium 'WebDriverWait' method, my preferred method in selecting HTML elements. It looks neater and is convenient to use in the console for testing/debugging.
 
 #### **_Credential Handling_**
-
+```python
     for inst in instances:
         if inst in ['instance2','instance3']:
             try:
@@ -149,7 +149,7 @@ This function is really just shorthand for the Selenium 'WebDriverWait' method, 
                 credentials['{}_usr'.format(inst)] = usr
                 pwd = getpass('Password ({}): '.format(inst))
                 credentials['{}_pwd'.format(inst)] = pwd
-
+```
 **This block determines whether credentials have been supplied and, if not, collects them appropriately.**
 
 Instances requiring a username and password to login are defined in this loop's list. Additional instances can simply be added.
@@ -159,7 +159,7 @@ Along with making sure credentials are available/collected, it does that before 
 Collecting credentials is important for certain instances. Credentials can be returned and utilized in a script to sustain login for these instances over long periods.
 
 #### **_Test Login State_**
-
+```python
     if os.path.exists(COOKIE_FILE): # If the driver Cookie file exists (indicating a first run or not), import the cookies and perform a SNOW Get
         s = requests.Session()
         s.proxies['https'] = PROXY
@@ -175,7 +175,7 @@ Collecting credentials is important for certain instances. Credentials can be re
                 logins.append(inst)
     else:
         logins = instances
-
+```
 **Tests any existing cookies for each instance and marks those that require login.**
 
 If the file 'Cookies' exists, a Session object imports cookies associated with the current instance (no cookies may be present) and performs a quick JSON query. Any return status code other than 200 adds the instance to the 'logins' list. If the 'Cookies' file does not exist, naturally, all instances are added to 'logins' list.
@@ -183,13 +183,13 @@ If the file 'Cookies' exists, a Session object imports cookies associated with t
 Aside from saving time with logging in, knowing login states helps in defining exactly what the Driver should expect and what redirects to anticipate.
 
 #### **_Instance1's 'Successful Logout' Redirect_**
-
+```python
        if 'instance1' in logins:
         try:
             os.remove(COOKIE_FILE)
         except:
             pass
-
+```
 **Driver cookies are erased if logging into 'Instance1' is necessary.**
 
 Instance1 will sometimes redirect browsers with expired cookies to a 'successfully logged out page' regardless of URL being accessed. Erasing cookies is the simplest way around this.
@@ -197,7 +197,7 @@ Instance1 will sometimes redirect browsers with expired cookies to a 'successful
 In this environment, 'Instance1' is the most commonly used and has cookies with the longest lifetime. Erasing all cookies is logical because if this instance's cookies are expired, the same is likely true for the others.
 
 #### **_Execute logins; return Driver and/or Credentials_**
-
+```python
     driver = webdriver.Chrome(CHROME_DRIVER,options=CHROME_OPTIONS)
     for inst in logins:
         if inst == 'instance1':
@@ -218,7 +218,7 @@ In this environment, 'Instance1' is the most commonly used and has cookies with 
             wait(10,0,'//*[@id="password"]').send_keys(Keys.ENTER)
             wait(20,0,'//*[@id="filter"]')
     	        driver_cookie_persist(inst)
-
+```
 **Iterate 'logins' list; authenticate and verify cookie persistence for each.**
 
 Each instance has unique login portals. Because 'Instance1' requires a PKI card login and its cookies last quite a while, it's easiest for the user and driver to handle the authentication process, hence the 120 second timeout.
@@ -226,13 +226,13 @@ Each instance has unique login portals. Because 'Instance1' requires a PKI card 
 Adding instances is just a matter of defining more 'elif' blocks for each and accounting for the login method.
 
 #### **_Return Credential and/or Driver_**
-
+```python
     if persist:
     	return driver,credentials
     else:
     	driver.quit()
         return credentials
-
+```
 **Always returns credentials, passed 'persist' argument determines if Driver with be returned or closed.**
 
 Returning credentials is useful for when sustained login over long periods of time is necessary and credentials are not defined ahead of time. 'Instance1' is the exception to this, however.
