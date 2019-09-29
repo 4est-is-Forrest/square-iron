@@ -25,4 +25,4 @@ _See 'General Context' for information on why Sessions and Webdrivers are used i
 
 **Note:** I refer to a browser writing cookies locally as 'cookies persisting.' The third function of this module specifically addresses this and is really only used within the Spawn Driver Function.
 
-**Chrome's Interval:** Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing cookies to its 'Cookies' file. After a login is successful via a Driver, a Session will query the particular instance's JSON service repeatedly until a status code 200 is returned. This is to ensure subsequent Sessions may immediately import these cookies so as to communicate with ServiceNow via JSON.
+**Chrome's Interval:** Cookies persistence must be asserted due to Google Chrome's 30-second interval when writing cookies to its 'Cookies' file. After a login is successful via a Driver, a Session will query the particular instance's JSON service repeatedly until a status code 200 is returned. This is to ensure subsequent Sessions may immediately import these cookies so as to communicate with ServiceNow via JSON.
