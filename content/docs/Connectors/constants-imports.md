@@ -11,16 +11,16 @@ Information regarding imports and constants for this module.
 ## _Imports_
 
 ```python
-    from selenium.webdriver.support.ui import WebDriverWait
-    from selenium.webdriver.chrome.options import Options
-    from selenium.webdriver.support import expected_conditions as EC
-    from selenium.webdriver.common.by import By
-    from selenium.webdriver.common.keys import Keys
-    import requests
-    import os,sys
-    import browser_cookie3
-    from getpass import getpass
-    import time
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import requests
+import os,sys
+import browser_cookie3
+from getpass import getpass
+import time
 ```
 
 The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library is worth elaborating on. This library offers methods to easily interact with browser cookies (obviously) thus, offering two important capabilities. Firstly, it offered a way to validate and test cookies with the help of Sessions and secondly, importing regular Chrome cookies for Sessions became possible. The latter is mostly just a nice convenience. So long as I was logged in to the instance via my preferred browser, I could easily interface with the JSON web service the moment I needed to.
