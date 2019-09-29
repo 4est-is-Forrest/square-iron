@@ -6,13 +6,15 @@ weight: 1
 ---
 Minimizes login effort and, after successful login, asserts cookies are saved locally, usually in order for a Session to import them.
 
-#### **_Arguments:_**
+<hr/>
+
+## **Arguments**
 
 * Instances: list of one or more expected ServiceNow instances; Default: The most used instance: 'instance1'
 * Credentials: (optional) dictionary of credentials for instances other than 'instance1.' Default is none. Dictionary key nomenclature is simply: instance_usr/pwd
 * Persist: Whether the Driver should be kept open after completed login/logins; Default is True
 
-#### **_Functionality:_**
+## **Functionality**
 
 The function is tailored for three specific instances with differentiating login methods and landing pages. Other instances can be added with relative ease, needing only to define the login process and whether the instance requires username and password credentials.
 
@@ -20,7 +22,7 @@ The function is tailored for three specific instances with differentiating login
 * Instance2: Username & Password
 * Instance3: Username & Password
 
-</hr>
+<hr/>
 
 ## Breakdown
 
