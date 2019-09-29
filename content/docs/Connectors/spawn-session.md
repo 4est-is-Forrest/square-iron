@@ -9,7 +9,7 @@ Creates an authenticated Request's Session for a specific instance of ServiceNow
 <hr />
 
 ## Code
-
+```python
     #Spawn Authenticated Driver for any Snow instance/instances
     def spawn_session(inst='instance1',login_action=False,credentials={}):
         s = requests.Session()
@@ -40,7 +40,7 @@ Creates an authenticated Request's Session for a specific instance of ServiceNow
             return spawn_session(inst=inst,credentials=credentials)
         else:
             return None
-
+```
 ## Arguments
 
 * Instance: Unlike 'spawn_driver,' only one instance can be passed
@@ -64,7 +64,7 @@ The 'login action' argument is primarily for use within a console, not a script.
 ## Breakdown
 
 #### **_Global Constants & Imports_**
-
+```python
     from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.chrome.options import Options
     from selenium.webdriver.support import expected_conditions as EC
@@ -83,25 +83,25 @@ The 'login action' argument is primarily for use within a console, not a script.
     COOKIE_FILE = DRIVER_DATA + '/Default/Cookies'
     CHROME_OPTIONS = webdriver.ChromeOptions()
     CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
-
+```
 #### **_Local Constants_**
-
+```python
     s = requests.Session()
     s.proxies['https'] = PROXY
     domain = '{}.service-now.com'.format(inst)
     url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
-
+```
 The new Session's proxy settings are set to the Px-Proxy (See Doc: 'General Context'). Local constants are set appropriately.
 
 #### **_Regular Chrome's Cookies_**
-
+```python
     cookies = browser_cookie3.chrome(domain_name=domain)
     for cookie in cookies:
         s.cookies.set(cookie.name, cookie.value)
     r = s.get(url)
     if r.status_code == 200:
         return s
-
+```
 **Test user's Chrome cookies, return Session if cookies are good.**
 
 Cookies associated with the passed instance are extracted using the 'browser-cookie' library (See Doc: 'Connectors (Module)') from the user's Chrome Browser. A simple GET query is sent and if the response code is 200, stop and return the Session, otherwise, next step.
@@ -109,7 +109,7 @@ Cookies associated with the passed instance are extracted using the 'browser-coo
 If no cookies are found, 'None' is returned which still results in the function proceeding to the next step.
 
 #### **_Chromedriver's Cookies_**
-
+```python
     if os.path.exists(COOKIE_FILE):
         cookies = browser_cookie3.chrome(COOKIE_FILE,domain_name=domain)
         for cookie in cookies:
@@ -117,18 +117,18 @@ If no cookies are found, 'None' is returned which still results in the function 
         r = s.get(url)
         if r.status_code == 200:
             return s
-
+```
 **Test Driver's cookies, return Session if cookies are good.**
 
 Cookies associated with the passed instance are extracted using the 'browser-cookie' library (See Doc: 'Connectors (Module)') from the Driver's 'Cookies' file, assuming it exists. Another query is performed and any return code other than 200 results in the function proceeding to the next step.
 
 #### **_Optional Login Action_**
-
+```python
     if login_action:
         spawn_driver(instances=[inst],persist=False,credentials=credentials)
         return spawn_session(inst=inst,credentials=credentials)
     else:
         return None
-
+```
 At this point, either 'None' is returned or a 'login action' is performed, essentially calling the Spawn Driver method while passing the necessary instance and, optionally, credentials. The 'Persist' argument is set to False so that the driver is closed.
 <hr />
