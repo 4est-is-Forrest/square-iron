@@ -19,34 +19,16 @@ Comprised of three functions:
 
 A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this environment, and this module makes creating and managing these connections simple, even from the console.
 
+_See 'General Context' for information on why both Sessions and a Webdriver are necessary._
+
 <hr />
-
-## Context Summary
-
-_See Doc: General Context for more details on the following._
-
-#### **_Environment_**
-
-This module is specific to a help desk environment and most other scripts/tools for said environment depend on it. Chromedriver is my preferred Webdriver.
-
-#### **_Why JSON?_**
-
-Simply due to policy, it was not possible for simple authentication with ServiceNow's various web services to be enabled for anyone beyond SNOW admins and developers. With the help of cookies however, access to the JSON Web Service via Requests is possible. This is true for all instances of ServiceNow utilized in this environment.
-
-#### **_Then why a Driver too?_**
-
-The JSON web service has three important limitations:
-
-1. Obviously, something else must negotiate login and obtain cookies
-2. Attaching items to ServiceNow records is not possible via JSON yet often necessary
-3. ServiceNow records can not be changed to a resolved/closed state outside of the GUI for 'itil' users (I theorize)
 
 ## Cookie persistence
 
 _Not covered in Doc: General Context_
 
-**Note:** I refer to a browser writing cookies locally as 'cookies persisting.' The third function of this module specifically addresses this and is really only used within the Spawn Driver Function
+**Note:** I refer to a browser writing cookies locally as 'cookies persisting.' The third function of this module specifically addresses this and is really only used within the Spawn Driver Function.
 
 Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing cookies to its 'Cookies' file. After a login is successful, a Session will query the instance's JSON service repeatedly until a status code 200 is returned.
 
-When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time. I eventually noticed that the local cookies were almost always bad if the Driver was immediately closed after login, implying some timing issue. Thankfully, a simple Google search revealed Chrome's 30-second interval and I adjusted the module accordingly.
+**_Stumbling on to this:_** When I was unaware of the 30 second interval, I was very confused why Sessions would often fail authentication within a script, yet, when I established the connection step-by-step in a console, it worked almost every time. I eventually noticed that the local cookies were almost always bad if the Driver was immediately closed after login, implying some timing issue. Thankfully, a simple Google search revealed Chrome's 30-second interval and I adjusted the module accordingly.
