@@ -146,16 +146,16 @@ This function is really just shorthand for the Selenium 'WebDriverWait' method, 
 #### **_Credential Handling_**
 
 ```python
-    for inst in instances:
-        if inst in ['instance2','instance3']:
-            try:
-                usr = credentials['{}_usr'.format(inst)]
-                pwd = credentials['{}_pwd'.format(inst)]
-            except:
-                usr = input('Username ({}): '.format(inst))
-                credentials['{}_usr'.format(inst)] = usr
-                pwd = getpass('Password ({}): '.format(inst))
-                credentials['{}_pwd'.format(inst)] = pwd
+for inst in instances:
+	if inst in ['instance2','instance3']:
+		try:
+			usr = credentials['{}_usr'.format(inst)]
+			pwd = credentials['{}_pwd'.format(inst)]
+		except:
+			usr = input('Username ({}): '.format(inst))
+			credentials['{}_usr'.format(inst)] = usr
+			pwd = getpass('Password ({}): '.format(inst))
+			credentials['{}_pwd'.format(inst)] = pwd
 ```
 
 **This block determines whether credentials have been supplied and, if not, collects them appropriately.**
@@ -169,21 +169,21 @@ Collecting credentials is important for certain instances. Credentials can be re
 #### **_Test Login State_**
 
 ```python
-    if os.path.exists(COOKIE_FILE): # If the driver Cookie file exists (indicating a first run or not), import the cookies and perform a SNOW Get
-        s = requests.Session()
-        s.proxies['https'] = PROXY
-        logins = []
-        for inst in instances:
-            domain = '{}.service-now.com'.format(inst)
-            url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
-            cookies = browser_cookie3.chrome(COOKIE_FILE, domain)
-            for cookie in cookies:
-                s.cookies.set(cookie.name, cookie.value)
-            r = s.get(url)
-            if r.status_code != 200:
-                logins.append(inst)
-    else:
-        logins = instances
+if os.path.exists(COOKIE_FILE): # If the driver Cookie file exists (indicating a first run or not), import the cookies and perform a SNOW Get
+	s = requests.Session()
+	s.proxies['https'] = PROXY
+	logins = []
+	for inst in instances:
+		domain = '{}.service-now.com'.format(inst)
+		url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
+		cookies = browser_cookie3.chrome(COOKIE_FILE, domain)
+		for cookie in cookies:
+			s.cookies.set(cookie.name, cookie.value)
+		r = s.get(url)
+		if r.status_code != 200:
+			logins.append(inst)
+else:
+	logins = instances
 ```
 
 **Tests any existing cookies for each instance and marks those that require login.**
