@@ -39,7 +39,7 @@ _See the 'General Context' document for more information on this environment's p
 
 #### **_Chromedriver Executable Path_**
 
-There is a separate script distributed to users in order to make it easy to keep all assets, modules and scripts up to date and in the correct locations. In this context, the directory named 'RESOURCES' is in the user's home path and contains 'chromedriver.exe' because of this separate script.
+There is a separate script distributed to users in order to make it easy to keep all assets, modules and scripts on their machine up to date and in the correct locations. Regarding the constants above, the directory named 'RESOURCES' is in the user's home path and contains 'chromedriver.exe' thanks to this separate script.
 
 #### **_Chromedriver Profile Directory_**
 
