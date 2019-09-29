@@ -211,26 +211,26 @@ In this environment, 'Instance1' is the most commonly used and has cookies with 
 #### **_Execute logins; return Driver and/or Credentials_**
 
 ```python
-    driver = webdriver.Chrome(CHROME_DRIVER,options=CHROME_OPTIONS)
-    for inst in logins:
-        if inst == 'instance1':
-            driver.get('https://instance1.service-now.com/login_with_sso.do?glide_sso_id=<xxxxx>')
-            wait(120,0,'//*[@id="filter"]')
-        elif inst == 'instance2':
-            driver.get('https://instance2.service-now.com/itserviceportal/?id=<xxxxx>')
-            wait(10,0,'//*[@id="username"]').send_keys(credentials['instance2_usr'])
-            wait(10,0,'//*[@id="username"]').send_keys(Keys.ENTER)
-            wait(10,0,'//*[@id="User_ID"]').send_keys(credentials['instance2_usr'])
-            wait(10,0,'//*[@id="Password"]').send_keys(credentials['instance2_pwd'])
-            wait(10,0,'//*[@id="Password"]').send_keys(Keys.ENTER)
-            wait(20,0,'//*[@id="filter"]')
-        elif inst == 'instance3':
-            driver.get('https://instance3.service-now.com/')
-            wait(10,0,'//*[@id="username"]').send_keys('instance3_usr')
-            wait(10,0,'//*[@id="password"]').send_keys('instance3_pwd')
-            wait(10,0,'//*[@id="password"]').send_keys(Keys.ENTER)
-            wait(20,0,'//*[@id="filter"]')
-    	        driver_cookie_persist(inst)
+driver = webdriver.Chrome(CHROME_DRIVER,options=CHROME_OPTIONS)
+for inst in logins:
+	if inst == 'instance1':
+		driver.get('https://instance1.service-now.com/login_with_sso.do?glide_sso_id=<xxxxx>')
+		wait(120,0,'//*[@id="filter"]')
+	elif inst == 'instance2':
+		driver.get('https://instance2.service-now.com/itserviceportal/?id=<xxxxx>')
+		wait(10,0,'//*[@id="username"]').send_keys(credentials['instance2_usr'])
+		wait(10,0,'//*[@id="username"]').send_keys(Keys.ENTER)
+		wait(10,0,'//*[@id="User_ID"]').send_keys(credentials['instance2_usr'])
+		wait(10,0,'//*[@id="Password"]').send_keys(credentials['instance2_pwd'])
+		wait(10,0,'//*[@id="Password"]').send_keys(Keys.ENTER)
+		wait(20,0,'//*[@id="filter"]')
+	elif inst == 'instance3':
+		driver.get('https://instance3.service-now.com/')
+		wait(10,0,'//*[@id="username"]').send_keys('instance3_usr')
+		wait(10,0,'//*[@id="password"]').send_keys('instance3_pwd')
+		wait(10,0,'//*[@id="password"]').send_keys(Keys.ENTER)
+		wait(20,0,'//*[@id="filter"]')
+			driver_cookie_persist(inst)
 ```
 
 **Iterate 'logins' list; authenticate and verify cookie persistence for each.**
