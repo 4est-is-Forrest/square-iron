@@ -34,13 +34,9 @@ Requests Sessions and Pip requests, by themselves, are unable to negotiate authe
 
 Naturally, anyone beyond ServiceNow admins and developers would be denied simple authentication access to any of ServiceNow's multiple web services (JSON, REST, etc).
 
-**_Selenium_**
+**_Selenium:_** A Selenium Webdriver initially seemed to be the only automation option available for this environment when it came to interacting with ServiceNow. The initial scripts written under this pretense navigated ServiceNow's GUI and favored sending JavaScript to a page in order to accomplish its objective.
 
-A Selenium Webdriver initially seemed to be the only automation option available for this environment when it came to interacting with ServiceNow. The initial scripts written under this pretense navigated ServiceNow's GUI and favored sending JavaScript to a page in order to accomplish its objective.
-
-**_JSON Web Service & Requests_**
-
-I eventually discovered ServiceNow's JSON Web Service was perfectly accessible so long as the HTTP requests were accompanied with valid authentication cookies imported from a browser. This lead to major script revisions favoring the Requests library over Selenium as much as possible.
+**_JSON & Requests:_** I eventually discovered ServiceNow's JSON Web Service was perfectly accessible so long as the HTTP requests were accompanied with valid authentication cookies imported from a browser. This lead to major script revisions favoring the Requests library over Selenium as much as possible.
 
 **_Selenium Webdriver & JSON Web Service Together_**
 
