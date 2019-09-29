@@ -33,7 +33,7 @@ CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
 """
 Functions
 """
-#Spawn Authenticated Driver for one or more Snow instance/instances
+#Spawn Authenticated Driver for one or more Snow instances
 def spawn_driver(instances=['instance1'],credentials={},persist=True):
 	"""
 	Functions
@@ -107,7 +107,7 @@ def spawn_driver(instances=['instance1'],credentials={},persist=True):
 		driver.quit()
 		return credentials
 
-#Spawn Authenticated Driver for any Snow instance/instances
+#Spawn authenticated Session for any defined SNOW instance
 def spawn_session(inst='instance1',login_action=False,credentials={}):
 	s = requests.Session()
 	s.proxies['https'] = PROXY
