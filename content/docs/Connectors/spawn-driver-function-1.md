@@ -6,6 +6,12 @@ weight = 1
 +++
 Creates an authenticated Request's Session for a specific instance of ServiceNow.
 
+<hr />
+
+## Code
+
+    
+
 ## Arguments:
 
 * Instance: Unlike 'spawn_driver,' only one instance can be passed
