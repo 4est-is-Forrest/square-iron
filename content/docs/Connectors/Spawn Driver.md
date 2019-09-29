@@ -135,7 +135,7 @@ In this environment, 'Instance1' is the most commonly used and has cookies with 
             wait(20,0,'//*[@id="filter"]')
     	        driver_cookie_persist(inst)
 
-**Iterate 'logins' list, authenticate and verify cookie persistence for each.**
+**Iterate 'logins' list; authenticate and verify cookie persistence for each.**
 
 Each instance has unique login portals. Because 'Instance1' requires a PKI card login and its cookies last quite a while, it's easiest for the user and driver to handle the authentication process, hence the 120 second timeout.
 
