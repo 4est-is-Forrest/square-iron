@@ -4,7 +4,9 @@ title = "Global Constants & Imports"
 weight = 2
 
 +++
-Information regarding imports and constants for the module 'connectors.'
+Information regarding imports and constants for this module.
+
+<hr />
 
 ## _Imports_
 
