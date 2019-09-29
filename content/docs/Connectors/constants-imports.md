@@ -28,13 +28,13 @@ The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library i
 ## _Constants_
 
 ```python
-    PROXY = '<My Local Machine>:<Px-Proxy Port>'
-    RESOURCES = os.environ['homepath'] + '/__resources__'
-    CHROME_DRIVER = RESOURCES + '/chromedriver.exe'
-    DRIVER_DATA = os.environ['homepath'] + '/Driver Data'
-    COOKIE_FILE = DRIVER_DATA + '/Default/Cookies'
-    CHROME_OPTIONS = webdriver.ChromeOptions()
-    CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
+PROXY = '<My Local Machine>:<Px-Proxy Port>'
+RESOURCES = os.environ['homepath'] + '/__resources__'
+CHROME_DRIVER = RESOURCES + '/chromedriver.exe'
+DRIVER_DATA = os.environ['homepath'] + '/Driver Data'
+COOKIE_FILE = DRIVER_DATA + '/Default/Cookies'
+CHROME_OPTIONS = webdriver.ChromeOptions()
+CHROME_OPTIONS.add_argument("user-data-dir={}".format(DRIVER_DATA))
 ```
 
 #### **_Px-Proxy_**
