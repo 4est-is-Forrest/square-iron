@@ -96,7 +96,7 @@ domain = '{}.service-now.com'.format(inst)
 url = 'https://{}/sys_user.do?JSONv2&sysparm_record_count=1&sysparm_action=getKeys'.format(domain)
 ```
 
-The new Session's proxy settings are set to the Px-Proxy (See Doc: 'General Context'). Local constants are set appropriately.
+The new Session's proxy settings are set to the Px-Proxy (See [_Environment & Context_](https://jjydyhotlchyoa.instant.forestry.io/docs/general-context/)). Local constants are set appropriately.
 
 #### **_Regular Chrome's Cookies_**
 
