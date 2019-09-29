@@ -38,7 +38,7 @@ Naturally, anyone beyond ServiceNow admins and developers would be denied simple
 
 **_Requests:_** I eventually discovered ServiceNow's JSON Web Service was perfectly accessible so long as the HTTP requests were accompanied with valid authentication cookies imported from a browser. This lead to major script revisions favoring the Requests library over Selenium as much as possible.
 
-The JSON Web Service has three important limitations (for 'itil' users at least). 
+**_Both:_** The JSON Web Service has three important limitations (for 'itil' users at least). 
 
 1. There is no way to negotiate authentication in this environment outside of ServiceNow's GUI. 
 2. Attaching files to ServiceNow records is not possible via JSON. 
