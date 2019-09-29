@@ -4,10 +4,11 @@ title = "Module Code"
 weight = 1
 
 +++
+
 Complete module code with light annotations.
 
 <hr />
-
+```python
     from selenium import webdriver
     from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.chrome.options import Options
@@ -159,4 +160,4 @@ Complete module code with light annotations.
             else:
                 print('Waiting for driver cookies to persist, please wait...')
                 time.sleep(5)
-    
+
