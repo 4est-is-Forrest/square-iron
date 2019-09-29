@@ -66,11 +66,13 @@ This function is really just shorthand for the Selenium 'WebDriverWait' method, 
                 pwd = getpass('Password ({}): '.format(inst))
                 credentials['{}_pwd'.format(inst)] = pwd
 
-Instances requiring a username and password to login are defined in this loop's list. Additional instances can simply be added if desired. This block determines whether credentials have been supplied and, if not, collects them appropriately.
+**This block determines whether credentials have been supplied and, if not, collects them appropriately.**
+
+Instances requiring a username and password to login are defined in this loop's list. Additional instances can simply be added. 
 
 Along with making sure credentials are available/collected, it does that before Chromedriver is opened, ensuring the credential prompt is not covered by the Driver window.
 
-A big reason for collecting the credentials in the first place is to return them for scripts and tools meant to run for extended periods of time. This way, should the session expire, logging in again can be automated.
+Collecting credentials is important for certain instances. Credentials can be returned and utilized in a script to sustain login for these instances over long periods.
 
 #### **_Test Login State_**
 
