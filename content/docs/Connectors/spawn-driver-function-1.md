@@ -4,11 +4,7 @@ title = "Spawn Session (Function)"
 weight = 1
 
 +++
-spawn_session(inst='instance1',login_action=False,credentials={})
-
-## Overview
-
-Tries to import good cookies from the user's Chrome Browser, failing that, tries from the Driver's cookies. Optionally, a Driver launches temporarily to perform a login and closes once good cookies are available for the Session to import.
+Creates an authenticated Request's Session for a specific instance of ServiceNow.
 
 #### **_Arguments:_**
 
