@@ -45,9 +45,7 @@ The JSON web service has three important limitations:
 
 _Not covered in Doc: General Context_
 
-**Note:** I refer to a browser writing cookies locally as 'cookies persisting.'
-
-The third function of this module specifically addresses this factor.
+**Note:** I refer to a browser writing cookies locally as 'cookies persisting.' The third function of this module specifically addresses this.
 
 Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing to its 'Cookies' file. After a login is successful, a Session queries the instance's JSON service repeatedly until a status code 200.
 
