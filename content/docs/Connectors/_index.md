@@ -24,8 +24,6 @@ _See 'General Context' for information on why both a Session and a Webdriver are
 
 ## Cookie Persistence
 
-_Not covered in Doc: General Context_
-
 **Note:** I refer to a browser writing cookies locally as 'cookies persisting.' The third function of this module specifically addresses this and is really only used within the Spawn Driver Function.
 
 Cookies persistence must be asserted due to Google Chrome's 30-second intervals of writing cookies to its 'Cookies' file. After a login is successful, a Session will query the instance's JSON service repeatedly until a status code 200 is returned.
