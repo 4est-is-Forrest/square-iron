@@ -11,7 +11,7 @@ sections:
     will also be included.
   image: ''
   actions:
-  - label: Code Documents
+  - label: Documents
     url: "/docs/"
 layout: home
 
