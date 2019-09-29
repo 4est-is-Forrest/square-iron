@@ -161,3 +161,4 @@ def driver_cookie_persist(inst='instance1'):
 			print('Waiting for driver cookies to persist, please wait...')
 			time.sleep(5)
 ```
+<hr />
