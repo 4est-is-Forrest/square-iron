@@ -5,10 +5,11 @@ weight:
 subtitle: ''
 
 ---
-This is an essential module I created and use to simplify authentication with different ServiceNow instances in order to use the instances' JSON Web Services (Session) and/or navigate their GUI's (Webdriver). 
+This is an essential module I created and use to simplify authentication with different ServiceNow instances in order to use the instances' JSON Web Services (Session) and/or navigate their GUI's (Webdriver).
 
 **Nearly every script active in this environment rely on this module.**
 
+Module Code
 <hr />
 
 ## Summary
