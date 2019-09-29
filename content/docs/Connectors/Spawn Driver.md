@@ -195,11 +195,11 @@ Aside from saving time with logging in, knowing login states helps in defining e
 #### **_Instance1's 'Successful Logout' Redirect_**
 
 ```python
-       if 'instance1' in logins:
-        try:
-            os.remove(COOKIE_FILE)
-        except:
-            pass
+if 'instance1' in logins:
+	try:
+		os.remove(COOKIE_FILE)
+	except:
+		pass
 ```
 
 **Driver cookies are erased if logging into 'Instance1' is necessary.**
