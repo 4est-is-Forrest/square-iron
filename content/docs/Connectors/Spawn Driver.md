@@ -106,7 +106,7 @@ Aside from saving time with logging in, knowing login states helps in defining e
         except:
             pass
 
-**Driver cookies are erased if login to 'Instance1' is necessary.**
+**Driver cookies are erased if logging into 'Instance1' is necessary.**
 
 Instance1 will sometimes redirect browsers with expired cookies to a 'successfully logged out page' regardless of URL being accessed. Erasing cookies is the simplest way around this.
 
