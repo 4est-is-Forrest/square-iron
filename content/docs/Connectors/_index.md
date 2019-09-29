@@ -26,7 +26,7 @@ _See '_[_Environment & Context_](https://jjydyhotlchyoa.instant.forestry.io/docs
 
 <hr />
 
-## Cookie Persistence
+## Cookie Persistence (Additional Context)
 
 **Note:** I refer to a browser writing cookies locally as 'cookies persisting.' The third function of this module specifically addresses this and is really only used within the Spawn Driver function.
 
