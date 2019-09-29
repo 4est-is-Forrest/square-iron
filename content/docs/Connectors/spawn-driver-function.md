@@ -35,7 +35,7 @@ The [browser-cookie3](https://pypi.org/project/browser-cookie3/0.6.0/) library i
 
 [Px-proxy](https://github.com/genotrance/px) is necessary for Sessions to play nice with the environment's NTLM proxy. As the author, Genotrance, describes it, "An HTTP proxy server to automatically authenticate through an NTLM proxy."
 
-_See the 'General Context' document for more information on this environment's proxy challenges and solutions ._
+_See the '_[_General Context_](/docs/general-context/)_' document for more information on this environment's proxy challenges and solutions ._
 
 #### **_Chromedriver Executable Path_**
 
