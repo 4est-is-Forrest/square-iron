@@ -4,7 +4,6 @@ title = "Module Code"
 weight = 1
 
 +++
-
 Complete module code with light annotations.
 
 <hr />
@@ -160,3 +159,4 @@ Complete module code with light annotations.
             else:
                 print('Waiting for driver cookies to persist, please wait...')
                 time.sleep(5)
+```
