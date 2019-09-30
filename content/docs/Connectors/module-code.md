@@ -8,6 +8,8 @@ Complete code with light annotations.
 
 <hr />
 
+**Summary and context associated with this module available in the section's parent document:** [**Connectors (Module)**](/docs/connectors/)
+
 ```python
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
@@ -161,4 +163,5 @@ def driver_cookie_persist(inst='instance1'):
 			print('Waiting for driver cookies to persist, please wait...')
 			time.sleep(5)
 ```
+
 <hr />
