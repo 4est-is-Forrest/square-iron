@@ -4,7 +4,7 @@ title = "Module Code"
 weight = 1
 
 +++
-**Summary and context associated with this module available in the section's parent document:** [**Connectors (Module)**](/docs/connectors/)
+**A summary and context for this module in section's parent document:** [**Connectors (Module)**](/docs/connectors/)
 
 <hr />
 
