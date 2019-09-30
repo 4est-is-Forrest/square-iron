@@ -4,7 +4,7 @@ weight:
 title: Inbox Automation
 
 ---
-In this section, I will elaborate on the tool set I created to automate the vast majority of labor associated with parsing and processing emails from a high volume help desk inbox.
+In this section, I will elaborate on the tool set I created to automate the vast majority of labor associated with parsing and processing emails from a high volume help desk inbox (\~300 emails/day).
 
 <hr />
 
