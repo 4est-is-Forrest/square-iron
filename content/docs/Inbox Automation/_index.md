@@ -21,3 +21,5 @@ This toolset/system is built on two personal modules and three scripts that perf
 This toolset has a small and simple syntax that must be used within emails' subject lines so as to pass important arguments into the ticket's creation.
 
 What use to require additional hires and a dedicated team to manage, is now leisurely worked by one individual with a processing rate higher than the email intake.
+
+<hr />
