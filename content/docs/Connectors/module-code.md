@@ -4,11 +4,11 @@ title = "Module Code"
 weight = 1
 
 +++
-Complete code with light annotations.
+**Summary and context associated with this module available in the section's parent document:** [**Connectors (Module)**](/docs/connectors/)
 
 <hr />
 
-**Summary and context associated with this module available in the section's parent document:** [**Connectors (Module)**](/docs/connectors/)
+Complete code with light annotations.
 
 ```python
 from selenium import webdriver
