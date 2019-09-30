@@ -32,9 +32,15 @@ See the scripts' respective documents for greater detail.
 
 ## Syntax
 
-'Tasks' and 'Incidents' are dependent on a syntax in order to fill fields with information that often require human interpretation, such as a resolver group or a billing code to create the ticket under. The syntax is as follows:
+'Tasks' and 'Incidents' are dependent on a syntax in order to fill fields with information that often require human interpretation, such as a resolver group or a client code to create the ticket under. The arguments are added to each email's subject line encased in their respective symbol:
 
-* %%<Billing Code>%% (required)
+* %%<Client Code>%% (required)
 * {{<Resolver Group>}} (required)
 * $$<Ticket Short Description>$$ (optional)
 * &&<Override Email Sender>&& (optional)
+
+Example:
+
+**Original Subject:** Helpdesk - I'm unable to access my email
+
+So long as the first two are provided on each email, the scripts have everything they need to accurately create 
