@@ -13,3 +13,4 @@ In this section, I will elaborate on the toolset I created to automate the vast 
 This toolset/system is built on two personal modules and three scripts that perform the work:
 
 * [Connectors Module](/docs/connectors/): Establishes Session and Webdriver connections with ServiceNow instances
+* Inbox Module: Primary use is to parse arguments from emails and return JSON ready Python dictionary
