@@ -20,7 +20,7 @@ Composed of three primary functions:
 * **A Session method** that tries to import good cookies from the user's browser, failing that, the Driver's locally saved cookies. Optionally, a Driver launches temporarily to perform a login and closes once good cookies are available for the Session.
 * **A 'cookie persist' method**, primarily used by the Driver method, to repeatedly test and wait until expected authentication cookies have been saved to the Driver's 'Cookies' file. Details on 'cookie persistence' can be found below.
 
-A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this environment, and this module makes creating and managing these connections simple, even from the console.
+A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this environment, and this module makes creating and managing these connections much easier.
 
 _See '_[_Environment & Context_](/docs/general-context/)_' for information on why Sessions and Webdrivers are both necessary._
 
