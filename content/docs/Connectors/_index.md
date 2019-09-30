@@ -14,7 +14,7 @@ This is an essential module I created and use to simplify authentication with di
 
 ## Summary
 
-Comprised of three functions:
+Composed of three primary functions:
 
 * **A Driver method** that minimizes login effort and, after successful login, asserts cookies are saved locally, usually in order for a Session to import them.
 * **A Session method** that tries to import good cookies from the user's browser, failing that, the Driver's locally saved cookies. Optionally, a Driver launches temporarily to perform a login and closes once good cookies are available for the Session.
