@@ -5,9 +5,9 @@ weight:
 subtitle: ''
 
 ---
-[Module Code](/docs/connectors/module-code/)
+'Connectors' is an essential module I created and use to simplify authentication with different ServiceNow instances in order to use the instances' JSON Web Services (Session) and/or navigate their GUI's (Webdriver).
 
-This is an essential module I created and use to simplify authentication with different ServiceNow instances in order to use the instances' JSON Web Services (Session) and/or navigate their GUI's (Webdriver).
+[Module Code](/docs/connectors/module-code/)
 
 **Nearly every script active in this environment relies on this module.**
 <hr />
