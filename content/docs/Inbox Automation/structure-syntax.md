@@ -4,7 +4,7 @@ weight: 1
 template: docs
 
 ---
-This document aims to provide clarity around each of the toolsets elements mentioned in the section's parent [document](/docs/inbox-automation/).
+This document aims to provide succinct clarity around this toolset's elements summarized in the section's parent [document](/docs/inbox-automation/).
 
 ## Modules
 
@@ -28,4 +28,6 @@ With exception to the 'Client Portal' script (doc to be added at a later date) ,
 * **Incidents** are created with JSON, the Driver only comes into play to attach emails to their respective ticket records
 * **Tasks** are first created with a Driver via a ServiceNow Catalog Request, JSON is then used to properly set fields for subsequent child tickets, ending by calling the Driver again to attach emails
 
-The scripts' respective documents will step through and explain these differences in detail.
+See the scripts' respective documents for greater detail.
+
+## Syntax
