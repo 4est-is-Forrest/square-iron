@@ -32,7 +32,7 @@ See the scripts' respective documents for greater detail.
 
 ## Syntax
 
-'Tasks' and 'Incidents' are dependent on a syntax in order to fill fields with information that often require human interpretation, such as a resolver group or a client project to create the ticket under. The syntax is as follows:
+'Tasks' and 'Incidents' are dependent on a syntax in order to fill fields with information that often require human interpretation, such as a resolver group or a billing code to create the ticket under. The syntax is as follows:
 
 * %%<Billing Code>%% (required)
 * {{<Resolver Group>}} (required)
