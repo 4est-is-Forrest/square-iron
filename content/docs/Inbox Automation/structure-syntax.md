@@ -23,11 +23,18 @@ See this module's doc for an in depth rundown.
 
 ##  Scripts
 
-With exception to the 'Client Portal' script (doc to be added at a later date) , 'Tasks' and 'Incidents' are fundamentally the same but do have key process differences. To summarize contrasting these two:
+With exception to the 'Client Portal' script (doc to be added at a later date), 'Tasks' and 'Incidents' are fundamentally the same but do have key process differences. To summarize contrasting these two:
 
-* **Incidents** are created with JSON, the Driver only comes into play to attach emails to their respective ticket records
-* **Tasks** are first created with a Driver via a ServiceNow Catalog Request, JSON is then used to properly set fields for subsequent child tickets, ending by calling the Driver again to attach emails
+* **Incidents** are for broken elements and are created with JSON, the Driver only comes into play to attach emails to their respective ticket records
+* **Tasks** are request-like elements, first created with a Driver via a ServiceNow Catalog Request, JSON is then used to properly set fields for subsequent child tickets, ending by calling the Driver again to attach emails
 
 See the scripts' respective documents for greater detail.
 
 ## Syntax
+
+'Tasks' and 'Incidents' are dependent on a syntax in order to fill fields with information that often require human interpretation, such as a resolver group or a client project to create the ticket under. The syntax is as follows:
+
+* %%<Billing Code>%% (required)
+* {{<Resolver Group>}} (required)
+* $$<Ticket Short Description>$$ (optional)
+* &&<Override Email Sender>&& (optional)
