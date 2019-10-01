@@ -29,22 +29,3 @@ With exception to the 'Client Portal' script (doc to be added at a later date), 
 * **Tasks** are request-like elements, first created with a Driver via a ServiceNow Catalog Request, JSON is then used to properly set fields for subsequent child tickets, ending by calling the Driver again to attach emails
 
 See the scripts' respective documents for greater detail.
-
-## Syntax
-
-'Tasks' and 'Incidents' are dependent on a syntax in order to fill fields with information that often require human interpretation, such as a resolver group or a client code to create the ticket under. The arguments are added to each email's subject line encased in their respective symbol:
-
-* %% Client Code %% (required)
-* {{ Assignment Queue }} (required)
-* $$ Ticket Short Description $$ (optional)
-* && Override Email Sender && (optional)
-
-So long as the first two are provided on each email, the scripts have everything they need to accurately create any number of email tickets in rapid succession.
-
-#### **_Example Case_**
-
-If a user sends an email with the following subject line:
-_Help Desk - I'm unable to log into my email, pls halp_
-
-An agent would add, at the very least, the following and save the email:
-_Help Desk - I'm unable to log into my email, pls halp %%Client1%% {{Email Group's Ticket Queue}}_
