@@ -2,12 +2,6 @@
 title: Introduction
 layout: docs
 weight: 
-excerpt: ''
-menu:
-  main:
-    name: Docs
-    weight: 1
-
 ---
 The following documents and sections contain some examples of Python code I've written for specific purposes. 
 
