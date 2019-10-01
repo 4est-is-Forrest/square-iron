@@ -81,6 +81,6 @@ build:
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
-  instant_preview_command: hugo server -D -E -F --port 8080 -b https://jjydyhotlchyoa.instant.forestry.io
+  instant_preview_command: hugo server -D -E -F --port 8080 -b https://cfn8nrtfumrtfa.instant.forestry.io
     --debug --bind 0.0.0.0 --appendPort=false --renderToDisk -d public
 version: '0.47'
