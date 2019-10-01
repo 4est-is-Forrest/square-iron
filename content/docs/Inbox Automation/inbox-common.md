@@ -1,5 +1,6 @@
 ---
-title: Structure & Syntax
+title: Inbox Common (Module)
 weight: 2
 template: docs
+
 ---
