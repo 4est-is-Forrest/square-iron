@@ -35,7 +35,7 @@ See the scripts' respective documents for greater detail.
 'Tasks' and 'Incidents' are dependent on a syntax in order to fill fields with information that often require human interpretation, such as a resolver group or a client code to create the ticket under. The arguments are added to each email's subject line encased in their respective symbol:
 
 * %%<Client Code>%% (required)
-* {{<Resolver Group>}} (required)
+* {{<Assignment Queue>}} (required)
 * $$<Ticket Short Description>$$ (optional)
 * &&<Override Email Sender>&& (optional)
 
@@ -53,10 +53,10 @@ _Help Desk - I'm unable to log into my email, pls halp %%Client1%% {{Email Group
 
 #### **_The Arguments_**
 
-**('%') Client codes** determine what customer to create the ticket under and therefore who to charge. 
+**( % ) Client codes** determine what customer to create the ticket under and therefore who to charge. 
 
-**('{') Resolver group** is the queue the ticket should be sent for completion or resolution.
+**( {{ ) Assignment Queue** is the queue the ticket should be sent for completion or resolution.
 
-**('$') Ticket subject** represents the ticket's 'short description' field. When this argument is excluded, the email's subject line (minus the formatted arguments) is passed as the ticket's short description. Of course, sometimes email subject lines are not very helpful or descriptive, hence why this argument exists.
+**( $ ) Ticket subject** represents the ticket's 'short description' field. When this argument is excluded, the email's subject line (minus the formatted arguments) is passed as the ticket's short description. Of course, sometimes email subject lines are not very helpful or descriptive, hence why this argument exists.
 
-**('&') Source Override** is for overriding what user is attached to the ticket's watch list (a notification service) and what user will receive the ticket number reply. By default, the scripts utilize the sender's email address which must be overridden on automatically generated and forwarded email cases.
+**( & ) Source Override** is for overriding what user is attached to the ticket's watch list (a notification service) and what user will receive the ticket number reply. By default, the scripts utilize the sender's email address which must be overridden on automatically generated and forwarded email cases.
