@@ -1,6 +1,6 @@
 ---
 template: docs
-title: Structure & Syntax
+title: Overview
 weight: 1
 
 ---
