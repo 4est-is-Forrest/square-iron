@@ -39,8 +39,14 @@ See the scripts' respective documents for greater detail.
 * $$<Ticket Short Description>$$ (optional)
 * &&<Override Email Sender>&& (optional)
 
-Example:
+**_Example:_**
 
-**Original Subject:** Helpdesk - I'm unable to access my email
+If a user sends an email with the following subject line:
+
+_Help Desk - I'm unable to log into my email, pls halp_
+
+An agent would add, at the very least, the following and save the email:
+
+_Help Desk - I'm unable to log into my email, pls halp %%Client1%% {{<Email Guys>}}_
 
 So long as the first two are provided on each email, the scripts have everything they need to accurately create 
