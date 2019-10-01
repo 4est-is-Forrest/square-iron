@@ -54,5 +54,3 @@ _Help Desk - I'm unable to log into my email, pls halp %%Client1%% {{Email Group
 **( % ) Client codes** determine what customer to create the ticket under and therefore who to charge.
 
 **( { ) Assignment Queue** is the queue the ticket should be sent for completion or resolution.
-
-**( $ ) Ticket subject** represents the ticket's 'short description' field. When this argument is excluded, the email's subject line (minus the formatted arguments) is passed as the ticket's short description. Of course, sometimes email subject lines are not very helpful or descriptive, hence why this argument exists.
