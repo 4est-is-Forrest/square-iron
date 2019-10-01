@@ -39,6 +39,8 @@ See the scripts' respective documents for greater detail.
 * $$<Ticket Short Description>$$ (optional)
 * &&<Override Email Sender>&& (optional)
 
+So long as the first two are provided on each email, the scripts have everything they need to accurately create any number of email tickets in rapid succession.
+
 **_Example:_**
 
 If a user sends an email with the following subject line:
