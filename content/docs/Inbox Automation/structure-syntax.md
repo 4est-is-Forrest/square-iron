@@ -41,7 +41,7 @@ See the scripts' respective documents for greater detail.
 
 So long as the first two are provided on each email, the scripts have everything they need to accurately create any number of email tickets in rapid succession.
 
-**_Example:_**
+#### **_Example Case_**
 
 If a user sends an email with the following subject line:
 
@@ -49,6 +49,14 @@ _Help Desk - I'm unable to log into my email, pls halp_
 
 An agent would add, at the very least, the following and save the email:
 
-_Help Desk - I'm unable to log into my email, pls halp %%Client1%% {{<Email Guys>}}_
+_Help Desk - I'm unable to log into my email, pls halp %%Client1%% {{Email Group's Ticket Queue}}_
 
-So long as the first two are provided on each email, the scripts have everything they need to accurately create 
+#### **_The Arguments_**
+
+**('%') Client codes** determine what customer to create the ticket under and therefore who to charge. 
+
+**('{') Resolver group** is the queue the ticket should be sent for completion or resolution.
+
+**('$') Ticket subject** represents the ticket's 'short description' field. When this argument is excluded, the email's subject line (minus the formatted arguments) is passed as the ticket's short description. Of course, sometimes email subject lines are not very helpful or descriptive, hence why this argument exists.
+
+**('&') Source Override** is for overriding what user is attached to the ticket's watch list (a notification service) and what user will receive the ticket number reply. By default, the scripts utilize the sender's email address which must be overridden on automatically generated and forwarded email cases.
