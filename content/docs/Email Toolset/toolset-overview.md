@@ -1,6 +1,6 @@
 +++
 layout = "docs"
-title = "Toolset Overview"
+title = "Inbox Common (Module)"
 weight = 2
 
 +++
