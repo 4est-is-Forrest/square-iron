@@ -1,5 +1,5 @@
 ---
-title: Toolset Overview
+title: Toolset Composition
 weight: 2
 layout: docs
 
