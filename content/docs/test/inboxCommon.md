@@ -40,10 +40,10 @@ See the scripts' respective documents for greater detail.
 
 'Tasks' and 'Incidents' are dependent on a syntax in order to fill fields with information that often require human interpretation, such as a resolver group or a client code to create the ticket under. The arguments are added to each email's subject line encased in their respective symbol:
 
-* %%<Client Code>%% (required)
-* \{\{<Assignment Queue>\}\} (required)
-* \$$<Ticket Short Description>$$ (optional)
-* &&<Override Email Sender>&& (optional)
+* %%\<Client Code\>%% (required)
+* \{\{\<Assignment Queue\>\}\} (required)
+* \$$\<Ticket Short Description\>$$ (optional)
+* &&\<Override Email Sender\>&& (optional)
 
 So long as the first two are provided on each email, the scripts have everything they need to accurately create any number of email tickets in rapid succession.
 
