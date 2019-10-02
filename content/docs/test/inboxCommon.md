@@ -4,12 +4,6 @@ weight: 2
 layout: docs
 
 ---
----
-template: docs
-title: Structure & Syntax
-weight: 1
-
----
 This document aims to provide succinct clarity around this toolset's elements summarized in the section's parent [document](/docs/inbox-automation/).
 
 ## Modules
