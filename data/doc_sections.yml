@@ -3,4 +3,5 @@ root_folder: "/docs/"
 sections:
 - General Context
 - Connectors
-- test
+- Email Toolset
+
