@@ -16,3 +16,5 @@ This module ultimately contains every function the scripts 'Task' and 'Incidents
 * **Attach** function which simply attaches the current email file to the newly created ServiceNow ticket.
 *  **Reply** function that replies to all with the ticket number while also removing previously configured 'do not reply' addresses
 * **Queue Spellcheck** function simply spellchecks resolver group designations parsed from email subject lines during 'Values from email' call. 
+
+<hr />
