@@ -24,6 +24,4 @@ fields:
   config:
     required: true
 pages:
-- content/docs/Code/environment-context.md
-- content/docs/Code/connectors-my-own-module.md
 - content/style-guide.md
