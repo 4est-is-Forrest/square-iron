@@ -17,11 +17,11 @@ This document offers details into the constants and imports within the 'Inbox Co
     from connectors import *
     from pathlib import Path
 
-#### **_Win32com.client_** 
+#### **_Win32com.client_**
 
 **Win32com/pywin32 offers a method to interface with Outlook and therefore the environment's mail servers without need of an REST API token.**
 
-Because this is an interface into the Outlook application, connections and authentication are already handled. Also, having the current user's email address readily available is also helpful in reliably obtaining "sys_id's" across different ServiceNow instances. Overall, having this interface available from the beginning is largely the reason I never bothered to request access to the Mail API. 
+Because this is an interface into the Outlook application, connections and authentication are already handled. Also, having the current user's email address readily available is also helpful in reliably obtaining "sys_id's" across different ServiceNow instances. Overall, having this interface available from the beginning is largely the reason I never bothered to request access to the Mail API.
 
 #### **_Fuzzywuzzy_**
 
@@ -29,7 +29,13 @@ Because this is an interface into the Outlook application, connections and authe
 
 Specifically, the 'partial ratio' function is what I was ultimately looking to incorporate in the spellcheck function (explained later). I needed a way to compare strings without marking down due to a lack of characters.
 
-Connectors is also one of the imports which has its own doc [section](https://3flqfei0stazaa.instant.forestry.io/docs/connectors/).
+#### **_Connectors _**
+
+A crucial module documented in this doc [section](https://3flqfei0stazaa.instant.forestry.io/docs/connectors/).
+
+#### **_RE (Regex)_**
+
+Parsing email subject lines for specific arguments is based entirely on simple regular expressions. The function 'Values from Email' will illustrate this in the following section.
 
 <hr />
 
