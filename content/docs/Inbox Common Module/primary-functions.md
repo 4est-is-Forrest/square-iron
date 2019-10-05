@@ -154,7 +154,7 @@ By default, the short description will be the emails subject line minus all of t
 
 **Obtain the client name and generic user name associated with that client. Get their "sys_id's" via JSON.**
 
-In this context, this particular customer has multiple clients under it and so tickets must be created under those specific clients (for billing purposes). Using specific users is not possible when using these client codes (this why the 'watchlist 'field is necessary)
+In this context, this particular customer has multiple clients under them and so tickets must be created under those specific clients (for billing purposes). Using specific users is not possible when using these client codes (this is why the 'watchlist 'field is necessary) so a generic user associated with every client code must fill the required user field. Conveniently, for the vast number of these client codes, the generic user's name always follows the listed format above.
 
         #Values Obtained
         ticketBody= 'From: ' + email + '\nSent: ' + datetime.strftime(m.receivedtime, '%Y-%m-%d %H:%M:%S') + '\nTo: ' + m.to + '\nCC: ' + m.cc + '\nSubject: ' + m.subject + '\n\n' +  m.body
@@ -173,3 +173,7 @@ In this context, this particular customer has multiple clients under it and so t
             'description':ticketBody,
             'time':datetime.strftime(m.receivedtime, '%Y-%m-%d %H:%M:%S')
             }
+
+**Print values for the human running the script, mark the email in progress and return the dictionary.**
+
+Finally, the ticket's 'description' field is always made to look like a forward version of the email. The email is marked to indicate it is being processed and the emails information is printed for the script user monitoring its progress. Lastly, a dictionary is returned which will be added to and eventually used to created a ticket via JSON or a Selenium Webdriver.
