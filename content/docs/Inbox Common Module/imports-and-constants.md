@@ -49,9 +49,12 @@ Parsing email subject lines for specific arguments is based entirely on simple r
     REPLY_TEMPLATE = RESOURCES + '/template.msg'
     do_not_reply = ['< long list of inboxes to remove from replies >']
     do_not_reply = [s.upper() for s in do_not_reply]
+    lqlist = pickle.load(open(RESOURCES + '/lqlist.p','rb'))
 
 **Outlook and the folders** are pretty self-explanatory. Interface with Outlook and obtain the help desk's inbox folder object as well as the sub-folder object where processed emails are moved ('/root/year/month')
 
-**The reply template** sourced from the 'resources' folder, an 'assets' directory created and maintained by a separate 'setup' script run periodically on users' machines.
+**The reply template and 'lqlist' are** sourced from the 'resources' folder, an 'assets' directory created and maintained by a separate 'setup' script run periodically on users' machines. 
 
 **Do not reply** is a list of email addresses that must always be removed from the reply's recipients when replying to a user. Made up mostly of other help desk shared inboxes and addresses associated with automated services. This list is only pertinent within the context of the Email Toolset and is thus maintained manually (and constantly added to). It is converted to upper for reliable string comparison.
+
+**The 'lqlist' list** is used by the spellcheck function. It is a list of all queues associated with the subject account (250+) in lowercase format.
