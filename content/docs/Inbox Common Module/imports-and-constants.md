@@ -29,7 +29,7 @@ Because this is an interface into the Outlook application, connections and authe
 
 Specifically, the 'partial ratio' function is what I was ultimately looking to incorporate in the spellcheck function (explained later). I needed a way to compare strings without marking down due to a lack of characters.
 
-#### **_Connectors _**
+#### **_Connnectors_**
 
 A crucial module documented in this doc [section](https://3flqfei0stazaa.instant.forestry.io/docs/connectors/).
 
