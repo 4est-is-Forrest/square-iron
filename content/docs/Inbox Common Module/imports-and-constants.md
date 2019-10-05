@@ -24,3 +24,5 @@ This document offers details into the constants and imports within the 'Inbox Co
 Some advantages to this method:
 
 * It doesn't depend on anything other than an open instance of Outlook
+* User specific information can be obtained from the current Outlook session
+* I've found otherwise complicated tasks, such as managing email attachments
