@@ -45,3 +45,5 @@ Connectors is also one of the imports which has its own doc [section](https://3f
     do_not_reply = [s.upper() for s in do_not_reply]
 
 **Outlook and the folders** are pretty self-explanatory. Interface with Outlook and obtain the help desk's inbox folder object as well as the sub-folder object where processed emails are moved ('/root/year/month')
+
+**The reply template** sourced from the 'resources' folder, an 'assets' directory created and maintained by a separate 'setup' script run periodically on users' machines.
