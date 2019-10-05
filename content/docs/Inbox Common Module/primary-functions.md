@@ -152,7 +152,9 @@ By default, the short description will be the emails subject line minus all of t
         r = s.get('{}sys_user.do?JSONv2&sysparm_action=getKeys&sysparm_query=name={}'.format(snow,sys_user))
         sys_user = r.json()['records'][0]
 
-**Obtain the sub-client name and generic user associated with that sub-client.**
+**Obtain the client name and generic user name associated with that client. Get their "sys_id's" via JSON.**
+
+In this context, this particular customer has multiple clients under it and so tickets must be created under those specific clients (for billing purposes). Using specific users is not possible when using these client codes (this why the 'watchlist 'field is necessary)
 
         #Values Obtained
         ticketBody= 'From: ' + email + '\nSent: ' + datetime.strftime(m.receivedtime, '%Y-%m-%d %H:%M:%S') + '\nTo: ' + m.to + '\nCC: ' + m.cc + '\nSubject: ' + m.subject + '\n\n' +  m.body
