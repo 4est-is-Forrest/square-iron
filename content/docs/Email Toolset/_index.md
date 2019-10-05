@@ -50,10 +50,10 @@ See the scripts' respective documents for greater detail.
 
 ## Syntax
 
-'Tasks' and 'Incidents' are dependent on a syntax in order to fill ticket fields with varying but specific values that often require human interpretation, such as a resolver group or a client code to create the ticket under. The arguments are added to each email's subject line encased in their respective symbol:
+'Tasks' and 'Incidents' are dependent on a syntax in order to fill ticket fields with varying but specific values that often require human interpretation, such as a resolver group or a client code to create the ticket under. These arguments are added to each email's subject line encased in their respective symbols so as to be parsed by the 'Inbox Common' module's 'Values from email' function using basic regular expressions:
 
 * %%<Client Code>%% (required)
-* \{\{<Assignment Queue>\}\} (required)
+* {{<Assignment Queue>}} (required)
 * $$<Ticket Short Description>$$ (optional)
 * &&<Override Email Sender>&& (optional)
 
