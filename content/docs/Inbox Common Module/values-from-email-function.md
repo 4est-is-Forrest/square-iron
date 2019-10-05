@@ -1,6 +1,6 @@
 ---
 title: Values From Email (Function)
-weight: 
+weight: 2
 layout: docs
 
 ---
