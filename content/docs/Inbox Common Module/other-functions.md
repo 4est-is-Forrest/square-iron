@@ -70,3 +70,33 @@ This method of spellchecking has proven accurate in this scope because these gro
 Once a ticket number is created and the fields require no further edits, the previously initialized Webdriver (bottom of 'Inbox Common' Module) navigates directly to the ticket via ServiceNow's web interface in order to attach the email. This is to ensure there is no ambiguity between the ticket and email as far as details and it also ensures the email's attachments are also uploaded to the ticket.
 
 The web elements accessed in this function are exactly the same regardless of ticket type and ultimately, this function simulates a user attaching the '.msg' object as quickly as the GUI will allow. 
+
+#### **_Reply_**
+
+    def reply(email,msg,number):
+    
+        """Clean/Set reply recipients"""
+        reply_to = []
+        for r in msg.recipients:
+            if '@' not in r.address:
+                reply_to.append(r.addressentry.GetExchangeUser().primarysmtpaddress)
+            else:
+                reply_to.append(r.address)
+        rm = do_not_reply + [email.upper()]
+        reply_to = [addr for addr in reply_to if addr.upper() not in rm]
+    
+        """Construct Reply Email"""
+        temp= outlook.CreateItemFromTemplate(REPLY_TEMPLATE)
+        temp.htmlbody= temp.htmlbody.replace('ticketNumber',number)
+        reply = msg.reply
+        reply.subject = re.sub('Working...','',reply.subject)
+        reply.subject = number + ' - ' + re.sub('[\$\$\{\{%%].+','',reply.subject)
+        msg.subject = reply.subject
+        reply.to = email
+        reply.cc = '; '.join(reply_to)
+        reply.htmlbody = temp.htmlbody + reply.htmlbody
+    
+        """Send/Save/Move"""
+        reply.send
+        msg.save()
+        msg.move(completed_folder)
