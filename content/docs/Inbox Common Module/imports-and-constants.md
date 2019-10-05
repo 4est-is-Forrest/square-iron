@@ -23,4 +23,4 @@ This document offers details into the constants and imports within the 'Inbox Co
 
 Some advantages to this method:
 
-* It doesn't depend on anything other than an open instance of Outlook on the local machine
+* It doesn't depend on anything other than an open instance of Outlook
