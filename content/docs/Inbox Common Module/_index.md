@@ -1,5 +1,5 @@
 ---
-title: Inbox Common Overview
+title: Inbox Common
 weight: 
 layout: docs
 
