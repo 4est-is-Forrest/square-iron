@@ -16,6 +16,8 @@ The remaining functions found in the module 'Inbox Common.'
 
 **A short-hand version of my preferred element selection method using Selenium.** 
 
+<hr />
+
 #### **_Queue Spellcheck_**
 
     def queue_spellcheck(q):
