@@ -128,7 +128,7 @@ Finally, a JSON query is attempted in order to obtain a ServiceNow 'sys_id'_ ass
         except:
             short = re.sub('[\$\$\{\{%%&&].+','',m.subject)
 
-**Parse the assignment/resolver group and spellcheck the string. Set 'short description' field.** 
+**Parse the assignment/resolver group and spellcheck the string; use JSON to get 'sys_id.' Set 'short description' field.** 
 
 Resolver group in this instance of ServiceNow have a very long names and thus are very easily misspelled, hence why a spellchecker is necessary. The function will be described in greater detail in the following section. Depending on the spellcheck, the email is marked with an 'Invalid' string and skipped, or the resolver group's 'sys_id' is obtained from ServiceNow via JSON.
 
@@ -151,6 +151,8 @@ By default, the short description will be the emails subject line minus all of t
             sys_user = 'Generic User {}'.format(client_name)
         r = s.get('{}sys_user.do?JSONv2&sysparm_action=getKeys&sysparm_query=name={}'.format(snow,sys_user))
         sys_user = r.json()['records'][0]
+
+**Obtain the sub-client name and generic user associated with that sub-client.**
 
         #Values Obtained
         ticketBody= 'From: ' + email + '\nSent: ' + datetime.strftime(m.receivedtime, '%Y-%m-%d %H:%M:%S') + '\nTo: ' + m.to + '\nCC: ' + m.cc + '\nSubject: ' + m.subject + '\n\n' +  m.body
