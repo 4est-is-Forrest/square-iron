@@ -103,6 +103,14 @@ This function is used to parse and validate arguments inserted into an email's s
             user = ''
             pass
 
+**Determine the email's subject user based on the sender's email address. Try to get that user's "sys_id" from ServiceNow via JSON query.**
+
+Generally, the sender's email address is accurate enough to go off of. However, there are plenty of instances where the email was forwarded one or more times from it's original source. This is why the '&&' is an option to override the source address to be used in the ticket. 
+
+Internal senders can be consistently identified by a lack of '@' in the sender string and thus extra steps must be taken to obtain the actual SMTP address string.
+
+Finally, a JSON query is attempted in order to obtain a ServiceNow 'sys_id'_ associated with that email address. This is for the 'watchlist' field in ServiceNow where user's are notified about their ticket's activity. If a 'sys_id' cannot be found, this field is ignored as it is not required.
+
         #Assignment Group
         try:
             queue_name = re.findall('\{\{\s*(.+)\s*\}\}',m.subject)[0]
@@ -119,6 +127,12 @@ This function is used to parse and validate arguments inserted into an email's s
             short = re.findall('\$\$\s*(.+)\s*\$\$',m.subject)[0]
         except:
             short = re.sub('[\$\$\{\{%%&&].+','',m.subject)
+
+**Parse the assignment/resolver group and spellcheck the string. Set 'short description' field.** 
+
+Resolver group in this instance of ServiceNow have a very long names and thus are very easily misspelled, hence why a spellchecker is necessary. The function will be described in greater detail in the following section. Depending on the spellcheck, the email is marked with an 'Invalid' string and skipped, or the resolver group's 'sys_id' is obtained from ServiceNow via JSON.
+
+By default, the short description will be the emails subject line minus all of the arguments meant for this function. For instances where the subject line is too vague, using $$ allows for a specific string to be used instead.
 
         #Client
         try:
