@@ -44,4 +44,4 @@ Connectors is also one of the imports which has its own doc [section](https://3f
     do_not_reply = ['< long list of inboxes to remove from replies >']
     do_not_reply = [s.upper() for s in do_not_reply]
 
-**Outlook and the folders** are pretty self explanatory. Interface with Outlook and obtain the help desk's inbox Folder object as well as the sub-folder where processed email will end up ('/root/year/month')
+**Outlook and the folders** are pretty self-explanatory. Interface with Outlook and obtain the help desk's inbox folder object as well as the sub-folder object where processed emails are moved ('/root/year/month')
