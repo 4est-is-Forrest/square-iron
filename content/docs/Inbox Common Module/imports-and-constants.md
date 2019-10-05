@@ -61,3 +61,5 @@ Parsing email subject lines for specific arguments is based entirely on simple r
 **Do not reply** is a list of email addresses that must always be removed from the reply's recipients when replying to a user. Made up mostly of other help desk shared inboxes and addresses associated with automated services. This list is only pertinent within the context of the Email Toolset and is thus maintained manually (and constantly added to). It is converted to upper for reliable string comparison.
 
 **The 'lqlist' list** is used by the spellcheck function. It is a list of all queues associated with the subject account (250+) in lowercase format.
+
+**Note:** Connectors function calls are actually located at the bottom but displayed here as constants. The full code document reflects this.
