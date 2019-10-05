@@ -100,3 +100,7 @@ The web elements accessed in this function are exactly the same regardless of ti
         reply.send
         msg.save()
         msg.move(completed_folder)
+
+**Called immediately after attachment of email was successful; replies to the end user with the ticket number while removing undesired reply recipients.** 
+
+The function constructs a reply all and filters out addresses listed in the 'do not reply' list. All indication of subject line inserts from help desk agents or the scripts are removed aside from the email's associated ticket number. Finally, the reply is sent, and the original email filed away as completed.
