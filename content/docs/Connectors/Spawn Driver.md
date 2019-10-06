@@ -104,6 +104,7 @@ Keep in mind the following for instance login methods:
 * Instance1: PKI card login with pin (most used)
 * Instance2: Username & Password
 * Instance3: Username & Password
+
 ServiceNow Instance URL = https://"instance".service-now.com/
 
 <hr/>
