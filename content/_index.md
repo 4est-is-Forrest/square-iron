@@ -11,7 +11,7 @@ sections:
     them. '
   image: ''
   actions:
-  - label: Documents
+  - label: Code
     url: "/docs/"
 layout: home
 
