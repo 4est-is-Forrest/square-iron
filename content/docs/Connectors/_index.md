@@ -22,14 +22,14 @@ The module ultimately has three primary functions:
 
 A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this environment, and this module makes creating and managing these objects simpler.
 
-_See '_[_Environment & Context_](/docs/general-context/)_' for information on why Sessions and Webdrivers are both necessary._
+_See '_[_Help Desk Environment_]()_' for information on why Sessions and Webdrivers are both necessary._
 
 <hr />
 
-## Cookie Persistence (Additional Context)
+## Cookie Persistence (Module Context)
 
 **Note:** I refer to a browser writing cookies locally as 'cookies persisting.' The third function of this module specifically addresses this and is really only used within the Spawn Driver function.
 
-**Chrome's Interval:** Cookies persistence must be asserted due to Google Chrome's 30-second interval when writing cookies to its 'Cookies' file. After a login is successful via a Driver, a Session will query the relevant instance's JSON service repeatedly until a status code 200 is returned. This is to ensure subsequent Sessions may immediately import these cookies so as to communicate with ServiceNow's JSON Web Service.
+**Chrome's Interval:** Cookie persistence must be asserted in my module due to Google Chrome's 30-second interval when writing cookies to its 'Cookies' file. After a login is successful via a Webdriver, a Session will query the relevant instance's JSON service repeatedly until a status code 200 is returned. This is to ensure subsequent Sessions may immediately import these cookies so as to communicate with ServiceNow's JSON Web Service.
 
 <hr />
