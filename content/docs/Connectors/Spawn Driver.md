@@ -100,6 +100,8 @@ The general process consists of testing a Driver's 'Cookies' file with temporary
 
 ## **Context**
 
+Keep in mind the following for instance login methods:
+
 * Instance1: PKI card login with pin (most used)
 * Instance2: Username & Password
 * Instance3: Username & Password
