@@ -4,7 +4,7 @@ weight:
 template: docs
 
 ---
-This document offers brief contextual information surrounding the help desk environment much of my code was written in. Details on specific challenges and solutions faced in this environment may also viewed.
+This document offers brief contextual information surrounding my code in its help desk environment. Details on specific challenges and solutions faced in this environment may also viewed for reference.
 
 <hr />
 
