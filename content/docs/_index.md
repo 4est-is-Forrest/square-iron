@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Index
 layout: docs
 weight: 
 excerpt: ''
@@ -11,6 +11,10 @@ menu:
 ---
 The following documents and sections contain some examples of Python code I've written for specific purposes. 
 
-The 'Environment & Context' document is available and may add clarity toward some of the methods I utilize and scripts/tools I distribute.
+<hr />
 
-I will be working to include more and more sections following the format of what is already available here.
+* **Help Desk Environment:** Information about coding in a help desk environment and the challenges that came with it
+* **Connectors (Module):** A module of my own design, utilized by nearly every help desk script or tool I distributed
+* **Inbox Automation:** An overview into the problem and resulting solutions regarding the email scripts I created
+* **Inbox Common:** A module specific to Inbox Automation
+* **Email Scripts/Tools:** The Python scripts used to process emails into ServiceNow tickets
