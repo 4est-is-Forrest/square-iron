@@ -14,6 +14,8 @@ Connectors is an essential module I created and use to simplify authentication w
 
 ## Summary
 
+**Note:** I use the terms 'Driver' and 'Webdriver' interchangeably in the documents ahead.
+
 The module ultimately has three primary functions:
 
 * **A Webdriver function** that minimizes login effort and, after successful login, asserts cookies are saved locally, usually in order for a Session to import them.
