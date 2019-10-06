@@ -4,7 +4,7 @@ weight:
 title: Inbox Automation
 
 ---
-In the following section, I will elaborate on the toolset I created to automate the vast majority of the labor associated processing emails from a high volume help desk inbox (\~300 emails/day).
+In the following section, I will elaborate on the scripts and tools I created to automate the vast majority of the labor in processing emails from a high volume help desk inbox (\~300 emails/day) into ServiceNow tickets.
 
 <hr />
 
