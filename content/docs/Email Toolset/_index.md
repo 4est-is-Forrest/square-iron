@@ -23,18 +23,16 @@ These scripts have a small and simple syntax that must be used within emails' su
 
 ## Modules
 
-**_Connectors:_** Connectors is specific to the help desk environment I have previously mentioned. It simplifies creating authenticated sessions and Webdrivers with previously defined instances of ServiceNow. I devoted a whole [section](/docs/connectors/) to it because nearly every script deployed in this environment is dependent on it.
+**_Connectors:_** Connectors is specific to the help desk environment I have previously mentioned. It simplifies creating authenticated Sessions and Webdrivers with previously defined instances of ServiceNow. I devoted a whole [section](/docs/connectors/) to it because nearly every script deployed in this environment is dependent on it.
 
-**_Inbox Common:_** This module is exclusive to this 'Inbox Automation' toolset, primarily the 'Incidents' and 'Tasks' scripts. It has a few important functions and objects shared between the two scripts and will be broken down in one of the following documents but the essentials are:
+**_Inbox Common:_** This module is for exclusive use by the 'scripts 'Incidents' and 'Tasks.' It houses a few important functions and objects shared between the two scripts and will be broken down in one of the [following documents](/docs/inbox-common-module/) but the essentials are:
 
 * Spawns a Driver and Session
 * Interfaces with Outlook
 * Contains a 'resolver group' spellchecker
-* Function to get arguments from emails' subject lines
-* Function to attach .msg files to ServiceNow records
-* Reply to end user's with their respective ticket number
-
-See this module's doc for an in depth rundown.
+* Gets arguments from emails' subject lines
+* Attaches .msg files to ServiceNow records
+* Replies to end users with their respective ticket numbers
 
 ## Scripts
 
