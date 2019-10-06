@@ -36,16 +36,18 @@ These scripts have a small and simple syntax that must be used within emails' su
 
 ## Scripts
 
-With exception to the 'Client Portal' script (doc to be added at a later date), 'Tasks' and 'Incidents' are fundamentally the same but do have key process differences. To summarize contrasting these two:
+The scripts Tasks and Incidents are fundamentally the same but do have key process differences; to summarize them:
 
-* **Incidents** are for broken elements and are created with JSON, the Driver only comes into play to attach emails to their respective ticket records
-* **Tasks** are request-like elements, first created with a Driver via a ServiceNow Catalog Request, JSON is then used to properly set fields for subsequent child tickets, ending by calling the Driver again to attach emails
+* **Incidents** are for issues and are created with JSON, the Webdriver only comes into play to attach emails to their respective ticket records
+* **Tasks** are for requests and are initially created with a Webdriver via a ServiceNow Catalog Request. JSON is then used to properly set fields for the subsequent child tickets and the process ends by calling the Webdriver again in order to attach .msg objects to records.
 
 See the scripts' respective documents for greater detail.
 
 ## Syntax
 
-'Tasks' and 'Incidents' are dependent on a syntax in order to fill ticket fields with varying but specific values that often require human interpretation, such as a resolver group or a client code to create the ticket under. These arguments are added to each email's subject line encased in their respective symbols so as to be parsed by the 'Inbox Common' module's 'Values from email' function using basic regular expressions:
+The scripts Tasks and Incidents are dependent on a type of syntax in order to fill certain ticket fields. Fields that require human interpretation such as a resolver group best suited to solve the problem or the particular client to create the ticket under. 
+
+These arguments are added to each email's subject line encased in their respective symbols so as to be parsed using basic regular expressions:
 
 * %% Client Code %% (required)
 * {{ Assignment Queue }} (required)
@@ -68,6 +70,6 @@ _Help Desk - I'm unable to log into my email, pls halp %%Client1%% {{Email Group
 
 **( { ) Assignment Queue** is the queue the ticket should be sent for completion or resolution.
 
-**( $ ) Ticket subject** represents the ticket's 'short description' field. When this argument is excluded, the email's subject line (minus the formatted arguments) is passed as the ticket's short description. Of course, sometimes email subject lines are not very helpful or descriptive, hence why this argument exists.
+**( $ ) Ticket subject** represents the ticket's 'short description' field. When this argument is excluded, the email's subject line (minus the formatted arguments) is passed as the ticket's short description. Of course, sometimes email subject lines are not very helpful or descriptive, hence why this argument can be used.
 
-**( & ) Source Override** is for overriding what user is attached to the ticket's watch list (a notification service) and what user will receive the ticket number reply. By default, the scripts utilize the sender's email address which must be overridden on automatically generated and forwarded email cases.
+**( & ) Source Override** is for overriding what user should be seen as creating the ticket. By default, the scripts utilize the sender's email address which must be overridden for automatically generated and forwarded email messages.
