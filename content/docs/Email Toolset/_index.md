@@ -10,13 +10,12 @@ In the following section, I will elaborate on the scripts and tools I created to
 
 ## Summary
 
-This toolset/system is built on two personal modules and three scripts that perform the work:
+These tools are built on two modules of my design and four scripts that perform the work, two of which will be excluded from the docs for now:
 
 * [Connectors Module](/docs/connectors/): Establishes Session and Webdriver connections with ServiceNow instances
-* Inbox Module: Primary use is to parse arguments from emails and return JSON ready Python dictionary
+* [Inbox Module](/docs/inbox-common-module/): Primary use is to parse arguments from emails and return JSON ready Python dictionary
 * Tasks Script: Creates ServiceNow Task tickets based on email arguments
 * Incidents Script: Creates ServiceNow Incident tickets based on email arguments
-* Client Portal Script: Creates ServiceNow tickets within a client's instance without JSON capability
 
 This toolset has a small and simple syntax that must be used within emails' subject lines so as to pass important arguments into the ticket's creation.
 
