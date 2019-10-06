@@ -4,6 +4,12 @@ weight:
 template: docs
 
 ---
+This document offers brief contextual information surrounding the help desk environment much of my code was written in. Details on specific challenges and solutions faced in this environment may also viewed.
+
+<hr />
+
+## Environment and Context
+
 **_Global Use:_** The tools and scripts in the sections ahead are meant to be run by any individual in a help desk environment. Meaning, they can be run reliably across a team, regardless of the local system.
 
 **_Distribution:_** Sometimes executables are distributed but it's simpler to have users install Python and run a setup.py specific to this environment.
@@ -38,10 +44,10 @@ Naturally, anyone beyond ServiceNow admins and developers would be denied simple
 
 **_Requests:_** I eventually discovered ServiceNow's JSON Web Service was perfectly accessible so long as the HTTP requests were accompanied with valid authentication cookies imported from a browser. This lead to major script revisions favoring the Requests library over Selenium as much as possible.
 
-**_Both:_** The JSON Web Service has three important limitations (for 'itil' users at least). 
+**_Both:_** The JSON Web Service has three important limitations (for 'itil' users at least).
 
-1. There is no way to negotiate authentication in this environment outside of ServiceNow's GUI. 
-2. Attaching files to ServiceNow records is not possible via JSON. 
-3. It is not possible to change a record's state to anything synonymous with closed or resolved. 
+1. There is no way to negotiate authentication in this environment outside of ServiceNow's GUI.
+2. Attaching files to ServiceNow records is not possible via JSON.
+3. It is not possible to change a record's state to anything synonymous with closed or resolved.
 
 For these three commonly performed tasks, a Driver reliably fills the automation roll.
