@@ -17,10 +17,10 @@ Connectors is an essential module I created and use to simplify authentication w
 The module ultimately has three primary functions:
 
 * **A Webdriver function** that minimizes login effort and, after successful login, asserts cookies are saved locally, usually in order for a Session to import them.
-* **A Session method** that tries to import good cookies from the user's browser or the Webdriver's cookies. Optionally, a Driver launches temporarily to perform a login and closes once good cookies are available for the Session.
-* **A 'cookie persist' method**, primarily used by the Driver method, to repeatedly test and wait until expected authentication cookies have been saved to the Driver's 'Cookies' file. Details on 'cookie persistence' can be found below.
+* **A Session method** that tries to import good cookies from the user's browser or the Webdriver's cookies. Optionally, a Webdriver launches temporarily to perform a login and closes once good cookies are available for the Session.
+* **A 'cookie persist' method**, primarily used by the Webdriver method, to repeatedly test and wait until expected authentication cookies have been saved to the Webdriver's "Cookies" file. Details on 'cookie persistence' can be found below.
 
-A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this environment, and this module makes creating and managing these connections much easier.
+A Webdriver that runs concurrently with a Session is often necessary for many of the tools I've deployed in this environment, and this module makes creating and managing these objects simpler.
 
 _See '_[_Environment & Context_](/docs/general-context/)_' for information on why Sessions and Webdrivers are both necessary._
 
