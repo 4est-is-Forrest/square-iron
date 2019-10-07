@@ -115,6 +115,8 @@ Generally, the sender's email address is enough. For instances where the message
 
 A JSON query is sent in order to obtain a ServiceNow 'sys_id' associated with that email address in order to add the user to ticket fields.
 
+#### **_Resolver Group & Short Description_**
+
         #Assignment Group
         try:
             queue_name = re.findall('\{\{\s*(.+)\s*\}\}',m.subject)[0]
@@ -136,7 +138,7 @@ A JSON query is sent in order to obtain a ServiceNow 'sys_id' associated with th
 
 Depending on the spellcheck results, the email is either marked as 'Invalid' and skipped, or the resolver group's 'sys_id' is obtained from ServiceNow.
 
-By default, the short description will be the emails subject line minus all of the arguments meant for this function. For instances where the subject line is too vague, using $$ allows for a specific string to be used instead.
+By default, the short description will be the emails subject line minus the inserted arguments. For instances where the subject line is too vague, '$$' allows for a specific string to be used instead.
 
         #Client
         try:
