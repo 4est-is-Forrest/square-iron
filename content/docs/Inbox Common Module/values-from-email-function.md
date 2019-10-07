@@ -188,4 +188,4 @@ In this environments context, tickets are opened by client and the required user
 
 **Print values for the human running the script, mark the email in progress and return the dictionary.**
 
-Finally, the ticket's 'description' field is always made to look like a forward version of the email. The email is marked to indicate it is being processed and the emails information is printed for the script user monitoring its progress. Lastly, a dictionary is returned which will be added to and eventually used to created a ticket via JSON or a Selenium Webdriver.
+<hr />
