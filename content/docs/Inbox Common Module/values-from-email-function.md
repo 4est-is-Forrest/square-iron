@@ -141,25 +141,25 @@ Depending on the spellcheck results, the email is either marked as 'Invalid' and
 By default, the short description will be the emails subject line minus the inserted arguments. For instances where the subject line is too vague, '$$' allows for a specific string to be used instead.
 
 #### **_Client & Generic Client User_**
+```python
+    #Client
+    try:
+        client_name = re.findall('%%\s*(.+)\s*%%', m.subject)[0]
+        r = s.get('{}core_company.do?JSONv2&sysparm_action=getKeys&sysparm_query=name={}'.format(snow,client_name))
+        client = r.json()['records'][0]
+    except:
+        client_name = 'Conduent'
+        r = s.get('{}core_company.do?JSONv2&sysparm_action=getKeys&sysparm_query=name={}'.format(snow,client_name))
+        client = r.json()['records'][0]
 
-        #Client
-        try:
-            client_name = re.findall('%%\s*(.+)\s*%%', m.subject)[0]
-            r = s.get('{}core_company.do?JSONv2&sysparm_action=getKeys&sysparm_query=name={}'.format(snow,client_name))
-            client = r.json()['records'][0]
-        except:
-            client_name = 'Conduent'
-            r = s.get('{}core_company.do?JSONv2&sysparm_action=getKeys&sysparm_query=name={}'.format(snow,client_name))
-            client = r.json()['records'][0]
-    
-        #Generic User
-        if client_name.lower() == 'client':
-            sys_user = 'Generic Client'
-        else:
-            sys_user = 'Generic User {}'.format(client_name)
-        r = s.get('{}sys_user.do?JSONv2&sysparm_action=getKeys&sysparm_query=name={}'.format(snow,sys_user))
-        sys_user = r.json()['records'][0]
-
+    #Generic User
+    if client_name.lower() == 'client':
+        sys_user = 'Generic Client'
+    else:
+        sys_user = 'Generic User {}'.format(client_name)
+    r = s.get('{}sys_user.do?JSONv2&sysparm_action=getKeys&sysparm_query=name={}'.format(snow,sys_user))
+    sys_user = r.json()['records'][0]
+```
 **Obtain the client name and generic user name associated with that client. Get their "sys_id's" via JSON.**
 
 In this context, this particular customer has multiple clients under them and so tickets must be created under those specific clients (for billing purposes). Using specific users is not possible when using these client codes (this is why the 'watchlist 'field is necessary) so a generic user associated with every client code must fill the required user field. Conveniently, for the vast number of these client codes, the generic user's name always follows the listed format above.
