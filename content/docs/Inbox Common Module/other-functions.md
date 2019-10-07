@@ -72,35 +72,35 @@ Once a ticket number is created and the fields require no further edits, the pre
 The web elements accessed in this function are exactly the same regardless of ticket type and ultimately, this function simulates a user attaching the '.msg' file to the record as quickly as the GUI will allow.
 
 #### **_Reply_**
+```python
+def reply(email,msg,number):
 
-    def reply(email,msg,number):
-    
-        """Clean/Set reply recipients"""
-        reply_to = []
-        for r in msg.recipients:
-            if '@' not in r.address:
-                reply_to.append(r.addressentry.GetExchangeUser().primarysmtpaddress)
-            else:
-                reply_to.append(r.address)
-        rm = do_not_reply + [email.upper()]
-        reply_to = [addr for addr in reply_to if addr.upper() not in rm]
-    
-        """Construct Reply Email"""
-        temp= outlook.CreateItemFromTemplate(REPLY_TEMPLATE)
-        temp.htmlbody= temp.htmlbody.replace('ticketNumber',number)
-        reply = msg.reply
-        reply.subject = re.sub('Working...','',reply.subject)
-        reply.subject = number + ' - ' + re.sub('[\$\$\{\{%%].+','',reply.subject)
-        msg.subject = reply.subject
-        reply.to = email
-        reply.cc = '; '.join(reply_to)
-        reply.htmlbody = temp.htmlbody + reply.htmlbody
-    
-        """Send/Save/Move"""
-        reply.send
-        msg.save()
-        msg.move(completed_folder)
+    """Clean/Set reply recipients"""
+    reply_to = []
+    for r in msg.recipients:
+        if '@' not in r.address:
+            reply_to.append(r.addressentry.GetExchangeUser().primarysmtpaddress)
+        else:
+            reply_to.append(r.address)
+    rm = do_not_reply + [email.upper()]
+    reply_to = [addr for addr in reply_to if addr.upper() not in rm]
 
+    """Construct Reply Email"""
+    temp= outlook.CreateItemFromTemplate(REPLY_TEMPLATE)
+    temp.htmlbody= temp.htmlbody.replace('ticketNumber',number)
+    reply = msg.reply
+    reply.subject = re.sub('Working...','',reply.subject)
+    reply.subject = number + ' - ' + re.sub('[\$\$\{\{%%].+','',reply.subject)
+    msg.subject = reply.subject
+    reply.to = email
+    reply.cc = '; '.join(reply_to)
+    reply.htmlbody = temp.htmlbody + reply.htmlbody
+
+    """Send/Save/Move"""
+    reply.send
+    msg.save()
+    msg.move(completed_folder)
+```
 **Called immediately after attachment of email was successful; replies to the end user with the ticket number while removing undesired reply recipients.**
 
 The function constructs a reply all and filters out addresses listed in the 'do not reply' list. All indication of subject line inserts from help desk agents or the scripts are removed aside from the email's associated ticket number. Finally, the reply is sent, and the original email filed away as completed.
