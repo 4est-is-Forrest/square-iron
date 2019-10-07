@@ -4,7 +4,7 @@ weight: 4
 layout: docs
 
 ---
-The remaining functions found in the module 'Inbox Common.'
+The remaining functions found in the Inbox Common module.
 
 <hr />
 
