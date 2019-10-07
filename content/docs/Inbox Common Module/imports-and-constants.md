@@ -62,4 +62,4 @@ Parsing email subject lines for specific arguments is based entirely on simple r
 
 **The 'lqlist' list** is used by the spellcheck function. It is a list of all queues associated with the subject account (250+) in lowercase format.
 
-**Note:** Connectors function calls are actually located at the bottom but displayed here as constants. The full code document reflects this.
+**Note:** Connectors function calls are actually located at the bottom but displayed here as constants. The [full code document](/docs/inbox-common-module/inbox-common-code/) reflects this.
