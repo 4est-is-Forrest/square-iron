@@ -1,5 +1,5 @@
 ---
-title: Full Code
+title: Module Code
 weight: 1
 layout: docs
 
