@@ -25,7 +25,7 @@ from pathlib import Path
 
 [Connectors](/docs/connectors/) is a crucial module I created for this environment.
 
-**Regex** is used to parse the arguments inserted into an email's subject line. See [Syntax ](http:///docs/email-toolset/#syntax)for details on these arguments.
+**Regex** is used to parse the arguments inserted into an email's subject line. See [Syntax](http:///docs/email-toolset/#syntax) for details on these arguments.
 
 <hr />
 
