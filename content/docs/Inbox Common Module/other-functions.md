@@ -13,9 +13,9 @@ The remaining functions found in the Inbox Common module.
 def wait(x,y,z):
     els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
     return WebDriverWait(driver, x).until(EC.presence_of_element_located((els[y], z)))
-
-**A short-hand version of my preferred element selection method using Selenium.** 
 ```
+**A short-hand version of my preferred element selection method using Selenium.** 
+
 <hr />
 
 #### **_Queue Spellcheck_**
