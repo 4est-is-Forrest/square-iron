@@ -9,16 +9,19 @@ The remaining functions found in the Inbox Common module.
 <hr />
 
 #### **_Shorthand Wait_**
+
 ```python
 def wait(x,y,z):
     els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
     return WebDriverWait(driver, x).until(EC.presence_of_element_located((els[y], z)))
 ```
-**A short-hand version of my preferred element selection method using Selenium.** 
+
+**A short-hand version of my preferred element selection method using Selenium.**
 
 <hr />
 
 #### **_Queue Spellcheck_**
+
 ```python
 def queue_spellcheck(q):
     if q.lower() not in lqlist:
@@ -32,40 +35,41 @@ def queue_spellcheck(q):
     else:
         return q
 ```
-**Serves to spellcheck resolver group names while parsing subject line arguments in the 'Value from Email' function.**
+
+**Serves to spellcheck resolver group names while parsing subject line arguments in the 'Values from Email' function.**
 
 Because resolver group names employed in this environment's ServiceNow instance are very long and easy to misspell, spellchecking had to be implemented.
 
 <hr />
 
 #### **_Attach_**
-
-    def attach(msg,number):
-        """Get Direct Ticket URL"""
-        if 'INC' in number:
-            url = '{}incident.do?sysparm_query=number={}'.format(snow,number)
-        else:
-            url = '{}sc_task.do?sysparm_query=number={}'.format(snow,number)
-        driver.get(url)
-        """Remove/Save"""
-        path = str(Path('email.msg').absolute())
-        try:
-            os.remove(path)
-        except:
-            pass
-        msg.saveas(path)
-        """Attach/Remove"""
-        wait(15,0,'//*[@id="header_add_attachment"]').click()
-        driver.execute_script('window.alert = null')
-        wait(10,0,'//*[@id="attachFile"]').send_keys(path)
-        wait(15,2,'email.msg')
+```python
+def attach(msg,number):
+    """Get Direct Ticket URL"""
+    if 'INC' in number:
+        url = '{}incident.do?sysparm_query=number={}'.format(snow,number)
+    else:
+        url = '{}sc_task.do?sysparm_query=number={}'.format(snow,number)
+    driver.get(url)
+    """Remove/Save"""
+    path = str(Path('email.msg').absolute())
+    try:
         os.remove(path)
-
+    except:
+        pass
+    msg.saveas(path)
+    """Attach/Remove"""
+    wait(15,0,'//*[@id="header_add_attachment"]').click()
+    driver.execute_script('window.alert = null')
+    wait(10,0,'//*[@id="attachFile"]').send_keys(path)
+    wait(15,2,'email.msg')
+    os.remove(path)
+```
 **Called immediately after a task or incident number is obtained; attaches the email object to the ticket.**
 
 Once a ticket number is created and the fields require no further edits, the previously initialized Webdriver (bottom of 'Inbox Common' Module) navigates directly to the ticket via ServiceNow's web interface in order to attach the email. This is to ensure there is no ambiguity between the ticket and email as far as details and it also ensures the email's attachments are also uploaded to the ticket.
 
-The web elements accessed in this function are exactly the same regardless of ticket type and ultimately, this function simulates a user attaching the '.msg' object as quickly as the GUI will allow. 
+The web elements accessed in this function are exactly the same regardless of ticket type and ultimately, this function simulates a user attaching the '.msg' object as quickly as the GUI will allow.
 
 #### **_Reply_**
 
@@ -97,6 +101,6 @@ The web elements accessed in this function are exactly the same regardless of ti
         msg.save()
         msg.move(completed_folder)
 
-**Called immediately after attachment of email was successful; replies to the end user with the ticket number while removing undesired reply recipients.** 
+**Called immediately after attachment of email was successful; replies to the end user with the ticket number while removing undesired reply recipients.**
 
 The function constructs a reply all and filters out addresses listed in the 'do not reply' list. All indication of subject line inserts from help desk agents or the scripts are removed aside from the email's associated ticket number. Finally, the reply is sent, and the original email filed away as completed.
