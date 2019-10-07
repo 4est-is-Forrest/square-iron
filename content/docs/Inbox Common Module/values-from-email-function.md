@@ -84,25 +84,25 @@ def values_from_email(m):
         }
 ```
 ## Breakdown
-
-        #Email Address
-        try:
-            email = re.findall(r'&&\s*(.+)\s*&&',m.subject)[0]
-        except:
-            email= m.senderemailaddress
-        if '@' not in email:
-            email= m.sender.GetExchangeUser().PrimarySmtpAddress
-        if email.upper() in do_not_reply:
-            m.subject= 'Helpdesk/Safe Sender - ' + m.subject
-            m.save()
-            return None
-        r = s.get('{}sys_user.do?JSONv2&sysparm_action=getKeys&sysparm_query=email={}'.format(snow,email))
-        try:
-            user = r.json()['records'][0]
-        except:
-            user = ''
-            pass
-
+```python
+    #Email Address
+    try:
+        email = re.findall(r'&&\s*(.+)\s*&&',m.subject)[0]
+    except:
+        email= m.senderemailaddress
+    if '@' not in email:
+        email= m.sender.GetExchangeUser().PrimarySmtpAddress
+    if email.upper() in do_not_reply:
+        m.subject= 'Helpdesk/Safe Sender - ' + m.subject
+        m.save()
+        return None
+    r = s.get('{}sys_user.do?JSONv2&sysparm_action=getKeys&sysparm_query=email={}'.format(snow,email))
+    try:
+        user = r.json()['records'][0]
+    except:
+        user = ''
+        pass
+```
 **Determine the email's subject user based on the sender's email address. Try to get that user's "sys_id" from ServiceNow via JSON query.**
 
 Generally, the sender's email address is accurate enough to go off of. However, there are plenty of instances where the email was forwarded one or more times from it's original source. This is why the '&&' is an option to override the source address to be used in the ticket.
