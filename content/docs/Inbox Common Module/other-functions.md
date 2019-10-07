@@ -67,9 +67,9 @@ def attach(msg,number):
 ```
 **Called immediately after a task or incident number is obtained; attaches the email object to the ticket.**
 
-Once a ticket number is created and the fields require no further edits, the previously initialized Webdriver (bottom of 'Inbox Common' Module) navigates directly to the ticket via ServiceNow's web interface in order to attach the email. This is to ensure there is no ambiguity between the ticket and email as far as details and it also ensures the email's attachments are also uploaded to the ticket.
+Once a ticket number is created and the fields require no further edits, the previously initialized Webdriver (bottom of 'Inbox Common' Module) navigates directly to the ticket via ServiceNow's web interface. 
 
-The web elements accessed in this function are exactly the same regardless of ticket type and ultimately, this function simulates a user attaching the '.msg' object as quickly as the GUI will allow.
+The web elements accessed in this function are exactly the same regardless of ticket type and ultimately, this function simulates a user attaching the '.msg' file to the record as quickly as the GUI will allow.
 
 #### **_Reply_**
 
