@@ -8,7 +8,7 @@ The remaining functions found in the Inbox Common module.
 
 <hr />
 
-#### **_Short-hand Wait_**
+#### **_Shorthand Wait_**
 ```python
 def wait(x,y,z):
     els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
