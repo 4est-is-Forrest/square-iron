@@ -34,6 +34,8 @@ These scripts have a small and simple syntax that must be used within emails' su
 * Attaches .msg files to ServiceNow records
 * Replies to end users with their respective ticket numbers
 
+<hr />
+
 ## Scripts
 
 The scripts Tasks and Incidents are fundamentally the same but do have key process differences; to summarize them:
@@ -42,6 +44,8 @@ The scripts Tasks and Incidents are fundamentally the same but do have key proce
 * **Tasks** are for requests and are initially created with a Webdriver via a ServiceNow Catalog Request. JSON is then used to properly set fields for the subsequent child tickets and the process ends by calling the Webdriver again in order to attach .msg objects to records.
 
 See the scripts' respective documents for greater detail.
+
+<hr />
 
 ## Syntax
 
