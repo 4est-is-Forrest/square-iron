@@ -43,6 +43,7 @@ Because resolver group names employed in this environment's ServiceNow instance 
 <hr />
 
 #### **_Attach_**
+
 ```python
 def attach(msg,number):
     """Get Direct Ticket URL"""
@@ -65,13 +66,15 @@ def attach(msg,number):
     wait(15,2,'email.msg')
     os.remove(path)
 ```
+
 **Called immediately after a task or incident number is obtained; attaches the email object to the ticket.**
 
-Once a ticket number is created and the fields require no further edits, the previously initialized Webdriver (bottom of 'Inbox Common' Module) navigates directly to the ticket via ServiceNow's web interface. 
+Once a ticket number is created and the fields require no further edits, the previously initialized Webdriver (bottom of 'Inbox Common' Module) navigates directly to the ticket via ServiceNow's web interface.
 
 The web elements accessed in this function are exactly the same regardless of ticket type and ultimately, this function simulates a user attaching the '.msg' file to the record as quickly as the GUI will allow.
 
 #### **_Reply_**
+
 ```python
 def reply(email,msg,number):
 
@@ -101,6 +104,7 @@ def reply(email,msg,number):
     msg.save()
     msg.move(completed_folder)
 ```
+
 **Called immediately after attachment of email was successful; replies to the end user with the ticket number while removing undesired reply recipients.**
 
-The function constructs a reply all and filters out addresses listed in the 'do not reply' list. All indication of subject line inserts from help desk agents or the scripts are removed aside from the email's associated ticket number. Finally, the reply is sent, and the original email filed away as completed.
+The function constructs a reply all and removes any 'do-not-reply' addresses. All formatted arguments are removed from the subject line and the new ticket number inserted at the beginning. Once the reply is sent, the user email is filed away.
