@@ -9,13 +9,14 @@ This document offers details into the constants and imports within the 'Inbox Co
 <hr />
 
 ## Imports
-
-    import win32com.client
-    from datetime import datetime
-    import re
-    from fuzzywuzzy import fuzz
-    from connectors import *
-    from pathlib import Path
+```python
+import win32com.client
+from datetime import datetime
+import re
+from fuzzywuzzy import fuzz
+from connectors import *
+from pathlib import Path
+```
 
 #### **_Win32com.client_**
 
