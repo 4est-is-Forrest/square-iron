@@ -4,7 +4,7 @@ weight:
 layout: docs
 
 ---
-This document section will breakdown the module 'Inbox Common' much like the breakdown of the 'Connectors' module.
+This document section will breakdown the module Inbox Common much like the breakdown of the Connectors module.
 
 <hr />
 
