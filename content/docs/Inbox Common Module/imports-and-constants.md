@@ -27,7 +27,7 @@ from pathlib import Path
 
 #### **_RE (Regex)_**
 
-Parsing email subject lines for specific arguments is based entirely on simple regular expressions. The function 'Values from Email' will illustrate this in the following section.
+**Regex** is used to parse the arguments inserted into an email's subject line.
 
 <hr />
 
