@@ -14,8 +14,8 @@ These tools are built on two modules of my design and four scripts that perform 
 
 * [Connectors Module](/docs/connectors/): Establishes Session and Webdriver connections with ServiceNow instances
 * [Inbox Module](/docs/inbox-common-module/): Primary use is to parse arguments from emails and return JSON ready Python dictionary
-* Tasks Script: Creates ServiceNow Task tickets based on email arguments
-* Incidents Script: Creates ServiceNow Incident tickets based on email arguments
+* **Tasks Script**: Creates ServiceNow Task tickets based on email arguments
+* **Incidents Script**: Creates ServiceNow Incident tickets based on email arguments
 
 These scripts have a small and simple syntax that must be used within emails' subject lines so as to pass important arguments into the ticket's creation.
 
@@ -45,7 +45,7 @@ See the scripts' respective documents for greater detail.
 
 ## Syntax
 
-The scripts Tasks and Incidents are dependent on a type of syntax in order to fill certain ticket fields. Fields that require human interpretation such as a resolver group best suited to solve the problem or the particular client to create the ticket under. 
+The scripts Tasks and Incidents are dependent on a type of syntax in order to fill certain ticket fields. Fields that require human interpretation such as a resolver group best suited to solve the problem or the particular client to create the ticket under.
 
 These arguments are added to each email's subject line encased in their respective symbols so as to be parsed using basic regular expressions:
 
