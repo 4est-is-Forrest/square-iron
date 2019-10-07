@@ -31,7 +31,7 @@ Specifically, the 'partial ratio' function is what I was ultimately looking to i
 
 #### **_Connnectors_**
 
-A crucial module documented in this doc [section](https://3flqfei0stazaa.instant.forestry.io/docs/connectors/).
+A crucial module I created for this environment. Documented in this [section](https://3flqfei0stazaa.instant.forestry.io/docs/connectors/).
 
 #### **_RE (Regex)_**
 
