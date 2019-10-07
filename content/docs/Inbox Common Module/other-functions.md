@@ -9,13 +9,13 @@ The remaining functions found in the module 'Inbox Common.'
 <hr />
 
 #### **_Short-hand Wait_**
-
-    def wait(x,y,z):
-        els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
-        return WebDriverWait(driver, x).until(EC.presence_of_element_located((els[y], z)))
+```python
+def wait(x,y,z):
+    els = [By.XPATH, By.CSS_SELECTOR, By.PARTIAL_LINK_TEXT]
+    return WebDriverWait(driver, x).until(EC.presence_of_element_located((els[y], z)))
 
 **A short-hand version of my preferred element selection method using Selenium.** 
-
+```
 <hr />
 
 #### **_Queue Spellcheck_**
