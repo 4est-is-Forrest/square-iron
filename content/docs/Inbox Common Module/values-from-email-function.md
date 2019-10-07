@@ -141,6 +141,7 @@ Depending on the spellcheck results, the email is either marked as 'Invalid' and
 By default, the short description will be the emails subject line minus the inserted arguments. For instances where the subject line is too vague, '$$' allows for a specific string to be used instead.
 
 #### **_Client & Generic Client User_**
+
 ```python
     #Client
     try:
@@ -160,9 +161,12 @@ By default, the short description will be the emails subject line minus the inse
     r = s.get('{}sys_user.do?JSONv2&sysparm_action=getKeys&sysparm_query=name={}'.format(snow,sys_user))
     sys_user = r.json()['records'][0]
 ```
+
 **Obtain the client name and generic user name associated with that client. Get their "sys_id's" via JSON.**
 
-In this context, this particular customer has multiple clients under them and so tickets must be created under those specific clients (for billing purposes). Using specific users is not possible when using these client codes (this is why the 'watchlist 'field is necessary) so a generic user associated with every client code must fill the required user field. Conveniently, for the vast number of these client codes, the generic user's name always follows the listed format above.
+In this environments context, tickets are opened by client and the required user field is simply filled with a Generic user associated with that client. User specific information is handled in ServiceNow's 'watch list' field or directly in the ticket notes. 
+
+#### **_Return Dictionary of Values_**
 
         #Values Obtained
         ticketBody= 'From: ' + email + '\nSent: ' + datetime.strftime(m.receivedtime, '%Y-%m-%d %H:%M:%S') + '\nTo: ' + m.to + '\nCC: ' + m.cc + '\nSubject: ' + m.subject + '\n\n' +  m.body
