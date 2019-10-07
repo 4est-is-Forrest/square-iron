@@ -23,11 +23,9 @@ from pathlib import Path
 
 [**Fuzzywuzzy**](https://pypi.org/project/fuzzywuzzy/0.3.0/) is a useful library that offers a variety of string comparison methods and is used in this module's spellcheck function.
 
-**Connectors** is a crucial module I created for this environment. Documented in this [section](https://3flqfei0stazaa.instant.forestry.io/docs/connectors/).
+Connectors is a crucial module I created for this environment.
 
-#### **_RE (Regex)_**
-
-**Regex** is used to parse the arguments inserted into an email's subject line.
+**Regex** is used to parse the arguments inserted into emai
 
 <hr />
 
