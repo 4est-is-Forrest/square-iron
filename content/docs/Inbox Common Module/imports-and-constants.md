@@ -21,7 +21,7 @@ This document offers details into the constants and imports within the 'Inbox Co
 
 **Win32com/pywin32 offers a method to interface with Outlook and therefore the environment's mail servers without need of a REST API token.**
 
-Because this is an interface into the Outlook application, connections and authentication are already handled. Also, having the current user's email address readily available is also helpful in reliably obtaining "sys_id's" across different ServiceNow instances. Overall, having this interface available from the beginning is largely the reason I never bothered to request access to the Mail API.
+Because this is an interface into the Outlook application, connections and authentication are already handled. Also, having the current user's email address readily available is also helpful in reliably obtaining "sys_id's" across different ServiceNow instances. 
 
 #### **_Fuzzywuzzy_**
 
