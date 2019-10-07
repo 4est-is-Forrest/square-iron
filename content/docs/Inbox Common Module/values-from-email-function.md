@@ -9,6 +9,7 @@ This function is used to parse and validate arguments inserted into an email's s
 <hr />
 
 ## Function Code
+
 ```python
 def values_from_email(m):
     
@@ -83,7 +84,11 @@ def values_from_email(m):
         'time':datetime.strftime(m.receivedtime, '%Y-%m-%d %H:%M:%S')
         }
 ```
+
 ## Breakdown
+
+#### **_User & User Email Address_**
+
 ```python
     #Email Address
     try:
@@ -103,6 +108,7 @@ def values_from_email(m):
         user = ''
         pass
 ```
+
 **Determine the email's subject user based on the sender's email address. Try to get that user's "sys_id" from ServiceNow via JSON query.**
 
 Generally, the sender's email address is accurate enough to go off of. However, there are plenty of instances where the email was forwarded one or more times from it's original source. This is why the '&&' is an option to override the source address to be used in the ticket.
