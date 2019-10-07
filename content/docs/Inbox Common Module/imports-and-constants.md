@@ -54,4 +54,4 @@ s = spawn_session()
 
 **The 'lqlist' list** is used by the spellcheck function. It is a list of all queues associated with the subject account (250+) in lowercase format.
 
-**Note:** Connectors function calls are actually located at the bottom but displayed here as constants. The [full code document](/docs/inbox-common-module/inbox-common-code/) reflects this.
+<hr />
