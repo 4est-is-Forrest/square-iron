@@ -140,6 +140,8 @@ Depending on the spellcheck results, the email is either marked as 'Invalid' and
 
 By default, the short description will be the emails subject line minus the inserted arguments. For instances where the subject line is too vague, '$$' allows for a specific string to be used instead.
 
+#### **_Client & Generic Client User_**
+
         #Client
         try:
             client_name = re.findall('%%\s*(.+)\s*%%', m.subject)[0]
