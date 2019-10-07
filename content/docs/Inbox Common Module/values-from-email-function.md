@@ -167,25 +167,25 @@ By default, the short description will be the emails subject line minus the inse
 In this environments context, tickets are opened by client and the required user field is simply filled with a Generic user associated with that client. User specific information is handled in ServiceNow's 'watch list' field or directly in the ticket notes. 
 
 #### **_Return Dictionary of Values_**
-
-        #Values Obtained
-        ticketBody= 'From: ' + email + '\nSent: ' + datetime.strftime(m.receivedtime, '%Y-%m-%d %H:%M:%S') + '\nTo: ' + m.to + '\nCC: ' + m.cc + '\nSubject: ' + m.subject + '\n\n' +  m.body
-        print('\n{}\n\n{}\n\n{}\n\n{}'.format(m.subject,email,m.receivedtime,queue_name.upper()))
-        print('=' * 50)
-        """Mark/Return"""
-        m.subject = 'Working...'+ m.subject
-        m.save()
-        return {
-            'email':email,
-            'watchlist':user,
-            'company':client,
-            'caller_id':sys_user,
-            'assignment_group':queue,
-            'short_description':short,
-            'description':ticketBody,
-            'time':datetime.strftime(m.receivedtime, '%Y-%m-%d %H:%M:%S')
-            }
-
+```python
+    #Values Obtained
+    ticketBody= 'From: ' + email + '\nSent: ' + datetime.strftime(m.receivedtime, '%Y-%m-%d %H:%M:%S') + '\nTo: ' + m.to + '\nCC: ' + m.cc + '\nSubject: ' + m.subject + '\n\n' +  m.body
+    print('\n{}\n\n{}\n\n{}\n\n{}'.format(m.subject,email,m.receivedtime,queue_name.upper()))
+    print('=' * 50)
+    """Mark/Return"""
+    m.subject = 'Working...'+ m.subject
+    m.save()
+    return {
+        'email':email,
+        'watchlist':user,
+        'company':client,
+        'caller_id':sys_user,
+        'assignment_group':queue,
+        'short_description':short,
+        'description':ticketBody,
+        'time':datetime.strftime(m.receivedtime, '%Y-%m-%d %H:%M:%S')
+        }
+```
 **Print values for the human running the script, mark the email in progress and return the dictionary.**
 
 <hr />
