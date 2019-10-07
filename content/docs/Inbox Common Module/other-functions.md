@@ -108,3 +108,5 @@ def reply(email,msg,number):
 **Called immediately after attachment of email was successful; replies to the end user with the ticket number while removing undesired reply recipients.**
 
 The function constructs a reply all and removes any 'do-not-reply' addresses. All formatted arguments are removed from the subject line and the new ticket number inserted at the beginning. Once the reply is sent, the user email is filed away.
+
+<hr />
