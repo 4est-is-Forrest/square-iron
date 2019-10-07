@@ -60,16 +60,6 @@ These arguments are added to each email's subject line encased in their respecti
 
 So long as the first two are provided on each email, the scripts have everything they need to accurately create any number of email tickets in rapid succession.
 
-#### **_Example Case_**
-
-If a user sends an email with the following subject line:
-
-_Help Desk - I'm unable to log into my email, pls halp_
-
-An agent would add, at the very least, the following and save the email:
-
-_Help Desk - I'm unable to log into my email, pls halp %%Client1%% {{Email Group's Ticket Queue}}_
-
 #### **_The Arguments_**
 
 **( % ) Client codes** determine what customer to create the ticket under and therefore who to charge.
