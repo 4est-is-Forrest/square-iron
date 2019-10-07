@@ -41,20 +41,20 @@ Parsing email subject lines for specific arguments is based entirely on simple r
 <hr />
 
 ## Constants
+```python
+outlook= win32com.client.Dispatch('Outlook.Application')
+root_folder = outlook.GetNamespace('MAPI').Folders['help.desk@inbox.com'].Folders['Inbox']
+completed_folder = root_folder.Folders[str(datetime.today().year)].Folders[datetime.today().month - 1]
+snow = 'https://instance1.service-now.com/'
+RESOURCES = os.environ['homepath'] + '/__resources__'
+REPLY_TEMPLATE = RESOURCES + '/template.msg'
+do_not_reply = ['< long list of inboxes to remove from replies >']
+do_not_reply = [s.upper() for s in do_not_reply]
 
-    outlook= win32com.client.Dispatch('Outlook.Application')
-    root_folder = outlook.GetNamespace('MAPI').Folders['help.desk@inbox.com'].Folders['Inbox']
-    completed_folder = root_folder.Folders[str(datetime.today().year)].Folders[datetime.today().month - 1]
-    snow = 'https://instance1.service-now.com/'
-    RESOURCES = os.environ['homepath'] + '/__resources__'
-    REPLY_TEMPLATE = RESOURCES + '/template.msg'
-    do_not_reply = ['< long list of inboxes to remove from replies >']
-    do_not_reply = [s.upper() for s in do_not_reply]
-    
-    lqlist = pickle.load(open(RESOURCES + '/lqlist.p','rb'))
-    driver,creds = spawn_driver()
-    s = spawn_session()
-
+lqlist = pickle.load(open(RESOURCES + '/lqlist.p','rb'))
+driver,creds = spawn_driver()
+s = spawn_session()
+```
 **Outlook and the folders** are pretty self-explanatory. Interface with Outlook and obtain the help desk's inbox folder object as well as the sub-folder object where processed emails are moved ('/root/year/month')
 
 **The reply template and 'lqlist'** are sourced from the 'resources' folder, an 'assets' directory created and maintained by a separate 'setup' script run periodically on users' machines.
