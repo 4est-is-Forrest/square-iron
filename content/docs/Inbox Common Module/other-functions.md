@@ -34,11 +34,7 @@ def queue_spellcheck(q):
 ```
 **Serves to spellcheck resolver group names while parsing subject line arguments in the 'Value from Email' function.**
 
-Because resolver group names employed in this environment's ServiceNow instance are very long and easy to misspell, spellchecking had to be incorporated into early versions of these tools. 
-
-Using a list of all the group names in lowercase, the passed group argument is compared to each one. Partial ratio match is used because most misspellings are due to lack of characters or incorrect order of characters. The queue with the highest ratio (beyond 80) is the one that is returned. 
-
-This method of spellchecking has proven accurate in this scope because these group names range from 15 characters to more than 30. With the addition that group names use at least two different characters from one another, its close to impossible to accidentally end up with something other than the intended group name.
+Because resolver group names employed in this environment's ServiceNow instance are very long and easy to misspell, spellchecking had to be implemented.
 
 <hr />
 
