@@ -25,9 +25,9 @@ Because this is an interface into the Outlook application, connections and authe
 
 #### **_Fuzzywuzzy_**
 
-[**Fuzzywuzzy**](https://pypi.org/project/fuzzywuzzy/0.3.0/) **is a useful library that offers a variety of string comparison methods and is primarily used in this module's spellcheck function.**
+[**Fuzzywuzzy**](https://pypi.org/project/fuzzywuzzy/0.3.0/) **is a useful library that offers a variety of string comparison methods and is used in this module's spellcheck function.**
 
-Specifically, the 'partial ratio' function is what I was ultimately looking to incorporate in the spellcheck function (explained later). I needed a way to compare strings without marking down due to a lack of characters.
+Specifically, the 'partial ratio' function is what I was ultimately looking to incorporate in the spellcheck function (explained later). I needed a way to compare strings without factoring lack of characters.
 
 #### **_Connnectors_**
 
