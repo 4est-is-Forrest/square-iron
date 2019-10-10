@@ -4,9 +4,12 @@ weight: 1
 layout: docs
 
 ---
+Code and details into the 'Incidents' script.
+
 <hr />
 
 ## Code
+
 ```python
 """
 User Input
