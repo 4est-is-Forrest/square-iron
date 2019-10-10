@@ -33,7 +33,7 @@ while len(emails) > 0:
                 print('Skipped (see message subject):\n{}'.format(msg.subject))
                 continue
             """Submit Request"""
-            driver.get('https://atosnam.service-now.com/nav_to.do?uri=%2Fcom.glideapp.servicecatalog_cat_item_view.do%3Fv%3D1%26sysparm_id%3D225583303710efc08d0d1f9543990e6f%26sysparm_link_parent%3Dc167ce3137c45b408d0d1f9543990e6e%26sysparm_catalog%3D1f7442fd37845b408d0d1f9543990eaf%26sysparm_catalog_view%3Dcatalog_conduent')
+            driver.get('https://instance1.service-now.com/nav_to.do?uri=%2Fcom.glideapp.servicecatalog_cat_item_view.do%3Fv%3D1%26sysparm_id%3D225583303710efc08d0d1f9543990e6f%26sysparm_link_parent%3Dc167ce3137c45b408d0d1f9543990e6e%26sysparm_catalog%3D1f7442fd37845b408d0d1f9543990eaf%26sysparm_catalog_view%3Dcatalog_conduent')
             driver.switch_to.frame(WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'gsft_main'))))
             wait(10,0,'//*[@id="IO:63da1a84371093808d0d1f9543990eb7"]') #Wait for bottom to load
             """Fill in Request Fields"""
