@@ -92,4 +92,4 @@ driver.quit()
 
 ## Details
 
-Because the modules of my design handle much of the work, the script is easy to parse without going into great detail. The script on its own must handle selecting and iterrating the selected folder and differs from 'Tasks' in that the ticket can be created from JSON, calling the Webdriver only to attach the email file to the record.
+Because the modules of my design handle much of the work, the script is easy to parse without going into great detail. The script on its own must handle selecting and iterrating the selected folder and differs from 'Incidents' in that the ticket must first be created using the web interface in ServiceNow, utilizing JSON for all the remaining steps with exception to attaching the email file to the ServiceNow records.
