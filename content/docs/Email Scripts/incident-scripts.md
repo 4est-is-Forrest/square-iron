@@ -4,10 +4,12 @@ weight: 1
 layout: docs
 
 ---
+Code and details into the 'Incidents' script.
 
 <hr />
 
 ## Code
+
 ```python
 """
 User Input
@@ -63,3 +65,7 @@ while len(emails) > 0:
             emails.sort("ReceivedTime")
 driver.quit()
 ```
+
+## Details
+
+Because the modules of my design handle much of the work, the script is easy to parse without going into great detail. The script on its own must handle selecting and iterrating the selected folder and differs from 'Tasks' in that the ticket can be created from JSON, calling the Webdriver only to attach the email file to the record.
