@@ -1,5 +1,5 @@
 ---
-title: Inbox Common
+title: Inbox Common (Module)
 weight: 
 layout: docs
 
